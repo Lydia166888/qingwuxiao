@@ -337,7 +337,7 @@ ul{list-style:none}
 .outfit-card img{width:100%;height:150px;object-fit:cover;border-radius:var(--radius-sm);margin-bottom:8px;background:var(--bg)}
 .outfit-card .ot-title{font-size:13px;font-weight:600}
 .outfit-card .ot-desc{font-size:12px;color:var(--text-light);margin-top:3px}
-.outfit-card .ot-link{font-size:11px;color:var(--primary-dark);margin-top:4px}
+.outfit-card .ot-link{font-size:11px;color:var(--primary-dark);margin-top:4px;cursor:pointer}
 .sub-tab-row{display:flex;gap:6px;margin-bottom:12px;background:#fff;border-radius:var(--radius);padding:4px}
 .sub-tab{flex:1;text-align:center;padding:8px 2px;border-radius:var(--radius-sm);font-size:12px;color:var(--text-light);cursor:pointer;transition:all .2s}
 .sub-tab.active{background:var(--primary);color:#fff;font-weight:500}
@@ -682,6 +682,35 @@ const SENTENCES={en:[
   {t:'Будем рады сотрудничеству.',m:'期待合作。'}
 ]};
 
+const ORAL_PRACTICE={
+  en:[
+    {s:'Could you send us your latest quotation?',m:'请发送最新报价。',kw:'quotation'},
+    {s:'What is the lead time for this model?',m:'这款型号交货期多久？',kw:'lead time'},
+    {s:'Our MOQ is two units for this series.',m:'这个系列起订量2台。',kw:'MOQ'},
+    {s:'We accept payment by T/T and L/C.',m:'我们接受电汇和信用证付款。',kw:'payment'},
+    {s:'Please confirm the cabin size and door width.',m:'请确认轿厢尺寸和开门宽度。',kw:'cabin'},
+    {s:'The warranty period is twelve months.',m:'保修期为12个月。',kw:'warranty'},
+    {s:'How many landings does this building need?',m:'这栋楼需要多少层站？',kw:'landings'},
+    {s:'We can offer a discount for bulk orders.',m:'大批量订单我们可以给折扣。',kw:'discount'},
+    {s:'The installation will take about two weeks.',m:'安装大约需要两周。',kw:'installation'},
+    {s:'Please check the attached technical drawing.',m:'请查收附件技术图纸。',kw:'drawing'},
+    {s:'This elevator meets European safety standards.',m:'这台电梯符合欧洲安全标准。',kw:'standards'},
+    {s:'We will arrange the shipment next Monday.',m:'我们下周一安排发货。',kw:'shipment'}
+  ],
+  ru:[
+    {s:'Какая цена?',m:'价格多少？',kw:'цена'},
+    {s:'Пришлите коммерческое предложение.',m:'请发报价单。',kw:'предложение'},
+    {s:'Какой срок поставки?',m:'交货期多久？',kw:'поставки'},
+    {s:'Мы готовы принять заказ.',m:'我们准备接单。',kw:'заказ'},
+    {s:'Сколько остановок нужно?',m:'需要多少层站？',kw:'остановок'},
+    {s:'Гарантийный срок — один год.',m:'保修期一年。',kw:'Гарантийный'},
+    {s:'Мы отправим оборудование в понедельник.',m:'我们周一发货。',kw:'отправим'},
+    {s:'Прилагаем технический чертёж.',m:'附上技术图纸。',kw:'чертёж'},
+    {s:'Лифт соответствует стандартам безопасности.',m:'电梯符合安全标准。',kw:'стандартам'},
+    {s:'Какие условия оплаты?',m:'付款条件是什么？',kw:'оплаты'}
+  ]
+};
+
 const DEFAULT_TODOS={work:[{text:'整理当日待办工作事项',done:false,q:'important'},{text:'客户开发5+',done:false,q:'urgent'}],personal:[{text:'做晚饭+明日午餐',done:false,q:'normal'},{text:'23:00提醒睡觉',done:false,q:'normal'}]};
 
 const NEWS=[
@@ -723,18 +752,22 @@ const DIET_MENU=[
 ];
 
 const OUTFIT_BLOGGERS={
-  xsn:{name:'小山菜奈',platform:'小红书',h:'168cm',w:'94斤',profile:'https://www.xiaohongshu.com/search_result?keyword=小山菜奈',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'甜美少女风·日常平价'},
-  xxnn:{name:'蟹蟹蟹蟹妮',platform:'小红书',h:'168cm',w:'100斤',profile:'https://www.xiaohongshu.com/search_result?keyword=蟹蟹蟹蟹妮',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'松弛减龄·休闲通勤'},
-  hdy:{name:'好多鱼y',platform:'小红书',h:'165cm',w:'96斤',profile:'https://www.xiaohongshu.com/search_result?keyword=好多鱼y穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'基础款天花板·干净利落'},
-  mbw:{name:'猫堡王',platform:'小红书',h:'166cm',w:'95斤',profile:'https://www.xiaohongshu.com/search_result?keyword=猫堡王穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'大方得体·气质穿搭'},
-  czp:{name:'橙子皮',platform:'小红书',h:'170cm',w:'105斤',profile:'https://www.xiaohongshu.com/search_result?keyword=橙子皮穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'通勤气质标杆·韩系日常'},
-  ning:{name:'Ning',platform:'小红书',h:'169cm',w:'105斤',profile:'https://www.xiaohongshu.com/search_result?keyword=Ning穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'韩系极简·大衣穿搭'},
-  jj:{name:'菁菁是我',platform:'小红书',h:'165cm',w:'92斤',profile:'https://www.xiaohongshu.com/search_result?keyword=菁菁是我穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'金融职场·利落衬衫套装'},
-  vpp:{name:'v郑呸呸v',platform:'小红书',h:'168cm',w:'94斤',profile:'https://www.xiaohongshu.com/search_result?keyword=v郑呸呸v穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'简单干净·职场借鉴'},
-  dxgz:{name:'电线杆子',platform:'小红书',h:'171cm',w:'80斤',profile:'https://www.xiaohongshu.com/search_result?keyword=电线杆子穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'极简黑白灰·通勤天花板'},
-  tjs:{name:'吞金瘦',platform:'小红书',h:'172cm',w:'105斤',profile:'https://www.xiaohongshu.com/search_result?keyword=吞金瘦穿搭',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'高智清冷·西装腰带'},
-  ykmy:{name:'一颗门牙的反击',platform:'小红书',h:'155cm',w:'92斤',profile:'https://www.xiaohongshu.com/user/profile/62530b9a0000000010007f6f',search:'https://www.xiaohongshu.com/search_result?keyword=',tags:'小个子素颜·基础款穿搭'},
-  wlmili:{name:'无聊的米粒',platform:'抖音',h:'-',w:'-',profile:'https://www.douyin.com/search/无聊的米粒',search:'https://www.douyin.com/search/',tags:'抖音穿搭·松弛感'}
+  xsn:{name:'小山菜奈',platform:'小红书',h:'168cm',w:'94斤',kw:'小山菜奈',tags:'甜美少女风·日常平价'},
+  xxnn:{name:'蟹蟹蟹蟹妮',platform:'小红书',h:'168cm',w:'100斤',kw:'蟹蟹蟹蟹妮',tags:'松弛减龄·休闲通勤'},
+  hdy:{name:'好多鱼y',platform:'小红书',h:'165cm',w:'96斤',kw:'好多鱼y穿搭',tags:'基础款天花板·干净利落'},
+  mbw:{name:'猫堡王',platform:'小红书',h:'166cm',w:'95斤',kw:'猫堡王穿搭',tags:'大方得体·气质穿搭'},
+  czp:{name:'橙子皮',platform:'小红书',h:'170cm',w:'105斤',kw:'橙子皮穿搭',tags:'通勤气质标杆·韩系日常'},
+  ning:{name:'Ning',platform:'小红书',h:'169cm',w:'105斤',kw:'Ning穿搭',tags:'韩系极简·大衣穿搭'},
+  jj:{name:'菁菁是我',platform:'小红书',h:'165cm',w:'92斤',kw:'菁菁是我穿搭',tags:'金融职场·利落衬衫套装'},
+  vpp:{name:'v郑呸呸v',platform:'小红书',h:'168cm',w:'94斤',kw:'v郑呸呸v穿搭',tags:'简单干净·职场借鉴'},
+  dxgz:{name:'电线杆子',platform:'小红书',h:'171cm',w:'80斤',kw:'电线杆子穿搭',tags:'极简黑白灰·通勤天花板'},
+  tjs:{name:'吞金瘦',platform:'小红书',h:'172cm',w:'105斤',kw:'吞金瘦穿搭',tags:'高智清冷·西装腰带'},
+  ykmy:{name:'一颗门牙的反击',platform:'小红书',h:'155cm',w:'92斤',kw:'一颗门牙的反击',tags:'小个子素颜·基础款穿搭'},
+  wlmili:{name:'无聊的米粒',platform:'抖音',h:'-',w:'-',kw:'无聊的米粒',tags:'抖音穿搭·松弛感'}
+};
+const OUTFIT_PLATFORMS={
+  '小红书':{web:'https://www.xiaohongshu.com/search_result?keyword=',app:'xhsdiscover://search/result?keyword='},
+  '抖音':{web:'https://www.douyin.com/search/',app:'snssdk1128://search/?keyword='}
 };
 const OUTFITS={
   commute:[
@@ -1603,7 +1636,37 @@ const App={
       return `<div class="card"><div class="card-title"><span class="icon">📚</span>语句素材库</div>${SENTENCES[this.langPrevLang||'en'].map(s=>`<div style="padding:10px 0;border-bottom:1px solid #f5f0f0"><div style="font-size:13px;color:var(--primary-dark)">${s.t}</div><div style="font-size:12px;color:var(--text-light)">${s.m}</div><div style="font-size:11px;color:var(--primary);margin-top:4px;cursor:pointer" onclick="speak('${s.t.replace(/'/g,"\\'")}','${(this.langPrevLang||'en')==='en'?'en-US':'ru-RU'}')">🔊 听一听</div></div>`).join('')}<button class="btn btn-ghost btn-block btn-sm" style="margin-top:10px" onclick="App.setLang('${this.langPrevLang||'en'}')">返回单词</button></div>`;
     }
     if(this.langSub==='practice'){
-      return `<div class="card"><div class="card-title"><span class="icon">✍️</span>每周练习</div><div class="input-group"><label>翻译练习</label><textarea class="textarea" id="pracTrans" placeholder="写下你的翻译...">${escapeHtml(load('pracTrans_'+this.currentDate,''))}</textarea></div><div class="input-group"><label>模拟对话记录</label><textarea class="textarea" id="pracDialog" placeholder="记录今日模拟客户对话...">${escapeHtml(load('pracDialog_'+this.currentDate,''))}</textarea></div><button class="btn btn-primary btn-block" onclick="App.savePractice()">保存</button><button class="btn btn-ghost btn-block btn-sm" style="margin-top:8px" onclick="App.setLang('${this.langPrevLang||'en'}')">返回单词</button></div>`;
+      const lang=this.langPrevLang||'en';
+      const sentences=this.getDailySentences(lang);
+      const idx=this.getPracticeIndex(lang);
+      const s=sentences[idx];
+      const progress=this.getPracticeProgress(lang);
+      const meaningVisible=load('pracMeaningVisible_'+this.currentDate+'_'+lang,false);
+      return `<div class="card"><div class="card-title"><span class="icon">🎤</span>口语特训 · 每日一句</div>
+        <div style="text-align:center;padding:16px 0">
+          <div style="font-size:12px;color:var(--text-lighter)">第 ${idx+1} / ${sentences.length} 句 · ${lang==='en'?'英语':'俄语'}</div>
+          <div style="font-size:17px;font-weight:600;color:var(--primary-dark);margin:12px 0;line-height:1.6">${s.s}</div>
+          <div id="pracMeaning" style="font-size:13px;color:var(--text-light);${meaningVisible?'':'display:none'}">${s.m}</div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px">
+          <button class="btn btn-primary" onclick="App.speakPracticeSentence()">🔊 听原声</button>
+          <button class="btn btn-ghost" onclick="App.togglePracticeMeaning()">👀 ${meaningVisible?'隐藏中文':'看中文'}</button>
+          <button class="btn btn-yellow" onclick="App.startDictation()">✏️ 默写</button>
+          <button class="btn btn-outline ${progress[idx]==='read'?'btn-yellow':''}" onclick="App.markReadDone()">🎤 跟读完成</button>
+        </div>
+        <div id="dictationArea" style="display:none;margin-bottom:12px;padding:12px;background:var(--primary-light);border-radius:var(--radius-sm)">
+          <div style="font-size:12px;color:var(--text-light);margin-bottom:8px">请填写句子中缺失的关键词：</div>
+          <div id="dictationSentence" style="font-size:15px;color:var(--primary-dark);margin-bottom:10px;line-height:1.6"></div>
+          <input class="input" id="dictInput" placeholder="输入缺失的单词/词组" onkeydown="if(event.key==='Enter')App.checkDictation()">
+          <button class="btn btn-primary btn-block" style="margin-top:8px" onclick="App.checkDictation()">提交答案</button>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:12px;border-top:1px solid #f5f0f0">
+          <button class="btn btn-ghost btn-sm" onclick="App.prevPractice()">上一句</button>
+          <span id="pracProgress" style="font-size:12px;color:var(--text-light)">今日完成 ${progress.filter(x=>x).length}/${sentences.length}</span>
+          <button class="btn btn-ghost btn-sm" onclick="App.nextPractice()">下一句</button>
+        </div>
+      </div>
+      <div class="card"><div class="card-title"><span class="icon">✍️</span>自由练习</div><div class="input-group"><label>翻译练习</label><textarea class="textarea" id="pracTrans" placeholder="写下你的翻译...">${escapeHtml(load('pracTrans_'+this.currentDate,''))}</textarea></div><div class="input-group"><label>模拟对话记录</label><textarea class="textarea" id="pracDialog" placeholder="记录今日模拟客户对话...">${escapeHtml(load('pracDialog_'+this.currentDate,''))}</textarea></div><button class="btn btn-primary btn-block" onclick="App.savePractice()">保存</button><button class="btn btn-ghost btn-block btn-sm" style="margin-top:8px" onclick="App.setLang('${lang}')">返回单词</button></div>`;
     }
     if(this.langSub==='wrong'){
       const wrong=load('wrongWords',[]);
@@ -1661,9 +1724,62 @@ const App={
     this.renderPage('language');this.updateHome();
   },
   savePractice(){save('pracTrans_'+this.currentDate,$('pracTrans').value);save('pracDialog_'+this.currentDate,$('pracDialog').value);toast('练习已保存');},
+  getDailySentences(lang){
+    const all=ORAL_PRACTICE[lang]||[];
+    const d=new Date(this.currentDate);const start=new Date(d.getFullYear(),0,1);const dayOfYear=Math.floor((d-start)/864e5);
+    const out=[];for(let i=0;i<3;i++){out.push(all[(dayOfYear*3+i)%all.length]);}return out;
+  },
+  getPracticeIndex(lang){return load('pracIdx_'+this.currentDate+'_'+lang,0);},
+  setPracticeIndex(lang,idx){save('pracIdx_'+this.currentDate+'_'+lang,idx);},
+  getPracticeProgress(lang){
+    const sentences=this.getDailySentences(lang);
+    const def=sentences.map(()=>'');
+    return load('pracProgress_'+this.currentDate+'_'+lang,def);
+  },
+  setPracticeProgress(lang,idx,status){
+    const p=this.getPracticeProgress(lang);p[idx]=status;save('pracProgress_'+this.currentDate+'_'+lang,p);
+  },
+  currentPracticeSentence(){const lang=this.langPrevLang||'en';return this.getDailySentences(lang)[this.getPracticeIndex(lang)];},
+  speakPracticeSentence(){const s=this.currentPracticeSentence();if(s)speak(s.s,(this.langPrevLang||'en')==='en'?'en-US':'ru-RU');},
+  togglePracticeMeaning(){
+    const lang=this.langPrevLang||'en';const key='pracMeaningVisible_'+this.currentDate+'_'+lang;
+    const v=!load(key,false);save(key,v);this.renderPage('language');
+  },
+  startDictation(){
+    const s=this.currentPracticeSentence();if(!s)return;
+    const area=$('dictationArea');const sentence=$('dictationSentence');const input=$('dictInput');
+    if(!area)return;
+    area.style.display='block';
+    const regex=new RegExp('('+s.kw.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','i');
+    sentence.innerHTML=s.s.replace(regex,'<span style="display:inline-block;min-width:60px;border-bottom:2px dashed var(--primary);padding:0 4px">&nbsp;</span>');
+    input.value='';input.focus();
+  },
+  checkDictation(){
+    const s=this.currentPracticeSentence();if(!s)return;
+    const v=$('dictInput').value.trim().toLowerCase();
+    const correct=s.kw.toLowerCase();
+    if(v===correct){
+      this.setPracticeProgress(this.langPrevLang||'en',this.getPracticeIndex(this.langPrevLang||'en'),'dictation');
+      toast('✓ 默写正确');
+      this.renderPage('language');
+    }else{toast('✗ 正确答案是：'+s.kw);}
+  },
+  markReadDone(){
+    const lang=this.langPrevLang||'en';const idx=this.getPracticeIndex(lang);
+    this.setPracticeProgress(lang,idx,'read');toast('🎤 跟读完成');this.renderPage('language');
+  },
+  prevPractice(){
+    const lang=this.langPrevLang||'en';const idx=this.getPracticeIndex(lang);
+    if(idx>0){this.setPracticeIndex(lang,idx-1);this.renderPage('language');}
+  },
+  nextPractice(){
+    const lang=this.langPrevLang||'en';const idx=this.getPracticeIndex(lang);
+    const total=this.getDailySentences(lang).length;
+    if(idx<total-1){this.setPracticeIndex(lang,idx+1);this.renderPage('language');}
+  },
   langGame(type){
     if(type==='listen'){const words=this.langSub==='en'||!['en','ru'].includes(this.langSub)?EN_WORDS:RU_WORDS;const w=words[Math.floor(Math.random()*words.length)];this.openModal('听音识词',`<div style="text-align:center;padding:20px"><div style="font-size:42px;margin-bottom:10px">👂</div><div style="font-size:14px;color:var(--text-light)">点击播放，选择正确单词</div><button class="btn btn-primary btn-block" style="margin:14px 0" onclick="speak('${w.w}','${w.lang||'en-US'}')">▶ 播放</button><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">${this.shuffle(words).slice(0,4).map(x=>`<button class="btn btn-outline btn-sm" onclick="App.checkGame('${x.w}','${w.w}')">${x.w}</button>`).join('')}</div></div>`);}
-    if(type==='sentence'){const s=SENTENCES[this.langSub==='en'||!['en','ru'].includes(this.langSub)?'en':'ru'][Math.floor(Math.random()*SENTENCES[this.langSub==='en'||!['en','ru'].includes(this.langSub)?'en':'ru'].length)];this.openModal('句子跟读',`<div style="text-align:center;padding:16px"><div style="font-size:16px;font-weight:600;color:var(--primary-dark);margin-bottom:8px">${s.t}</div><div style="font-size:13px;color:var(--text-light);margin-bottom:14px">${s.m}</div><button class="btn btn-primary btn-block" onclick="speak('${s.t.replace(/'/g,"\\'")}','${this.langSub==='en'?'en-US':'ru-RU'}')">🔊 听一听</button><button class="btn btn-yellow btn-block" style="margin-top:8px" onclick="App.closeModal()">跟读完成</button></div>`);}
+    if(type==='sentence'){const lang=this.langSub==='en'||!['en','ru'].includes(this.langSub)?'en':'ru';const s=ORAL_PRACTICE[lang][Math.floor(Math.random()*ORAL_PRACTICE[lang].length)];this.openModal('句子跟读',`<div style="text-align:center;padding:16px"><div style="font-size:16px;font-weight:600;color:var(--primary-dark);margin-bottom:8px">${s.s}</div><div style="font-size:13px;color:var(--text-light);margin-bottom:14px">${s.m}</div><button class="btn btn-primary btn-block" onclick="speak('${s.s.replace(/'/g,"\\'")}','${lang==='en'?'en-US':'ru-RU'}')">🔊 听一听</button><button class="btn btn-yellow btn-block" style="margin-top:8px" onclick="App.closeModal()">跟读完成</button></div>`);}
     if(type==='flash'||type==='spell')toast('该模式持续开发中，先用单词卡片学习吧');
   },
   shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];}return b;},
@@ -1873,20 +1989,19 @@ const App={
         <div class="sub-tab ${tab==='client'?'active':''}" onclick="App.switchOutfitTab('client')">见客户穿搭</div>
       </div>
       <div style="font-size:11px;color:var(--text-lighter);margin-bottom:8px;line-height:1.6">
-        身高167cm / 体重115斤 / 21岁 · 以下博主身材相近，搭配可直接参考
+        身高167cm / 体重115斤 / 21岁 · 点击博主名调起 App，若打不开可点 📋 复制名字到对应平台搜索
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">
-        ${tabBloggers.map(k=>{const b=OUTFIT_BLOGGERS[k];return `<a href="${b.profile}" target="_blank" style="text-decoration:none"><div style="background:var(--primary-light);border-radius:8px;padding:4px 8px;font-size:10px;color:var(--primary-dark);display:flex;align-items:center;gap:3px">${b.name}<span style="color:var(--text-lighter)">·${b.h}/${b.w}</span></div></a>`}).join('')}
+        ${tabBloggers.map(k=>{const b=OUTFIT_BLOGGERS[k];const safeName=(b.kw||b.name).replace(/'/g,"\\'");return `<div style="display:flex;align-items:center;gap:2px;background:var(--primary-light);border-radius:8px;padding:3px 4px 3px 8px;font-size:10px;color:var(--primary-dark)"><span style="cursor:pointer" onclick="App.openBloggerLink('${k}')">${b.name}<span style="color:var(--text-lighter)">·${b.h}/${b.w}</span></span><span style="cursor:pointer;padding:2px 4px" onclick="App.copyBloggerName('${safeName}')" title="复制名字">📋</span></div>`}).join('')}
       </div>
       ${list.map((o,i)=>{
         const b=OUTFIT_BLOGGERS[o.blogger];
-        const searchUrl=b.search+encodeURIComponent(o.kw);
         return `<div class="outfit-card">
           <div class="ot-title">${o.title}</div>
           <div class="ot-desc">${o.desc}</div>
           <div style="display:flex;align-items:center;justify-content:space-between;margin-top:6px;flex-wrap:wrap;gap:4px">
-            <a class="ot-link" href="${searchUrl}" target="_blank">▶ ${b.name}·${b.platform} 查看视频 →</a>
-            <a href="${b.profile}" target="_blank" style="font-size:10px;color:var(--text-lighter)">博主主页</a>
+            <span class="ot-link" onclick="App.openBloggerSearch('${o.blogger}','${o.kw.replace(/'/g,"\\'")}')">▶ ${b.name}·${b.platform} 查看视频 →</span>
+            <span style="font-size:10px;color:var(--text-lighter);cursor:pointer" onclick="App.copyBloggerName('${o.kw.replace(/'/g,"\\'")}')">📋 复制搜索词</span>
           </div>
         </div>`;
       }).join('')}
@@ -1909,6 +2024,29 @@ const App={
     </div>`;
   },
   switchOutfitTab(t){this.outfitTab=t;this.renderPage('outfit');},
+  bloggerWebUrl(key){const b=OUTFIT_BLOGGERS[key];const p=OUTFIT_PLATFORMS[b.platform];return p.web+encodeURIComponent(b.kw||b.name);},
+  bloggerAppUrl(key){const b=OUTFIT_BLOGGERS[key];const p=OUTFIT_PLATFORMS[b.platform];return p.app+encodeURIComponent(b.kw||b.name);},
+  openBloggerLink(key){
+    const b=OUTFIT_BLOGGERS[key];
+    if(navigator.clipboard){navigator.clipboard.writeText(b.kw||b.name);}
+    const web=this.bloggerWebUrl(key);
+    const start=Date.now();
+    try{window.location.href=this.bloggerAppUrl(key);}catch(e){}
+    setTimeout(()=>{if(Date.now()-start<1200)window.location.href=web;},600);
+  },
+  openBloggerSearch(key,kw){
+    const b=OUTFIT_BLOGGERS[key];const p=OUTFIT_PLATFORMS[b.platform];
+    const q=encodeURIComponent(kw||b.kw||b.name);
+    if(navigator.clipboard){navigator.clipboard.writeText(kw||b.kw||b.name);}
+    const web=p.web+q;
+    const start=Date.now();
+    try{window.location.href=p.app+q;}catch(e){}
+    setTimeout(()=>{if(Date.now()-start<1200)window.location.href=web;},600);
+  },
+  copyBloggerName(name){
+    if(navigator.clipboard){navigator.clipboard.writeText(name).then(()=>toast('已复制：'+name));}
+    else{toast('请手动复制：'+name);}
+  },
   uploadOutfit(){
     const inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.onchange=e=>{const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{save('outfitImg',r.result);this.renderPage('outfit');toast('图片已保存')};r.readAsDataURL(file);};inp.click();
   },
