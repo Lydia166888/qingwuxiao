@@ -1,0 +1,26 @@
+{
+  "name": "青梧笑",
+  "short_name": "青梧笑",
+  "description": "专属自我成长综合工作台 - 每日计划、饮食、财务、英语俄语学习、锻炼、新闻、理财、AI资讯、穿搭、旅行",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FFF5F7",
+  "theme_color": "#FF8FAB",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
