@@ -1,5 +1,5 @@
-/* Service Worker - 青梧笑 离线缓存 v24 */
-const CACHE_NAME = "qingwuxiao-v24";
+/* Service Worker - 青梧笑 离线缓存 v24.1 */
+const CACHE_NAME = "qingwuxiao-v24-1";
 const ASSETS = [
   "./",
   "./index.html",
