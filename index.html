@@ -34,16 +34,16 @@ ul{list-style:none}
 /* Splash - 粉黄梦幻渐变 */
 .splash{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,#FF6B9D 0%,#FF8FAB 30%,#FFB088 60%,#FFD93D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:30px;transition:opacity .5s,visibility .5s;overflow-y:auto}
 .splash.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.splash-top{font-size:13px;opacity:.9;letter-spacing:1px;margin-bottom:6px}
-.splash-weather{display:flex;align-items:center;gap:8px;font-size:14px;opacity:.95;margin-bottom:16px;background:rgba(255,255,255,.15);padding:6px 16px;border-radius:20px;backdrop-filter:blur(8px)}
+.splash-top{font-size:15px;opacity:1;letter-spacing:1px;margin-bottom:6px;text-shadow:0 1px 4px rgba(0,0,0,.15)}
+.splash-weather{display:flex;align-items:center;gap:8px;font-size:15px;opacity:1;margin-bottom:16px;background:rgba(255,255,255,.2);padding:6px 16px;border-radius:20px;backdrop-filter:blur(8px)}
 .splash-avatar{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:36px;margin-bottom:20px;backdrop-filter:blur(4px);border:2px solid rgba(255,255,255,.4);box-shadow:0 8px 24px rgba(0,0,0,.06)}
 .splash-greeting{font-size:28px;font-weight:700;margin-bottom:10px;letter-spacing:1px}
-.splash-quote{font-size:15px;font-weight:500;margin-bottom:8px;max-width:300px;line-height:1.5}
-.splash-sub{font-size:12px;opacity:.8;margin-bottom:16px}
+.splash-quote{font-size:16px;font-weight:600;margin-bottom:8px;max-width:300px;line-height:1.6;text-shadow:0 1px 4px rgba(0,0,0,.15)}
+.splash-sub{font-size:13px;opacity:1;margin-bottom:16px;text-shadow:0 1px 3px rgba(0,0,0,.12)}
 .splash-almanac{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);border-radius:16px;padding:12px 18px;margin-bottom:24px;max-width:320px;border:1px solid rgba(255,255,255,.2)}
 .splash-almanac .sa-row{display:flex;gap:16px;justify-content:center}
-.splash-almanac .sa-item{display:flex;align-items:center;gap:4px;font-size:13px}
-.splash-almanac .sa-label{font-size:11px;opacity:.8;margin-right:2px}
+.splash-almanac .sa-item{display:flex;align-items:center;gap:4px;font-size:14px}
+.splash-almanac .sa-label{font-size:12px;opacity:1;margin-right:2px}
 .splash-almanac .sa-yi{color:#FFF9C4}
 .splash-almanac .sa-ji{color:#FFCDD2}
 .splash-btn{background:#fff;color:var(--primary-dark);border:none;border-radius:30px;padding:13px 44px;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.08);margin-bottom:8px;transition:transform .2s}
@@ -571,6 +571,20 @@ ru:[
 {s:'Какие условия оплаты?',m:'付款条件是什么？',kw:'оплаты'}
 ]};
 
+/* === Data: Daily menu (rotates by date) === */
+const DAILY_MENU=[
+{breakfast:'燕麦牛奶+水煮蛋+全麦面包',lunch:'鸡胸肉炒西兰花+杂粮饭+凉拌黄瓜',dinner:'清蒸鱼+豆腐白菜汤+小米粥',snack:'苹果+酸奶'},
+{breakfast:'豆浆+紫薯+鸡蛋',lunch:'青椒肉丝+米饭+冬瓜丸子汤',dinner:'西葫芦炒虾仁+杂粮饭+番茄蛋汤',snack:'坚果+黑咖啡'},
+{breakfast:'牛奶+玉米+全麦面包',lunch:'洋葱炒牛肉+米饭+芹菜炒肉',dinner:'豆腐白菜汤+杂粮饭+凉拌黄瓜',snack:'酸奶+苹果'},
+{breakfast:'小米粥+鸡蛋+馒头',lunch:'宫保鸡丁+米饭+凉拌黄瓜',dinner:'清蒸鱼+杂粮饭+冬瓜丸子汤',snack:'坚果+黑咖啡'},
+{breakfast:'燕麦牛奶+水煮蛋+苹果',lunch:'番茄炒蛋+米饭+豆腐白菜汤',dinner:'鸡胸肉炒西兰花+杂粮饭+紫菜蛋汤',snack:'酸奶+玉米'},
+{breakfast:'豆浆+全麦面包+鸡蛋',lunch:'西葫芦炒虾仁+米饭+冬瓜丸子汤',dinner:'清蒸鱼+小米粥+凉拌黄瓜',snack:'苹果+坚果'},
+{breakfast:'牛奶+紫薯+鸡蛋',lunch:'芹菜炒肉+米饭+番茄蛋汤',dinner:'豆腐白菜汤+杂粮饭+洋葱炒牛肉',snack:'黑咖啡+酸奶'},
+{breakfast:'燕麦牛奶+玉米+水煮蛋',lunch:'青椒肉丝+杂粮饭+紫菜蛋汤',dinner:'清蒸鱼+小米粥+凉拌黄瓜',snack:'苹果+坚果'},
+{breakfast:'豆浆+全麦面包+鸡蛋',lunch:'宫保鸡丁+米饭+豆腐白菜汤',dinner:'鸡胸肉炒西兰花+杂粮饭+冬瓜丸子汤',snack:'酸奶+苹果'},
+{breakfast:'小米粥+紫薯+鸡蛋',lunch:'洋葱炒牛肉+米饭+凉拌黄瓜',dinner:'西葫芦炒虾仁+杂粮饭+番茄蛋汤',snack:'坚果+黑咖啡'}
+];
+
 /* === Data: Food calories === */
 const FOOD_CAL={
 '燕麦牛奶':180,'水煮蛋':70,'全麦面包':120,'豆浆':80,'紫薯':90,'鸡蛋':70,'黑咖啡':5,'玉米':100,'牛奶':100,'小米粥':80,'苹果':50,
@@ -730,7 +744,20 @@ const TRAVEL=[
 {name:'云南大理',desc:'慢生活、洱海、拍照，适合放空',budget:4000,days:5,tags:['慢生活','洱海','拍照'],emoji:'🌊',guide:'【交通】昆明动车到大理2h\n【行程】D1大理古城+崇圣寺三塔；D2洱海环海；D3喜洲古镇+周城扎染；D4双廊+南诏风情岛；D5苍山缆车+返程\n【美食】乳扇、饵丝、酸辣鱼、鲜花饼\n【住宿】双廊或才村海景房300-800/晚\n【贴士】3-4月和9-11月最佳'},
 {name:'日本京都',desc:'古都、红叶、美食，小而精致',budget:8000,days:6,tags:['古都','红叶','美食'],emoji:'⛩️',guide:'【交通】飞大阪关西机场，JR到京都1.5h\n【行程】D1伏见稻荷大社+东福寺；D2清水寺+三年坂+八坂神社；D3岚山竹林+天龙寺；D4金阁寺+龙安寺；D5奈良一日游；D6锦市场+返程\n【美食】抹茶甜品、汤豆腐、京都料理、锦市场小吃\n【住宿】京都站或四条河原町附近400-1000/晚\n【贴士】红叶季11月中-12月初；买巴士一日券'}
 ];
-const TRAVEL_PLANS={省钱:'住青旅/民宿，公共交通出行，当地小吃为主，景点选免费的',舒适:'住中档酒店，部分包车，餐厅和民宿搭配，体验+舒适兼顾',拍照:'住网红民宿，选日出日落机位，带好相机三脚架，穿拍照好看的衣服'};
+const TRAVEL_PLANS={
+省钱:{
+summary:'住青旅/民宿，公共交通出行，当地小吃为主，景点选免费的',
+detail:{住宿:'青旅床位40-80/晚，或经济民宿100-150/晚',交通:'公交+地铁+步行，长途选硬座/大巴',餐饮:'当地小吃+超市采购，日均50-80元',景点:'优先免费景点，收费景点选1-2个必去的',购物:'只买纪念品小物件，预算100以内',tips:'提前订票有折扣，避开节假日出行'}
+},
+舒适:{
+summary:'住中档酒店，部分包车，餐厅和民宿搭配，体验+舒适兼顾',
+detail:{住宿:'中档酒店/精品民宿200-400/晚',交通:'打车+部分包车，远途选动车',餐饮:'当地特色餐厅+民宿搭配，日均100-150元',景点:'主要景点全覆盖，可请导游讲解',购物:'适当购买特产和手工艺品，预算300-500',tips:'错峰出行人少价低，提前比价订房'}
+},
+拍照:{
+summary:'住网红民宿，选日出日落机位，带好相机三脚架，穿拍照好看的衣服',
+detail:{住宿:'网红民宿/景观房300-600/晚，选有拍照场景的',交通:'包车/租车自由度高，方便追日出日落',餐饮:'选拍照好看的餐厅，下午茶+景观餐厅',景点:'日出日落机位+小众打卡点+经典地标',购物:'买拍照道具和当地服饰，预算200-400',tips:'查天气和光线时间，带好三脚架和备用电池，穿纯色衣服更出片'}
+}
+};
 
 /* === App === */
 const App={
@@ -937,11 +964,25 @@ const d=this.dayData(this.currentDate);
 const diet=d.diet||{};const cal=d.dietCal||{};
 const bCal=cal.breakfast||0,lCal=cal.lunch||0,dCal=cal.dinner||0;const total=bCal+lCal+dCal;
 const target=1500;
+const menu=DAILY_MENU[dayIdx(this.currentDate)%DAILY_MENU.length];
 return`<div class="card" style="background:linear-gradient(135deg,var(--primary) 0%,#FFB088 50%,var(--accent) 100%);color:#fff">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><div><div style="font-size:12px;opacity:.9">今日摄入</div><div style="font-size:32px;font-weight:700">${total}<span style="font-size:14px;opacity:.8"> kcal</span></div></div>
 <div style="text-align:right"><div style="font-size:12px;opacity:.9">目标 ${target} kcal</div><div style="font-size:14px;margin-top:4px">${total>target?'⚠️ 超出':'✅ 达标'}</div></div></div>
 <div style="height:8px;background:rgba(255,255,255,.3);border-radius:4px;overflow:hidden"><div style="height:100%;background:#fff;border-radius:4px;width:${Math.min(100,total/target*100)}%"></div></div>
 <div style="display:flex;justify-content:space-around;margin-top:12px;font-size:12px"><span>早 ${bCal}</span><span>午 ${lCal}</span><span>晚 ${dCal}</span></div>
+</div>
+<div class="card" style="background:var(--jelly);backdrop-filter:blur(8px);border:1px solid var(--jelly-bd)">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<div style="font-size:14px;font-weight:700;color:var(--text)">🍽️ 今日菜单推荐</div>
+<span style="font-size:11px;color:var(--text-light)">Day ${dayIdx(this.currentDate)%10+1}</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🍳</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">早餐</div><div style="font-size:13px">${menu.breakfast}</div></div></div>
+<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🍲</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">午餐</div><div style="font-size:13px">${menu.lunch}</div></div></div>
+<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🥗</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">晚餐</div><div style="font-size:13px">${menu.dinner}</div></div></div>
+<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🍎</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">加餐</div><div style="font-size:13px">${menu.snack}</div></div></div>
+</div>
+<div style="font-size:11px;color:var(--text-lighter);margin-top:8px;text-align:center">菜单按日期轮换 · 可参考填入下方记录</div>
 </div>
 <div class="meal-tabs">
 <div class="meal-tab ${this.dietMeal==='breakfast'?'active':''}" onclick="App.setDietMeal('breakfast')">🍳 早餐</div>
@@ -1007,18 +1048,29 @@ return`<div class="card" style="background:linear-gradient(135deg,var(--primary)
 </div>
 <div class="section-title">今日单词 <span class="count">${known}/${words.length}</span></div>
 ${words.map((w,i)=>this.renderWordCard(w,i)).join('')}
-<div class="section-title">🎮 游戏练习</div>
+<div class="section-title">🎮 练习与复习</div>
 <div class="word-game-grid">
 <div class="word-game-card" onclick="App.startListenGame()"><div class="wg-icon">👂</div><div class="wg-name">听音识词</div><div class="wg-desc">听发音选单词</div></div>
 <div class="word-game-card" onclick="App.startFlashcard()"><div class="wg-icon">🎴</div><div class="wg-name">闪卡复习</div><div class="wg-desc">当月单词轮换</div></div>
 <div class="word-game-card" onclick="App.startSpellGame()"><div class="wg-icon">✍️</div><div class="wg-name">拼写挑战</div><div class="wg-desc">听音拼单词</div></div>
 <div class="word-game-card" onclick="App.startSentenceGame()"><div class="wg-icon">💬</div><div class="wg-name">例句跟读</div><div class="wg-desc">听例句学表达</div></div>
+</div>
+<div class="section-title">📖 语句素材库</div>
+<div class="card">
+${SENTENCES[this.langSub].map((s,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--border)">
+<div style="font-size:13px;font-weight:600;margin-bottom:4px">${escapeHtml(s.t)} <span style="cursor:pointer;font-size:14px" onclick="speak('${escapeHtml(s.t)}','${this.langSub==='en'?'en-US':'ru-RU'}')">🔊</span></div>
+<div style="font-size:12px;color:var(--text-light)">${escapeHtml(s.m)}</div>
+</div>`).join('')}
+</div>
+<div class="section-title">📝 生词本</div>
+<div class="card" id="wordBookCard">
+${this.renderWordBook()}
 </div>`;
 },
 getTodayWords(){
 const arr=this.langSub==='en'?EN_WORDS:RU_WORDS;
 const week=monthWeek(this.currentDate);const dayInWeek=new Date(this.currentDate).getDay();
-const base=15+(week-1)*2;const start=base%arr.length;
+const base=15+(week-1)*3;const start=base%arr.length;
 return arr.slice(start,start+17).concat(arr.slice(0,Math.max(0,start+17-arr.length))).slice(0,17);
 },
 setLang(l){this.langSub=l;this.renderPage('language')},
@@ -1041,8 +1093,23 @@ return`<div class="word-card" onclick="App.toggleWordDetail(${i})">
 },
 toggleWordDetail(i){const el=$('wex_'+i);if(el)el.classList.toggle('show')},
 speakWord(i){const words=this.getTodayWords();const w=words[i];if(w)speak(w.w,w.lang||'en-US');haptic(8)},
-markWord(i,st){const d=this.dayData(this.currentDate);d.wordStatus=d.wordStatus||{};d.wordStatus[this.langSub+i]=st;this.saveDay(this.currentDate,d);this.renderPage('language');this.updateHome();haptic(12)},
 getWordProgress(){const d=this.dayData(this.currentDate);const st=d.wordStatus||{};const vals=Object.values(st).filter((_,i)=>i<17);if(!vals.length)return 0;return vals.filter(s=>s==='known').length/vals.length},
+renderWordBook(){
+const all=this.langSub==='en'?EN_WORDS:RU_WORDS;
+const unknown=[];
+for(let i=0;i<all.length;i++){
+const ws=load('wordBook_'+this.langSub,[]);
+if(ws.includes(i))unknown.push(all[i]);
+}
+if(!unknown.length)return'<div class="empty"><div class="empty-icon">📚</div><div class="empty-text">还没有标记不认识的单词<br>点击单词卡片"不认识"即可加入</div></div>';
+return`<div style="font-size:12px;color:var(--text-light);margin-bottom:8px">共${unknown.length}个生词</div>${unknown.map(w=>`<div style="padding:8px 0;border-bottom:1px solid var(--border)"><div style="font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang||'en-US'}')">🔊</span></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.p||'')} · ${escapeHtml(w.m||'')}</div></div>`).join('')}<button class="btn btn-yellow btn-sm" style="margin-top:8px" onclick="App.clearWordBook()">清空生词本</button>`;
+},
+markWord(i,st){
+const d=this.dayData(this.currentDate);d.wordStatus=d.wordStatus||{};d.wordStatus[this.langSub+i]=st;this.saveDay(this.currentDate,d);
+if(st==='unknown'){const wb=load('wordBook_'+this.langSub,[]);const realIdx=(this.langSub==='en'?EN_WORDS:RU_WORDS).indexOf(this.getTodayWords()[i]);if(realIdx>=0&&!wb.includes(realIdx)){wb.push(realIdx);save('wordBook_'+this.langSub,wb)}}
+this.renderPage('language');this.updateHome();haptic(12);
+},
+clearWordBook(){save('wordBook_'+this.langSub,[]);this.renderPage('language');toast('生词本已清空')},
 
 /* Listen game */
 startListenGame(){
@@ -1238,12 +1305,29 @@ const items=NEWS_POOL;
 const filtered=this.newsFilter==='all'?items:items.filter(n=>n.cat===this.newsFilter);
 const cats=['all',...new Set(items.map(n=>n.cat))];
 const fav=load('favs_news',[]);
-return`<div class="section-title">📰 今日资讯 <span class="count">多平台来源</span></div>
+const favCount=load('favs_news',[]).length;
+const d=this.dayData(this.currentDate);
+const reflection=d.newsReflection||'';
+return`<div class="card" style="background:linear-gradient(135deg,var(--primary) 0%,#FF8FB1 50%,var(--accent) 100%);color:#fff;margin-bottom:12px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<div style="font-size:15px;font-weight:700">✍️ 随笔感悟</div>
+<button class="btn btn-sm" style="background:rgba(255,255,255,.25);color:#fff" onclick="App.openFavPanel();App.setFavTab('news')">⭐ 收藏(${favCount})</button>
+</div>
+<div style="font-size:13px;opacity:.95;line-height:1.7;min-height:40px;cursor:pointer" onclick="App.editReflection()">${reflection?escapeHtml(reflection):'<span style="opacity:.7">点击记录今天的所见所感...</span>'}</div>
+</div>
+<div class="section-title">📰 今日资讯 <span class="count">多平台来源</span></div>
 <div class="chips">${cats.map(c=>`<span class="chip ${this.newsFilter===c?'active':''}" onclick="App.setNewsFilter('${c}')">${c==='all'?'全部':c}</span>`).join('')}</div>
 ${filtered.map(n=>this.renderContentCard(n,'news',fav)).join('')}
 <div style="text-align:center;font-size:11px;color:var(--text-lighter);padding:12px">内容按日期轮换 · 每日更新</div>`;
 },
 setNewsFilter(f){this.newsFilter=f;this.renderPage('news');haptic(10)},
+editReflection(){
+const d=this.dayData(this.currentDate);
+this.openModal('✍️ 今日随笔感悟',`
+<div class="input-group"><textarea class="textarea" id="reflText" style="min-height:200px;font-size:14px;line-height:1.8" placeholder="记录今天的所见所感、灵感闪现、心得体会...">${escapeHtml(d.newsReflection||'')}</textarea></div>
+<button class="btn btn-primary btn-block" style="margin-top:10px" onclick="App.saveReflection()">保存感悟</button>`);
+},
+saveReflection(){const v=$('reflText').value.trim();const d=this.dayData(this.currentDate);d.newsReflection=v;this.saveDay(this.currentDate,d);this.closeModal();this.renderPage('news');toast('感悟已保存');haptic(15)},
 
 /* === INVEST === */
 renderInvest(){
@@ -1252,11 +1336,63 @@ const items=INVEST_POOL;
 const filtered=this.aiFilter==='all'?items:items.filter(n=>n.cat===this.aiFilter);
 const cats=['all',...new Set(items.map(n=>n.cat))];
 const fav=load('favs_invest',[]);
-return`<div class="section-title">📈 理财干货 <span class="count">每日轮换</span></div>
+const goal=load('savingsGoal',{target:50000,current:0,name:'年度储蓄目标'});
+const pct=goal.target?Math.min(100,Math.round(goal.current/goal.target*100)):0;
+const notes=load('investNotes',[]);
+return`<div class="card" style="background:linear-gradient(135deg,var(--primary) 0%,#FFB088 50%,var(--accent) 100%);color:#fff;margin-bottom:12px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<div style="font-size:15px;font-weight:700">🎯 ${goal.name||'储蓄目标'}</div>
+<button class="btn btn-sm" style="background:rgba(255,255,255,.25);color:#fff" onclick="App.editSavingsGoal()">✏️ 编辑</button>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:8px">
+<div><div style="font-size:12px;opacity:.9">已存</div><div style="font-size:28px;font-weight:700">¥${goal.current}</div></div>
+<div style="text-align:right"><div style="font-size:12px;opacity:.9">目标</div><div style="font-size:18px;font-weight:600">¥${goal.target}</div></div>
+</div>
+<div style="height:8px;background:rgba(255,255,255,.3);border-radius:4px;overflow:hidden"><div style="height:100%;background:#fff;border-radius:4px;width:${pct}%"></div></div>
+<div style="display:flex;justify-content:space-between;margin-top:6px;font-size:12px;opacity:.9"><span>${pct}%</span><span>还差 ¥${Math.max(0,goal.target-goal.current)}</span></div>
+<button class="btn btn-sm" style="background:rgba(255,255,255,.25);color:#fff;margin-top:8px" onclick="App.addSavings()">💰 存入</button>
+</div>
+<div class="section-title">📈 理财干货 <span class="count">每日轮换</span></div>
 <div class="chips">${cats.map(c=>`<span class="chip ${this.aiFilter===c?'active':''}" onclick="App.setInvestFilter('${c}')">${c==='all'?'全部':c}</span>`).join('')}</div>
-${filtered.map(n=>this.renderContentCard(n,'invest',fav)).join('')}`;
+${filtered.map(n=>this.renderContentCard(n,'invest',fav)).join('')}
+<div class="section-title">📓 学习笔记</div>
+<div class="card">
+${notes.length?notes.map((n,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--border)">
+<div style="display:flex;justify-content:space-between;align-items:flex-start">
+<div style="flex:1"><div style="font-size:13px;font-weight:600">${escapeHtml(n.title)}</div><div style="font-size:12px;color:var(--text-light);margin-top:4px;white-space:pre-wrap">${escapeHtml(n.content)}</div></div>
+<span style="font-size:11px;color:var(--text-lighter);cursor:pointer;margin-left:8px" onclick="App.editInvestNote(${i})">✏️</span>
+<span style="font-size:11px;color:var(--danger);cursor:pointer;margin-left:4px" onclick="App.delInvestNote(${i})">🗑</span>
+</div>
+</div>`).join(''):'<div class="empty"><div class="empty-text">还没有学习笔记</div></div>'}
+<button class="btn btn-yellow btn-block" style="margin-top:10px" onclick="App.addInvestNote()">➕ 添加笔记</button>
+</div>`;
 },
 setInvestFilter(f){this.aiFilter=f;this.renderPage('invest');haptic(10)},
+editSavingsGoal(){
+const goal=load('savingsGoal',{target:50000,current:0,name:'年度储蓄目标'});
+this.openModal('编辑储蓄目标',`
+<div class="input-group"><label>目标名称</label><input class="input" id="sgName" value="${escapeHtml(goal.name||'年度储蓄目标')}"></div>
+<div class="input-group"><label>目标金额</label><input class="input" type="number" id="sgTarget" value="${goal.target}"></div>
+<div class="input-group"><label>当前金额</label><input class="input" type="number" id="sgCurrent" value="${goal.current}"></div>
+<button class="btn btn-primary btn-block" onclick="App.saveSavingsGoal()">保存</button>`);
+},
+saveSavingsGoal(){const goal=load('savingsGoal',{target:50000,current:0,name:'年度储蓄目标'});goal.name=$('sgName').value;goal.target=+($('sgTarget').value||0);goal.current=+($('sgCurrent').value||0);save('savingsGoal',goal);this.closeModal();this.renderPage('invest');toast('已更新');haptic(15)},
+addSavings(){const amt=prompt('存入金额：');if(!amt)return;const goal=load('savingsGoal',{target:50000,current:0,name:'年度储蓄目标'});goal.current+=+amt;save('savingsGoal',goal);this.renderPage('invest');toast('已存入 ¥'+amt);haptic(15)},
+addInvestNote(){
+this.openModal('添加学习笔记',`
+<div class="input-group"><label>标题</label><input class="input" id="inTitle" placeholder="如：基金定投心得"></div>
+<div class="input-group"><label>内容</label><textarea class="textarea" id="inContent" style="min-height:120px" placeholder="记录你的理财学习心得..."></textarea></div>
+<button class="btn btn-primary btn-block" onclick="App.saveInvestNote(-1)">保存</button>`);
+},
+editInvestNote(i){
+const notes=load('investNotes',[]);const n=notes[i];
+this.openModal('编辑学习笔记',`
+<div class="input-group"><label>标题</label><input class="input" id="inTitle" value="${escapeHtml(n.title)}"></div>
+<div class="input-group"><label>内容</label><textarea class="textarea" id="inContent" style="min-height:120px">${escapeHtml(n.content)}</textarea></div>
+<button class="btn btn-primary btn-block" onclick="App.saveInvestNote(${i})">保存</button>`);
+},
+saveInvestNote(i){const title=$('inTitle').value.trim();const content=$('inContent').value.trim();if(!title){toast('请输入标题');return}const notes=load('investNotes',[]);if(i<0){notes.unshift({title,content,date:todayStr()})}else{notes[i]={title,content,date:todayStr()}}save('investNotes',notes);this.closeModal();this.renderPage('invest');toast('已保存');haptic(15)},
+delInvestNote(i){if(!confirm('确定删除此笔记？'))return;const notes=load('investNotes',[]);notes.splice(i,1);save('investNotes',notes);this.renderPage('invest');toast('已删除');haptic(20)},
 
 /* === AI === */
 renderAI(){
@@ -1264,14 +1400,47 @@ const items=AI_TRENDING;
 const filtered=this.aiFilter==='all'?items:items.filter(n=>n.cat===this.aiFilter);
 const cats=['all',...new Set(items.map(n=>n.cat))];
 const fav=load('favs_ai',[]);
-return`<div class="section-title">🤖 AI应用爆款 <span class="count">每日灵感</span></div>
+const plans=load('aiStudyPlans',[]);
+const doneCount=plans.filter(p=>p.done).length;
+const totalPct=plans.length?Math.round(doneCount/plans.length*100):0;
+return`<div class="card" style="background:linear-gradient(135deg,var(--primary) 0%,#FF8FB1 50%,var(--accent) 100%);color:#fff;margin-bottom:12px">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+<div style="font-size:15px;font-weight:700">📚 AI学习计划</div>
+<button class="btn btn-sm" style="background:rgba(255,255,255,.25);color:#fff" onclick="App.addStudyPlan()">➕ 新建</button>
+</div>
+<div style="font-size:12px;opacity:.9;margin-bottom:8px">${plans.length?`已完成 ${doneCount}/${plans.length} 项 · ${totalPct}%`:'还没有学习计划'}</div>
+${plans.length?`<div style="height:6px;background:rgba(255,255,255,.3);border-radius:3px;overflow:hidden;margin-bottom:10px"><div style="height:100%;background:#fff;border-radius:3px;width:${totalPct}%"></div></div>`:''}
+${plans.map((p,i)=>`<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.15)">
+<div style="width:22px;height:22px;border-radius:50%;border:2px solid #fff;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0" onclick="App.toggleStudyPlan(${i})">${p.done?'✓':''}</div>
+<div style="flex:1;cursor:pointer" onclick="App.editStudyPlan(${i})">
+<div style="font-size:13px;font-weight:600;${p.done?'text-decoration:line-through;opacity:.6':''}">${escapeHtml(p.title)}</div>
+<div style="font-size:11px;opacity:.8">${escapeHtml(p.detail||'')}</div>
+</div>
+<span style="font-size:11px;opacity:.7;cursor:pointer" onclick="App.delStudyPlan(${i})">🗑</span>
+</div>`).join('')}
+${!plans.length?'<div style="font-size:13px;opacity:.8;padding:8px 0">点击「新建」添加你的AI学习计划</div>':''}
+</div>
+<div class="section-title">🤖 AI应用爆款 <span class="count">每日灵感</span></div>
 <div class="chips">${cats.map(c=>`<span class="chip ${this.aiFilter===c?'active':''}" onclick="App.setAIFilter('${c}')">${c==='all'?'全部':c}</span>`).join('')}</div>
-${filtered.map(n=>this.renderContentCard(n,'ai',fav)).join('')}
-<div class="section-title">📚 AI课程</div>
-<div class="word-game-grid">${AI_COURSES.map(c=>`<div class="word-game-card" onclick="App.openAICourse('${c.name}')"><div class="wg-icon">${c.icon}</div><div class="wg-name">${c.name}</div><div class="wg-desc">${c.status}</div></div>`).join('')}</div>`;
+${filtered.map(n=>this.renderContentCard(n,'ai',fav)).join('')}`;
 },
 setAIFilter(f){this.aiFilter=f;this.renderPage('ai');haptic(10)},
-openAICourse(name){toast('课程即将上线，敬请期待')},
+addStudyPlan(){
+this.openModal('新建学习计划',`
+<div class="input-group"><label>计划标题</label><input class="input" id="spTitle" placeholder="如：学习ChatGPT写开发信"></div>
+<div class="input-group"><label>详细安排</label><textarea class="textarea" id="spDetail" style="min-height:100px" placeholder="如：第1天学习提示词技巧&#10;第2天练习写商务邮件&#10;第3天对比不同AI工具效果"></textarea></div>
+<button class="btn btn-primary btn-block" onclick="App.saveStudyPlan(-1)">保存</button>`);
+},
+editStudyPlan(i){
+const plans=load('aiStudyPlans',[]);const p=plans[i];
+this.openModal('编辑学习计划',`
+<div class="input-group"><label>计划标题</label><input class="input" id="spTitle" value="${escapeHtml(p.title)}"></div>
+<div class="input-group"><label>详细安排</label><textarea class="textarea" id="spDetail" style="min-height:100px">${escapeHtml(p.detail||'')}</textarea></div>
+<button class="btn btn-primary btn-block" onclick="App.saveStudyPlan(${i})">保存</button>`);
+},
+saveStudyPlan(i){const title=$('spTitle').value.trim();const detail=$('spDetail').value.trim();if(!title){toast('请输入标题');return}const plans=load('aiStudyPlans',[]);if(i<0){plans.unshift({title,detail,done:false,date:todayStr()})}else{plans[i]={...plans[i],title,detail}}save('aiStudyPlans',plans);this.closeModal();this.renderPage('ai');toast('已保存');haptic(15)},
+toggleStudyPlan(i){const plans=load('aiStudyPlans',[]);if(plans[i]){plans[i].done=!plans[i].done;save('aiStudyPlans',plans);this.renderPage('ai');haptic(plans[i].done?20:10)}},
+delStudyPlan(i){if(!confirm('确定删除此计划？'))return;const plans=load('aiStudyPlans',[]);plans.splice(i,1);save('aiStudyPlans',plans);this.renderPage('ai');toast('已删除');haptic(20)},
 
 /* === Content Card (shared) === */
 renderContentCard(item,type,fav){
@@ -1431,14 +1600,23 @@ resetTravelGuide(i){const t=TRAVEL[i];const g=load('travelGuides',{});delete g[t
 openTravelPlans(i){
 const t=TRAVEL[i];
 const plans=['省钱','舒适','拍照'];
+const planEmojis={'省钱':'💰','舒适':'🌟','拍照':'📸'};
 this.openModal(t.emoji+' '+t.name+' · 三套方案',`
-<div style="font-size:12px;color:var(--text-light);margin-bottom:12px">预算 ¥${t.budget} · ${t.days}天</div>
-${plans.map(p=>`<div class="cc-card" style="margin-bottom:10px">
-<div class="cc-tags"><span class="cc-tag cat">${p}方案</span></div>
-<div style="font-size:13px;font-weight:600;margin-bottom:4px">${p}出行方案</div>
-<div style="font-size:12px;color:var(--text-light);line-height:1.7">${TRAVEL_PLANS[p]}</div>
+<div style="font-size:12px;color:var(--text-light);margin-bottom:12px">预算 ¥${t.budget} · ${t.days}天 · ${t.tags.join('、')}</div>
+${plans.map(p=>{const pl=TRAVEL_PLANS[p];const d=pl.detail;return`<div class="cc-card" style="margin-bottom:12px">
+<div class="cc-tags"><span class="cc-tag cat">${planEmojis[p]} ${p}方案</span></div>
+<div style="font-size:13px;font-weight:600;margin-bottom:6px">${p}出行方案</div>
+<div style="font-size:12px;color:var(--text-light);line-height:1.7;margin-bottom:8px">${pl.summary}</div>
+<div style="font-size:12px;line-height:2;background:var(--primary-lighter);border-radius:10px;padding:10px 12px">
+<div><span style="font-weight:600;color:var(--primary-dark)">🏨 住宿</span>：${d.住宿}</div>
+<div><span style="font-weight:600;color:var(--primary-dark)">🚗 交通</span>：${d.交通}</div>
+<div><span style="font-weight:600;color:var(--primary-dark)">🍽️ 餐饮</span>：${d.餐饮}</div>
+<div><span style="font-weight:600;color:var(--primary-dark)">🎯 景点</span>：${d.景点}</div>
+<div><span style="font-weight:600;color:var(--primary-dark)">🛍️ 购物</span>：${d.购物}</div>
+<div><span style="font-weight:600;color:var(--primary-dark)">💡 贴士</span>：${d.tips}</div>
+</div>
 <button class="btn btn-outline btn-sm" style="margin-top:8px" onclick="App.saveTravelPlan('${escapeHtml(t.name)}','${p}')">💾 保存此方案</button>
-</div>`).join('')}`);
+</div>`}).join('')}`);
 },
 saveTravelPlan(name,plan){
 const saved=load('savedPlans',[]);saved.unshift({name,plan,date:todayStr(),id:Date.now()+''});
