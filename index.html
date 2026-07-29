@@ -298,18 +298,20 @@ ul{list-style:none}
 .fin-card.balance .fin-num{color:var(--accent-dark)}
 
 /* Finance record page */
-.fr-amount{font-size:28px;font-weight:700;text-align:center;padding:14px;background:var(--jelly);backdrop-filter:blur(8px);border-radius:var(--radius);margin-bottom:12px;border:1px solid var(--jelly-bd);line-height:1.2;color:var(--text);transition:color .2s}
+.finance-page{padding-bottom:68px}
+.fr-amount{font-size:26px;font-weight:700;text-align:center;padding:12px;background:var(--jelly);backdrop-filter:blur(8px);border-radius:var(--radius);margin-bottom:10px;border:1px solid var(--jelly-bd);line-height:1.2;color:var(--text);transition:color .2s}
 .fr-amount.income{color:var(--success)}
-.fr-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
-.fr-cat{text-align:center;padding:8px 4px;border-radius:14px;background:var(--jelly);color:var(--text);cursor:pointer;border:1px solid var(--jelly-bd);box-shadow:var(--shadow-soft);transition:all .15s}
+.fr-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-bottom:10px}
+.fr-cat{text-align:center;padding:7px 4px;border-radius:12px;background:var(--jelly);color:var(--text);cursor:pointer;border:1px solid var(--jelly-bd);box-shadow:var(--shadow-soft);transition:all .15s}
 .fr-cat.active{background:linear-gradient(135deg,var(--primary),#FF8FB1);color:#fff;border-color:transparent}
-.fr-cat i{font-size:18px;display:block;margin-bottom:2px;font-style:normal}
+.fr-cat i{font-size:17px;display:block;margin-bottom:1px;font-style:normal}
 .fr-cat span{font-size:11px}
-.fr-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0}
-.fr-key{background:var(--jelly);border-radius:14px;padding:12px 8px;text-align:center;font-size:18px;font-weight:600;cursor:pointer;box-shadow:var(--shadow-soft);border:1px solid var(--jelly-bd);user-select:none;transition:transform .1s}
+.fr-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}
+.fr-key{background:var(--jelly);border-radius:12px;padding:9px 6px;text-align:center;font-size:16px;font-weight:600;cursor:pointer;box-shadow:var(--shadow-soft);border:1px solid var(--jelly-bd);user-select:none;transition:transform .1s}
 .fr-key:active{transform:scale(.95)}
 .fr-key.del{background:linear-gradient(135deg,var(--accent),#FFE082);color:#5D4037;font-size:14px}
-.fr-records{margin-top:14px}
+.fr-records{margin-top:10px}
+.finance-tabs{position:sticky;bottom:0;background:var(--jelly);backdrop-filter:blur(12px);z-index:50;padding:6px 10px;margin:14px -14px 0;border-top:1px solid var(--jelly-bd);display:flex;gap:6px;border-radius:0 0 var(--radius) var(--radius)}
 .fr-records-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;padding:0 2px}
 .fr-records-title{font-size:13px;font-weight:700}
 .fr-records-total{font-size:13px;font-weight:600;color:var(--primary-dark)}
@@ -2129,7 +2131,7 @@ const inner=this.financeSub==='detail'?this.renderFinanceDetail():(this.financeS
 return`<div class="finance-page">${inner}</div>`+this.renderFinanceTabs();
 },
 renderFinanceTabs(){
-return`<div class="sub-tab-row" style="position:fixed;bottom:0;left:var(--nav-w);right:0;max-width:560px;margin:0 auto;background:var(--jelly);backdrop-filter:blur(12px);z-index:50;padding:6px 10px;border-top:1px solid var(--jelly-bd)">
+return`<div class="finance-tabs">
 <div class="sub-tab ${this.financeSub==='detail'?'active':''}" onclick="App.setFinanceSub('detail');haptic(10)">📊 明细</div>
 <div class="sub-tab ${this.financeSub==='chart'?'active':''}" onclick="App.setFinanceSub('chart');haptic(10)">📈 图表</div>
 <div class="sub-tab ${this.financeSub==='record'?'active':''}" onclick="App.setFinanceSub('record');haptic(10)">✍️ 记账</div>
