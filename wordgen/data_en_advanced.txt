@@ -1,0 +1,282 @@
+mediation|调解|ˌmiːdiˈeɪʃn|Mediation is less adversarial than litigation.|调解比诉讼对抗性更小。|合同条款|advanced
+conciliation|和解|kənˌsɪliˈeɪʃn|Conciliation seeks a mutually acceptable solution.|和解寻求双方可接受的方案。|合同条款|advanced
+litigation|诉讼|ˌlɪtɪˈɡeɪʃn|Litigation is the last resort for dispute resolution.|诉讼是争议解决的最后手段。|合同条款|advanced
+tribunal|法庭|traɪˈbjuːnl|An international trade tribunal handles cross-border disputes.|国际贸易法庭处理跨境争议。|合同条款|advanced
+award|裁决|əˈwɔːrd|The arbitral award is final and binding.|仲裁裁决是终局的且有约束力。|合同条款|advanced
+enforcement|执行|ɪnˈfɔːrsmənt|Enforcement of foreign judgments requires bilateral treaties.|执行外国判决需要双边条约。|合同条款|advanced
+injunction|禁令|ɪnˈdʒʌŋkʃn|The court granted an injunction to stop the infringement.|法院下达禁令停止侵权。|合同条款|advanced
+damages|损害赔偿|ˈdæmɪdʒɪz|Liquidated damages are specified in the contract.|约定损害赔偿在合同中明确规定。|合同条款|advanced
+indemnification|补偿|ɪnˌdemnɪfɪˈkeɪʃn|The seller's indemnification covers third-party claims.|卖方的补偿涵盖第三方索赔。|合同条款|advanced
+hold harmless|免责|hoʊld|The hold harmless clause protects against liability.|免责条款保护免受责任。|合同条款|advanced
+limitation|限制|ˌlɪmɪˈteɪʃn|The limitation period for claims is two years.|索赔时效为两年。|合同条款|advanced
+statute of limitations|诉讼时效|ˈstætʃuːt|The statute of limitations has expired.|诉讼时效已过。|合同条款|advanced
+waiver|放弃|ˈweɪvər|A waiver of rights must be in writing.|权利放弃必须以书面形式。|合同条款|advanced
+estoppel|禁止反言|ɪˈstɑːpl|Estoppel prevents a party from contradicting prior statements.|禁止反言阻止一方推翻先前陈述。|合同条款|advanced
+novation|债务更新|noʊˈveɪʃn|Novation replaces one obligation with another.|债务更新用一个义务替换另一个。|合同条款|advanced
+assignment|转让|əˈsaɪnmənt|Assignment of contract rights requires consent.|合同权利转让需要同意。|合同条款|advanced
+delegation|委托|ˌdelɪˈɡeɪʃn|Delegation of duties transfers performance obligations.|义务委托转移履行责任。|合同条款|advanced
+subcontracting|分包|ˌsʌbkənˈtræktɪŋ|Subcontracting requires prior written approval.|分包需要事先书面批准。|合同条款|advanced
+hardship|艰难|ˈhɑːrdʃɪp|A hardship clause allows renegotiation of terms.|艰难条款允许重新协商条款。|合同条款|advanced
+material adverse change|重大不利变化|məˈtɪriəl|A MAC clause protects against significant deterioration.|重大不利变化条款保护免受重大恶化。|合同条款|advanced
+change of law|法律变更|tʃeɪndʒ|A change of law clause allocates regulatory risk.|法律变更条款分配监管风险。|合同条款|advanced
+tax gross-up|税务补足|tæks|A tax gross-up clause compensates for withholding tax increases.|税务补足条款补偿预扣税增加。|合同条款|advanced
+withholding tax|预扣税|wɪθˈhoʊldɪŋ|Withholding tax on royalties is 10%.|版税预扣税为10%。|合同条款|advanced
+transfer pricing|转让定价|trænsˈfɜːr|Transfer pricing rules govern intercompany transactions.|转让定价规则管理关联方交易。|合同条款|advanced
+permanent establishment|常设机构|ˈpɜːrmənənt|A permanent establishment creates tax liability.|常设机构产生纳税义务。|合同条款|advanced
+double taxation|双重征税|ˈdʌbl|Double taxation treaties prevent tax on the same income.|双重征税协定防止对同一收入重复征税。|合同条款|advanced
+bilateral treaty|双边条约|baɪˈlætərəl|Bilateral treaties protect foreign investors.|双边条约保护外国投资者。|合同条款|advanced
+ICSID|国际投资争端解决中心|ˈɪksɪd|ICSID arbitration resolves investor-state disputes.|国际投资争端解决中心仲裁解决投资者-国家争议。|合同条款|advanced
+UNCITRAL|联合国国际贸易法委员会|ˈʌnsɪtrəl|UNCITRAL rules govern international commercial arbitration.|联合国国际贸易法委员会规则管理国际商事仲裁。|合同条款|advanced
+CISG|国际货物销售合同公约|sɪzɡ|CISG automatically applies to international sales contracts.|国际货物销售合同公约自动适用于国际销售合同。|合同条款|advanced
+Incoterms 2020|国际贸易术语解释通则|ˈɪŋkoʊtɜːrmz|Incoterms 2020 defines 11 trade terms.|国际贸易术语解释通则2020定义了11个贸易术语。|合同条款|advanced
+DAP| delivered at place|dæp|Under DAP the seller delivers to a named place.|DAP项下卖方交付至指定地点。|合同条款|advanced
+DPU| delivered at place unloaded|ˌdiː piː ˈjuː|DPU requires the seller to unload at destination.|DPU要求卖方在目的地卸货。|合同条款|advanced
+DDP| delivered duty paid|ˌdiː diː ˈpiː|Under DDP the seller bears all costs including duties.|DDP项下卖方承担所有费用包括关税。|合同条款|advanced
+FCA| free carrier|ˌef siː ˈeɪ|FCA means the seller delivers to the carrier.|FCA意味着卖方交付给承运人。|合同条款|advanced
+CPT| carriage paid to|ˌsiː piː ˈtiː|Under CPT the seller pays freight to destination.|CPT项下卖方支付运费至目的地。|合同条款|advanced
+CIP| carriage and insurance paid|sɪp|CIP includes insurance coverage during transit.|CIP包含运输期间的保险。|合同条款|advanced
+leverage|杠杆|ˈlevərɪdʒ|We used our volume as leverage in negotiations.|我们用订单量作为谈判杠杆。|报价谈判|advanced
+bargaining power|议价能力|ˈbɑːrɡənɪŋ|Large buyers have more bargaining power.|大买家拥有更强的议价能力。|报价谈判|advanced
+walk-away point|底线|wɔːk|Our walk-away point is $3 per unit.|我们的底线是每件3美元。|报价谈判|advanced
+BATNA|最佳替代方案|bætˈnə|Knowing your BATNA strengthens your position.|了解你的最佳替代方案能增强你的谈判地位。|报价谈判|advanced
+ZOPA|协议区间|ˈzoʊpə|We need to find the ZOPA for a deal.|我们需要找到达成交易的协议区间。|报价谈判|advanced
+anchoring|锚定|ˈæŋkərɪŋ|Anchoring with a high initial price sets expectations.|用高价锚定设定了预期。|报价谈判|advanced
+concession strategy|让步策略|kənˈseʃn|A planned concession strategy prevents giving away too much.|计划的让步策略防止让步过多。|报价谈判|advanced
+incremental|递增的|ˌɪŋkrəˈmentl|Make incremental concessions not large ones.|做递增的小让步而非大让步。|报价谈判|advanced
+reciprocity|互惠|ˌresɪˈprɑːsəti|Concessions should be based on reciprocity.|让步应基于互惠原则。|报价谈判|advanced
+good cop bad cop|红白脸|ɡʊd|The good cop bad cop tactic pressures the other side.|红白脸策略给对方施加压力。|报价谈判|advanced
+silence tactic|沉默策略|ˈsaɪləns|The silence tactic can make the other party concede.|沉默策略可以使对方让步。|报价谈判|advanced
+deadline pressure|截止日期压力|ˈdedlaɪn|Deadline pressure forces quicker decisions.|截止日期压力迫使更快决策。|报价谈判|advanced
+flinch|退缩|flɪntʃ|A visible flinch at the first price shows it's too high.|对首次报价明显退缩表示价格太高。|报价谈判|advanced
+nibble|蚕食|ˈnɪbl|The nibble tactic asks for small extras after agreement.|蚕食策略在达成协议后要求额外小利。|报价谈判|advanced
+bracketing|夹击法|ˈbrækɪtɪŋ|Bracketing the target price narrows the gap.|夹击法围绕目标价格缩小差距。|报价谈判|advanced
+split the difference|各让一半|splɪt|Let's split the difference and meet in the middle.|让我们各让一半折中。|报价谈判|advanced
+non-monetary|非货币的|nɑːn məˈneri|Non-monetary terms can offset price differences.|非货币条款可以弥补价格差异。|报价谈判|advanced
+value proposition|价值主张|ˈvæljuː|Our value proposition justifies premium pricing.|我们的价值主张证明溢价合理。|报价谈判|advanced
+cost-plus|成本加成|kɑːst plʌs|Cost-plus pricing ensures a fixed margin.|成本加成定价确保固定利润。|报价谈判|advanced
+value-based|基于价值|ˈvæljuː beɪst|Value-based pricing maximizes perceived worth.|基于价值定价最大化感知价值。|报价谈判|advanced
+penetration pricing|渗透定价|ˌpenɪˈtreɪʃn|Penetration pricing enters the market low.|渗透定价以低价进入市场。|报价谈判|advanced
+skimming|撇脂定价|ˈskɪmɪŋ|Price skimming targets early adopters first.|撇脂定价先针对早期采用者。|报价谈判|advanced
+dynamic pricing|动态定价|daɪˈnæmɪk|Dynamic pricing adjusts to real-time demand.|动态定价根据实时需求调整。|报价谈判|advanced
+price elasticity|价格弹性|praɪs|Price elasticity measures demand sensitivity to price.|价格弹性衡量需求对价格的敏感度。|报价谈判|advanced
+price sensitivity|价格敏感度|praɪs|Luxury goods have low price sensitivity.|奢侈品价格敏感度低。|报价谈判|advanced
+psychological pricing|心理定价|ˌsaɪkəˈlɑːdʒɪkl|Psychological pricing uses $9.99 instead of $10.|心理定价用9.99美元代替10美元。|报价谈判|advanced
+loss leader|亏本引流品|lɔːs|A loss leader attracts customers to buy other products.|亏本引流品吸引顾客购买其他产品。|报价谈判|advanced
+captive pricing|附属定价|ˈkæptɪv|Captive pricing applies to consumables for a device.|附属定价适用于设备的耗材。|报价谈判|advanced
+bundle pricing|捆绑定价|ˈbʌndl|Bundle pricing increases average order value.|捆绑定价提高平均订单价值。|报价谈判|advanced
+freemium|免费增值|ˈfriːmiəm|Freemium models offer basic features for free.|免费增值模式免费提供基本功能。|报价谈判|advanced
+subscription|订阅|səbˈskrɪpʃn|Subscription pricing generates recurring revenue.|订阅定价产生经常性收入。|报价谈判|advanced
+markup pricing|加成定价|ˈmɑːrkʌp|Markup pricing adds a percentage to the cost.|加成定价在成本上加一个百分比。|报价谈判|advanced
+target return pricing|目标回报定价|ˈtɑːrɡɪt|Target return pricing sets price to achieve ROI goals.|目标回报定价设定价格以实现投资回报目标。|报价谈判|advanced
+going-rate pricing|随行就市定价|ˈɡoʊɪŋ|Going-rate pricing matches competitor prices.|随行就市定价与竞争对手价格匹配。|报价谈判|advanced
+auction|拍卖|ˈɔːkʃn|Online auctions determine market price dynamically.|在线拍卖动态决定市场价格。|报价谈判|advanced
+sealed bid|密封投标|siːld|A sealed bid process ensures fair competition.|密封投标流程确保公平竞争。|报价谈判|advanced
+reverse auction|反向拍卖|rɪˈvɜːrs|In a reverse auction suppliers compete downward.|反向拍卖中供应商向下竞价。|报价谈判|advanced
+supply chain finance|供应链金融|səˈplaɪ|Supply chain finance improves cash flow for suppliers.|供应链金融改善供应商现金流。|支付方式|advanced
+factoring|保理|ˈfæktərɪŋ|Factoring converts receivables to immediate cash.|保理将应收账款转为即期现金。|支付方式|advanced
+reverse factoring|反向保理|rɪˈvɜːrs|Reverse factoring is initiated by the buyer.|反向保理由买方发起。|支付方式|advanced
+forfaiting|福费廷|fɔːrˈfeɪtɪŋ|Forfaiting eliminates export payment risk without recourse.|福费廷无追索权地消除出口收款风险。|支付方式|advanced
+supply chain optimization|供应链优化|səˈplaɪ|Supply chain optimization reduces costs and lead times.|供应链优化降低成本和交期。|物流交货|advanced
+demand forecasting|需求预测|dɪˈmænd|Accurate demand forecasting prevents overstock.|准确的需求预测防止库存积压。|物流交货|advanced
+S&OP|销售与运营计划|ˌes ænd oʊ ˈpiː|S&OP aligns sales and production plans.|销售与运营计划统一销售和生产计划。|物流交货|advanced
+CPFR|协同规划预测补货|ˌsiː piː ef ˈɑːr|CPFR improves supply chain collaboration.|协同规划预测补货改善供应链协作。|物流交货|advanced
+VMI|供应商管理库存|ˌviː em ˈaɪ|VMI lets suppliers manage buyer inventory levels.|供应商管理库存让供应商管理买方库存水平。|物流交货|advanced
+consignment inventory|寄售库存|kənˈsaɪnmənt|Consignment inventory shifts ownership risk.|寄售库存转移所有权风险。|物流交货|advanced
+cross-docking|越库作业|krɔːs|Cross-docking eliminates warehouse storage time.|越库作业消除仓储时间。|物流交货|advanced
+milk run|循环取货|mɪlk|The milk run optimizes pickup routes from multiple suppliers.|循环取货优化多供应商取货路线。|物流交货|advanced
+drop shipping|直发|drɑːp|Drop shipping eliminates retailer inventory needs.|直发消除零售商库存需求。|物流交货|advanced
+omnichannel|全渠道|ˌɑːmniˈtʃænl|Omnichannel logistics serves all sales channels.|全渠道物流服务所有销售渠道。|物流交货|advanced
+last mile optimization|最后一公里优化|læst|Last mile optimization reduces delivery costs.|最后一公里优化降低配送成本。|物流交货|advanced
+reverse logistics|逆向物流|rɪˈvɜːrs|Reverse logistics handles returns and recycling.|逆向物流处理退货和回收。|物流交货|advanced
+green logistics|绿色物流|ɡriːn|Green logistics minimizes environmental impact.|绿色物流最小化环境影响。|物流交货|advanced
+cold chain management|冷链管理|koʊld|Cold chain management ensures product integrity.|冷链管理确保产品完整性。|物流交货|advanced
+hazardous materials|危险品|ˈhæzərdəs|Hazardous materials transport requires special permits.|危险品运输需要特殊许可。|物流交货|advanced
+customs broker|报关行|ˈkʌstəmz|A customs broker facilitates import clearance.|报关行促进进口清关。|物流交货|advanced
+bonded logistics|保税物流|ˈbɑːndɪd|Bonded logistics defers duty payment.|保税物流延迟纳税。|物流交货|advanced
+trade lane|贸易航线|treɪd|The Asia-Europe trade lane is our primary route.|亚欧贸易航线是我们的主要路线。|物流交货|advanced
+freight consolidation|货运拼装|freɪt|Freight consolidation reduces per-unit shipping cost.|货运拼装降低单位运输成本。|物流交货|advanced
+freight forwarding|货运代理|freɪt|Freight forwarding coordinates multi-modal transport.|货运代理协调多式联运。|物流交货|advanced
+NVOCC|无船承运人|ˌen viː oʊ siː ˈsiː|An NVOCC issues bills of lading without owning vessels.|无船承运人签发提单但不拥有船只。|物流交货|advanced
+shipping line|船公司|ˈʃɪpɪŋ|The shipping line announced a rate increase.|船公司宣布涨价。|物流交货|advanced
+demurrage|滞期费|dɪˈmɜːrɪdʒ|Demurrage applies when containers exceed free time.|集装箱超过免费期产生滞期费。|物流交货|advanced
+detention|超期费|dɪˈtenʃn|Detention charges apply to returned containers.|退回集装箱超期收取超期费。|物流交货|advanced
+free time|免费期|friː|The carrier allows 7 days free time at destination.|承运人在目的地允许7天免费期。|物流交货|advanced
+storage fee|仓储费|ˈstɔːrɪdʒ|Storage fees accrue daily at the warehouse.|仓储费在仓库按日累计。|物流交货|advanced
+handling charge|操作费|ˈhændlɪŋ|The handling charge covers loading and unloading.|操作费涵盖装卸费用。|物流交货|advanced
+documentation fee|单证费|ˌdɑːkjumenˈteɪʃn|The documentation fee is $35 per B/L.|单证费为每份提单35美元。|物流交货|advanced
+seal fee|封条费|siːl|The seal fee covers container sealing.|封条费涵盖集装箱封条。|物流交货|advanced
+terminal handling charge|码头操作费|ˈtɜːrmɪnl|THC is payable at both origin and destination.|起运港和目的港均需支付码头操作费。|物流交货|advanced
+bunker adjustment|燃油附加费|ˈbʌŋkər|Bunker adjustment reflects fuel price changes.|燃油附加费反映燃油价格变化。|物流交货|advanced
+currency adjustment|币值附加费|ˈkɜːrənsi|Currency adjustment factor covers exchange rate risk.|币值附加费覆盖汇率风险。|物流交货|advanced
+peak season surcharge|旺季附加费|piːk|Peak season surcharge applies from September to November.|旺季附加费适用于9月至11月。|物流交货|advanced
+emergency surcharge|紧急附加费|ɪˈmɜːrdʒənsi|Emergency surcharge was added during the crisis.|危机期间增加了紧急附加费。|物流交货|advanced
+general rate increase|普遍运价上调|ˈdʒenrəl|The shipping line announced a general rate increase.|船公司宣布普遍运价上调。|物流交货|advanced
+space allocation|舱位分配|speɪs|Space allocation is guaranteed for VIP customers.|VIP客户保证有舱位分配。|物流交货|advanced
+priority booking|优先订舱|praɪˈɔːrəti|Priority booking ensures shipment during peak season.|优先订舱确保旺季发货。|物流交货|advanced
+roll over|甩柜|roʊl|Our container was rolled to the next vessel.|我们的集装箱被甩到下一班船。|物流交货|advanced
+short shipment|短装|ʃɔːrt|Short shipment occurred due to quality issues.|因质量问题发生短装。|物流交货|advanced
+over shipment|超装|ˈoʊvər|Over shipment beyond 5% requires buyer consent.|超装超过5%需要买方同意。|物流交货|advanced
+partial shipment|分批装运|ˈpɑːrʃl|Partial shipment is allowed under the L/C.|信用证允许分批装运。|物流交货|advanced
+transshipment|转运|trænsˈʃɪpmənt|Transshipment at Singapore adds 3 days.|在新加坡转运增加3天。|物流交货|advanced
+on-deck|舱面|ɑːn|On-deck cargo is subject to weather risks.|舱面货物受天气风险影响。|物流交货|advanced
+under-deck|舱内|ˈʌndər|Under-deck storage protects cargo from elements.|舱内储存保护货物免受天气影响。|物流交货|advanced
+stowage plan|积载计划|ˈstoʊɪdʒ|The stowage plan optimizes container placement.|积载计划优化集装箱摆放。|物流交货|advanced
+cargo plan|货物计划|ˈkɑːrɡoʊ|The cargo plan details loading sequence.|货物计划详述装货顺序。|物流交货|advanced
+ballast|压舱|ˈbæləst|Ballast water management prevents invasive species.|压舱水管理防止外来物种入侵。|物流交货|advanced
+draft restriction|吃水限制|dræft|Draft restriction limits vessel size at shallow ports.|吃水限制浅水港口的船只大小。|物流交货|advanced
+pilotage|引航费|ˈpaɪlətɪdʒ|Pilotage is compulsory for vessels over 500 GT.|超过500总吨的船只必须引航。|物流交货|advanced
+towage|拖轮费|ˈtoʊɪdʒ|Towage assists large vessels in port maneuvering.|拖轮协助大型船只港口操纵。|物流交货|advanced
+quarantine|检疫|ˈkwɔːrəntiːn|Quarantine inspection is required for agricultural products.|农产品需要检疫检查。|物流交货|advanced
+fumigation|熏蒸|ˌfjuːmɪˈɡeɪʃn|Fumigation is mandatory for wooden pallets.|木托盘必须熏蒸。|物流交货|advanced
+pest control|虫害控制|pest|Pest control certificates are needed for food imports.|食品进口需要虫害控制证书。|物流交货|advanced
+veterinary inspection|兽医检查|ˌvetərɪˈneri|Veterinary inspection applies to animal products.|动物产品需要兽医检查。|物流交货|advanced
+plant quarantine|植物检疫|plænt|Plant quarantine prevents pest introduction.|植物检疫防止害虫传入。|物流交货|advanced
+sanitary|卫生的|ˈsænɪteri|Sanitary certificates confirm product safety.|卫生证书确认产品安全。|物流交货|advanced
+phytosanitary|植物卫生|ˌfaɪtoʊˈsænɪteri|A phytosanitary certificate is required for plant exports.|植物出口需要植物卫生证书。|物流交货|advanced
+market penetration|市场渗透|ˈmɑːrkɪt|Our market penetration strategy targets price-sensitive segments.|我们的市场渗透战略针对价格敏感细分市场。|商务会议|advanced
+market segmentation|市场细分|ˌseɡmenˈteɪʃn|Market segmentation divides customers into homogeneous groups.|市场细分将客户分为同质群体。|商务会议|advanced
+positioning|定位|pəˈzɪʃənɪŋ|Brand positioning differentiates us from competitors.|品牌定位使我们与竞争对手区分开来。|商务会议|advanced
+differentiation|差异化|ˌdɪfərenʃiˈeɪʃn|Product differentiation creates competitive advantage.|产品差异化创造竞争优势。|商务会议|advanced
+competitive advantage|竞争优势|kəmˈpetɪtɪv|Our competitive advantage is fast delivery.|我们的竞争优势是快速交付。|商务会议|advanced
+core competency|核心竞争力|kɔːr|Innovation is our core competency.|创新是我们的核心竞争力。|商务会议|advanced
+value chain|价值链|ˈvæljuː tʃeɪn|Analyzing the value chain identifies cost reduction opportunities.|分析价值链识别降本机会。|商务会议|advanced
+economies of scale|规模经济|ɪˈkɑːnəmi|Economies of scale reduce per-unit production costs.|规模经济降低单位生产成本。|商务会议|advanced
+economies of scope|范围经济|ɪˈkɑːnəmi|Economies of scope arise from product diversification.|范围经济源于产品多样化。|商务会议|advanced
+barrier to entry|进入壁垒|ˈbæriər|High capital requirements create a barrier to entry.|高资本需求形成进入壁垒。|商务会议|advanced
+first mover advantage|先发优势|fɜːrst|First mover advantage benefits early market entrants.|先发优势有利于早期市场进入者。|商务会议|advanced
+network effect|网络效应|ˈnetwɜːrk|The network effect increases platform value with more users.|网络效应使平台价值随用户增加而提升。|商务会议|advanced
+switching cost|转换成本|ˈswɪtʃɪŋ|High switching costs retain customers.|高转换成本留住客户。|商务会议|advanced
+blue ocean|蓝海|bluː|A blue ocean strategy creates uncontested market space.|蓝海战略创造无竞争市场空间。|商务会议|advanced
+disruptive innovation|颠覆性创新|dɪsˈrʌptɪv|Disruptive innovation reshapes entire industries.|颠覆性创新重塑整个行业。|商务会议|advanced
+sustaining innovation|持续性创新|səˈsteɪnɪŋ|Sustaining innovation improves existing products.|持续性创新改进现有产品。|商务会议|advanced
+incremental innovation|渐进式创新|ˌɪŋkrəˈmentl|Incremental innovation involves small continuous improvements.|渐进式创新涉及持续的小改进。|商务会议|advanced
+radical innovation|激进式创新|ˈrædɪkl|Radical innovation creates entirely new product categories.|激进式创新创造全新的产品类别。|商务会议|advanced
+open innovation|开放式创新|ˈoʊpən|Open innovation leverages external ideas and partnerships.|开放式创新利用外部创意和合作伙伴关系。|商务会议|advanced
+technology transfer|技术转移|tekˈnɑːlədʒi|Technology transfer enables developing countries to advance.|技术转移使发展中国家得以进步。|商务会议|advanced
+knowledge management|知识管理|ˈnɑːlɪdʒ|Knowledge management captures and shares organizational expertise.|知识管理获取和分享组织专业知识。|商务会议|advanced
+organizational learning|组织学习|ˌɔːrɡənəˈzeɪʃənl|Organizational learning improves adaptability.|组织学习提高适应能力。|商务会议|advanced
+change management|变革管理|tʃeɪndʒ|Change management ensures smooth organizational transitions.|变革管理确保组织平稳过渡。|商务会议|advanced
+transformation|转型|ˌtrænsfərˈmeɪʃn|Digital transformation reshapes business models.|数字化转型重塑商业模式。|商务会议|advanced
+disruption|颠覆|dɪsˈrʌpʃn|Industry disruption creates both threats and opportunities.|行业颠覆同时带来威胁和机遇。|商务会议|advanced
+pivot|转型|ˈpɪvət|The company pivoted from hardware to software.|公司从硬件转型到软件。|商务会议|advanced
+scalability|可扩展性|ˌskeɪləˈbɪləti|Cloud infrastructure provides unlimited scalability.|云基础设施提供无限可扩展性。|商务会议|advanced
+agile transformation|敏捷转型|ˈædʒəl|Agile transformation improves organizational responsiveness.|敏捷转型提高组织响应能力。|商务会议|advanced
+customer-centric|以客户为中心|ˌkʌstəmər ˈsentrɪk|A customer-centric approach drives product development.|以客户为中心的方法驱动产品开发。|商务会议|advanced
+data-driven|数据驱动|ˈdeɪtə ˈdrɪvn|Data-driven decisions outperform intuition-based ones.|数据驱动决策优于直觉决策。|商务会议|advanced
+evidence-based|循证|ˈevɪdəns|Evidence-based management reduces bias in decisions.|循证管理减少决策中的偏见。|商务会议|advanced
+lean startup|精益创业|liːn|The lean startup methodology emphasizes rapid iteration.|精益创业方法论强调快速迭代。|商务会议|advanced
+minimum viable product|最小可行产品|ˈmɪnɪməm|An MVP tests market demand with minimal investment.|最小可行产品以最小投入测试市场需求。|商务会议|advanced
+product-market fit|产品市场契合|ˈprɑːdʌkt|Achieving product-market fit is critical for startups.|实现产品市场契合对初创企业至关重要。|商务会议|advanced
+growth hacking|增长黑客|ɡroʊθ|Growth hacking uses creative tactics for rapid growth.|增长黑客使用创意策略实现快速增长。|商务会议|advanced
+viral coefficient|病毒系数|ˈvaɪrəl|A viral coefficient above 1 means exponential growth.|病毒系数大于1意味着指数增长。|商务会议|advanced
+churn rate|流失率|tʃɜːrn|Reducing the churn rate increases customer lifetime value.|降低流失率提高客户终身价值。|商务会议|advanced
+cohort analysis|同期群分析|ˈkoʊhɔːrt|Cohort analysis tracks user behavior over time.|同期群分析跟踪用户行为随时间的变化。|商务会议|advanced
+A/B testing|A/B测试|eɪ|A/B testing optimizes conversion rates through experiments.|A/B测试通过实验优化转化率。|商务会议|advanced
+multivariate testing|多变量测试|ˌmʌltiˈveriət|Multivariate testing examines multiple variables simultaneously.|多变量测试同时检查多个变量。|商务会议|advanced
+heat map|热力图|hiːt|A heat map visualizes user click patterns.|热力图可视化用户点击模式。|商务会议|advanced
+user journey|用户旅程|ˈjuːzər|Mapping the user journey identifies pain points.|用户旅程映射识别痛点。|商务会议|advanced
+wireframe|线框图|ˈwaɪərfreɪm|A wireframe outlines the page structure before design.|线框图在设计前勾勒页面结构。|商务会议|advanced
+prototype|原型|ˈproʊtətaɪp|A clickable prototype tests user interaction.|可点击的原型测试用户交互。|商务会议|advanced
+usability testing|可用性测试|ˌjuːzəˈbɪləti|Usability testing reveals interface issues.|可用性测试揭示界面问题。|商务会议|advanced
+accessibility|无障碍|əkˌsesəˈbɪləti|Web accessibility ensures inclusivity for all users.|网络无障碍确保所有用户的包容性。|商务会议|advanced
+responsive design|响应式设计|rɪˈspɑːnsɪv|Responsive design adapts to different screen sizes.|响应式设计适应不同屏幕尺寸。|商务会议|advanced
+progressive web app|渐进式网页应用|prəˈɡresɪv|A PWA provides app-like experience in the browser.|渐进式网页应用在浏览器中提供类应用体验。|商务会议|advanced
+API integration|API集成|ˌeɪ piː ˈaɪ|API integration connects different software systems.|API集成连接不同软件系统。|商务会议|advanced
+microservices|微服务|ˈmaɪkroʊsɜːrvɪsɪz|Microservices architecture enables independent scaling.|微服务架构实现独立扩展。|商务会议|advanced
+containerization|容器化|kənˌteɪnəraɪˈzeɪʃn|Containerization simplifies deployment across environments.|容器化简化跨环境部署。|商务会议|advanced
+orchestration|编排|ˌɔːrkɪˈstreɪʃn|Container orchestration manages service lifecycle.|容器编排管理服务生命周期。|商务会议|advanced
+serverless|无服务器|ˈsɜːrvərləs|Serverless computing reduces infrastructure management.|无服务器计算减少基础设施管理。|商务会议|advanced
+edge computing|边缘计算|edʒ|Edge computing processes data closer to the source.|边缘计算在数据源附近处理数据。|商务会议|advanced
+quantum computing|量子计算|ˈkwɑːntəm|Quantum computing will revolutionize cryptography.|量子计算将彻底改变密码学。|商务会议|advanced
+augmented reality|增强现实|ɔːɡˈmentɪd|AR enhances product demonstrations for buyers.|AR增强买家产品演示。|商务会议|advanced
+virtual reality|虚拟现实|ˈvɜːrtʃuəl|VR training simulates real factory environments.|VR培训模拟真实工厂环境。|商务会议|advanced
+metaverse|元宇宙|ˈmetəvɜːrs|The metaverse creates new business opportunities.|元宇宙创造新的商业机会。|商务会议|advanced
+Web3|第三代互联网|web|Web3 decentralizes internet infrastructure.|Web3去中心化互联网基础设施。|商务会议|advanced
+NFT|非同质化代币|ˌen ef ˈtiː|NFTs verify digital asset ownership.|NFT验证数字资产所有权。|商务会议|advanced
+cryptocurrency|加密货币|ˌkrɪptoʊˈkɜːrənsi|Some suppliers accept cryptocurrency payments.|部分供应商接受加密货币付款。|商务会议|advanced
+stablecoin|稳定币|ˈsteɪblkoɪn|Stablecoins reduce crypto volatility in trade payments.|稳定币减少贸易付款中的加密货币波动。|商务会议|advanced
+CBDC|央行数字货币|ˌsiː biː diː ˈsiː|CBDCs may transform cross-border payments.|央行数字货币可能改变跨境支付。|商务会议|advanced
+smart contract|智能合约|smɑːrt|Smart contracts automate trade finance processes.|智能合约自动化贸易融资流程。|商务会议|advanced
+DeFi|去中心化金融|ˈdiː faɪ|DeFi platforms offer alternative trade finance options.|DeFi平台提供替代贸易融资选择。|商务会议|advanced
+digital twin|数字孪生|ˈdɪdʒɪtl twɪn|A digital twin simulates factory operations virtually.|数字孪生虚拟模拟工厂运营。|商务会议|advanced
+predictive analytics|预测性分析|prɪˈdɪktɪv|Predictive analytics forecasts supply chain disruptions.|预测性分析预测供应链中断。|商务会议|advanced
+prescriptive analytics|规范性分析|prɪˈskrɪptɪv|Prescriptive analytics recommends optimal actions.|规范性分析推荐最优行动。|商务会议|advanced
+computer vision|计算机视觉|kəmˈpjuːtər|Computer vision automates quality inspection.|计算机视觉自动化质量检验。|商务会议|advanced
+natural language processing|自然语言处理|ˈnætʃrəl|NLP powers multilingual customer service chatbots.|自然语言处理驱动多语言客服聊天机器人。|商务会议|advanced
+deep learning|深度学习|diːp|Deep learning improves demand forecasting accuracy.|深度学习提高需求预测准确性。|商务会议|advanced
+neural network|神经网络|ˈnʊrəl|Neural networks detect fraud in trade transactions.|神经网络检测贸易交易中的欺诈。|商务会议|advanced
+reinforcement learning|强化学习|ˌriːɪnˈfɔːrsmənt|Reinforcement learning optimizes logistics routing.|强化学习优化物流路线。|商务会议|advanced
+generative AI|生成式AI|ˈdʒenərətɪv|Generative AI creates product descriptions automatically.|生成式AI自动创建产品描述。|商务会议|advanced
+large language model|大语言模型|lɑːrdʒ|LLMs automate multilingual business communication.|大语言模型自动化多语言商务沟通。|商务会议|advanced
+RPA|机器人流程自动化|ˌɑːr piː ˈeɪ|RPA automates repetitive document processing tasks.|机器人流程自动化重复性文档处理任务。|商务会议|advanced
+hyperautomation|超级自动化|ˌhaɪpərˌɔːtəˈmeɪʃn|Hyperautomation combines AI and RPA for end-to-end automation.|超级自动化结合AI和RPA实现端到端自动化。|商务会议|advanced
+digital thread|数字主线|ˈdɪdʒɪtl θred|A digital thread connects data across the product lifecycle.|数字主线连接产品生命周期中的数据。|商务会议|advanced
+cybersecurity|网络安全|ˌsaɪbərˈekjuːtɪ|Cybersecurity protects trade data from breaches.|网络安全保护贸易数据免遭泄露。|商务会议|advanced
+encryption|加密|ɪnˈkrɪpʃn|End-to-end encryption secures sensitive communications.|端到端加密保护敏感通信。|商务会议|advanced
+zero trust|零信任|ˈzɪroʊ trʌst|A zero trust architecture verifies every access request.|零信任架构验证每个访问请求。|商务会议|advanced
+data governance|数据治理|ˈdeɪtə|Data governance ensures data quality and compliance.|数据治理确保数据质量和合规。|商务会议|advanced
+data privacy|数据隐私|ˈdeɪtə|Data privacy regulations affect cross-border data transfers.|数据隐私法规影响跨境数据传输。|商务会议|advanced
+GDPR|通用数据保护条例|ˌdʒiː diː piː ˈɑːr|GDPR compliance is required for EU customer data.|欧盟客户数据需要符合GDPR。|商务会议|advanced
+CCPA|加州消费者隐私法|ˌsiː siː piː ˈeɪ|CCPA gives California residents data privacy rights.|加州消费者隐私法赋予加州居民数据隐私权。|商务会议|advanced
+PIPL|个人信息保护法|pɪpl|China's PIPL regulates personal data processing.|中国个人信息保护法规范个人数据处理。|商务会议|advanced
+data localization|数据本地化|ˈdeɪtə|Data localization requires storing data within national borders.|数据本地化要求数据存储在国境内。|商务会议|advanced
+cross-border data transfer|跨境数据传输|krɔːs|Cross-border data transfers require security assessments.|跨境数据传输需要安全评估。|商务会议|advanced
+ESG reporting|ESG报告|ˌiː es ˈdʒiː|ESG reporting is mandatory for listed companies.|上市公司必须进行ESG报告。|商务会议|advanced
+carbon neutral|碳中和|ˈkɑːrbən|We aim to be carbon neutral by 2030.|我们的目标是在2030年实现碳中和。|商务会议|advanced
+net zero|净零排放|net|Net zero commitments drive supply chain transformation.|净零排放承诺驱动供应链转型。|商务会议|advanced
+carbon credit|碳信用|ˈkɑːrbən|Carbon credits offset unavoidable emissions.|碳信用抵消不可避免的排放。|商务会议|advanced
+scope 3 emissions|范围三排放|skoʊp|Scope 3 emissions include the entire value chain.|范围三排放包括整个价值链。|商务会议|advanced
+life cycle assessment|生命周期评估|laɪf|LCA evaluates environmental impact from cradle to grave.|生命周期评估评估从摇篮到坟墓的环境影响。|商务会议|advanced
+eco-design|生态设计|ˈiːkoʊ|Eco-design reduces product environmental footprint.|生态设计减少产品环境足迹。|商务会议|advanced
+extended producer responsibility|生产者责任延伸|ɪkˈstendɪd|EPR makes producers responsible for end-of-life products.|生产者责任延伸使生产者对产品报废负责。|商务会议|advanced
+circular supply chain|循环供应链|ˈsɜːrkjələr|A circular supply chain minimizes waste and maximizes reuse.|循环供应链最小化浪费最大化再利用。|商务会议|advanced
+reverse supply chain|逆向供应链|rɪˈvɜːrs|The reverse supply chain handles returns and recycling.|逆向供应链处理退货和回收。|商务会议|advanced
+product-as-a-service|产品即服务|ˈprɑːdʌkt|Product-as-a-service shifts from selling to leasing.|产品即服务从销售转向租赁。|商务会议|advanced
+servitization|服务化|ˌsɜːrvɪtəˈzeɪʃn|Servitization adds services to physical products.|服务化为实体产品增加服务。|商务会议|advanced
+outcome-based|基于结果|ˈaʊtkʌm|Outcome-based contracts tie payment to performance.|基于结果的合同将付款与绩效挂钩。|商务会议|advanced
+performance-based|基于绩效|pərˈfɔːrməns|Performance-based logistics ensures operational readiness.|基于绩效的物流确保运营准备。|商务会议|advanced
+gain-sharing|收益分享|ɡeɪn|Gain-sharing aligns supplier and buyer incentives.|收益分享统一供应商和买方激励。|商务会议|advanced
+risk-sharing|风险共担|rɪsk|Risk-sharing agreements distribute uncertainty fairly.|风险共担协议公平分配不确定性。|商务会议|advanced
+collaborative|协作的|kəˈlæbərətɪv|Collaborative forecasting improves accuracy across the chain.|协作预测提高整个链条的准确性。|商务会议|advanced
+synchronized|同步的|ˈsɪŋkrənaɪzd|Synchronized production reduces inventory across the chain.|同步生产减少整个链条的库存。|商务会议|advanced
+end-to-end|端到端|end|End-to-end visibility transforms supply chain management.|端到端可见性改变供应链管理。|商务会议|advanced
+real-time|实时|ˈriːl taɪm|Real-time tracking provides instant shipment visibility.|实时跟踪提供即时货物可见性。|商务会议|advanced
+visibility|可见性|ˌvɪzəˈbɪləti|Supply chain visibility reduces uncertainty and risk.|供应链可见性减少不确定性和风险。|商务会议|advanced
+traceability|可追溯性|ˌtreɪsəˈbɪləti|End-to-end traceability ensures product authenticity.|端到端可追溯性确保产品真实性。|商务会议|advanced
+resilience|韧性|rɪˈzɪliəns|Supply chain resilience enables quick recovery from disruptions.|供应链韧性使快速从中断中恢复。|商务会议|advanced
+redundancy|冗余|rɪˈdʌndənsi|Supply chain redundancy provides backup options.|供应链冗余提供备份选项。|商务会议|advanced
+diversification|多元化|daɪˌvɜːrsɪfɪˈkeɪʃn|Supplier diversification reduces dependency risk.|供应商多元化降低依赖风险。|商务会议|advanced
+nearshoring|近岸外包|ˈnɪrʃɔːrɪŋ|Nearshoring moves production closer to home markets.|近岸外包将生产移近本土市场。|商务会议|advanced
+reshoring|回岸|riːˈʃɔːrɪŋ|Reshoring brings manufacturing back to the home country.|回岸将制造业带回本国。|商务会议|advanced
+friendshoring|友岸外包|frendʃɔːrɪŋ|Friendshoring relocates supply chains to allied countries.|友岸外包将供应链迁至盟国。|商务会议|advanced
+dual sourcing|双重采购|ˈduːəl|Dual sourcing mitigates single-supplier risk.|双重采购减轻单一供应商风险。|商务会议|advanced
+multi-sourcing|多源采购|ˈmʌlti|Multi-sourcing diversifies supply base.|多源采购多元化供应基地。|商务会议|advanced
+supplier development|供应商开发|səˈplaɪər|Supplier development improves vendor capabilities.|供应商开发提升供应商能力。|商务会议|advanced
+supplier evaluation|供应商评估|səˈplaɪər|Regular supplier evaluation maintains quality standards.|定期供应商评估维持质量标准。|商务会议|advanced
+supplier scorecard|供应商记分卡|səˈplaɪər|A supplier scorecard tracks performance metrics.|供应商记分卡跟踪绩效指标。|商务会议|advanced
+supplier consolidation|供应商整合|səˈplaɪər|Supplier consolidation reduces administrative costs.|供应商整合降低管理成本。|商务会议|advanced
+strategic sourcing|战略采购|strəˈtiːdʒɪk|Strategic sourcing aligns procurement with business goals.|战略采购使采购与业务目标一致。|商务会议|advanced
+category management|品类管理|ˈkætəɡɔːri|Category management organizes procurement by spend category.|品类管理按支出类别组织采购。|商务会议|advanced
+spend analysis|支出分析|spend|Spend analysis identifies cost reduction opportunities.|支出分析识别降本机会。|商务会议|advanced
+total cost of ownership|总拥有成本|ˈtoʊtl|TCO includes purchase maintenance and disposal costs.|总拥有成本包括采购维护和处置成本。|商务会议|advanced
+should-cost|应有成本|ʃʊd|A should-cost model estimates fair component pricing.|应有成本模型估算合理零件价格。|商务会议|advanced
+value engineering|价值工程|ˈvæljuː|Value engineering reduces cost without sacrificing quality.|价值工程在不牺牲质量的前提下降低成本。|商务会议|advanced
+target costing|目标成本法|ˈtɑːrɡɪt|Target costing sets price first then engineers to cost.|目标成本法先定价格再按成本设计。|商务会议|advanced
+kaizen event|改善活动|kaɪˈzən|A kaizen event drives rapid process improvement in one week.|改善活动在一周内推动快速流程改进。|商务会议|advanced
+value stream mapping|价值流图|ˈvæljuː striːm|Value stream mapping visualizes the entire production flow.|价值流图可视化整个生产流程。|商务会议|advanced
+gemba walk|现场巡查|ˈɡembə|A gemba walk observes actual work at the shop floor.|现场巡查在车间观察实际工作。|商务会议|advanced
+5S methodology|5S方法|faɪv|5S methodology organizes the workplace for efficiency.|5S方法组织工作场所以提高效率。|商务会议|advanced
+poka-yoke|防错|ˌpoʊkəˈjoʊki|Poka-yoke devices prevent assembly errors.|防错装置防止装配错误。|商务会议|advanced
+kanban|看板|ˈkɑːnbɑːn|A kanban system signals when to replenish materials.|看板系统在需要补充物料时发出信号。|商务会议|advanced
+heijunka|均衡化|heɪˈdʒuːnkə|Heijunka levels production to smooth demand fluctuations.|均衡化平衡生产以平滑需求波动。|商务会议|advanced
+jidoka|自働化|dʒɪˈdoʊkə|Jidoka stops production when defects are detected.|自働化在检测到缺陷时停止生产。|商务会议|advanced
+andon|安灯|ˈændɑːn|An andon system alerts supervisors to problems.|安灯系统提醒主管注意问题。|商务会议|advanced
+takt time|节拍时间|tækt|Takt time synchronizes production with customer demand.|节拍时间使生产与客户需求同步。|商务会议|advanced
+cycle time reduction|周期时间缩短|ˈsaɪkl|Cycle time reduction increases throughput without additional investment.|周期时间缩短在不增加投资的情况下提高产量。|商务会议|advanced
+setup reduction|换模时间缩短|ˈsetʌp|Setup reduction increases equipment flexibility.|换模时间缩短提高设备灵活性。|商务会议|advanced
+single-minute exchange of die|快速换模|ˈsɪŋɡl|SMED reduces setup time to under 10 minutes.|快速换模将换模时间缩短至10分钟以内。|商务会议|advanced
+total productive maintenance|全员生产维护|ˈtoʊtl|TPM maximizes equipment effectiveness through operator involvement.|全员生产维护通过操作员参与最大化设备效率。|商务会议|advanced
+overall equipment effectiveness|设备综合效率|ˌoʊvərˈɔːl|OEE combines availability performance and quality metrics.|设备综合效率综合可用性性能和质量指标。|商务会议|advanced
+theory of constraints|约束理论|ˈθiːəri|The theory of constraints focuses on bottleneck management.|约束理论聚焦瓶颈管理。|商务会议|advanced
+drum-buffer-rope|鼓-缓冲-绳|drʌm|DBR synchronizes production to the bottleneck pace.|鼓-缓冲-绳使生产与瓶颈节奏同步。|商务会议|advanced
+critical chain|关键链|ˈkrɪtɪkl|Critical chain project management buffers uncertainty.|关键链项目管理缓冲不确定性。|商务会议|advanced

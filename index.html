@@ -467,65 +467,52 @@ function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.fl
 function dayIdx(s){const d=new Date(s);return Math.floor((d-new Date('2024-01-01'))/864e5)}
 function rotate(arr,idx){const n=arr.length;if(!n)return null;return arr[idx%n]}
 
-/* === Data: Words === */
-const EN_WORDS=[
-{w:'quotation',p:'/kwəʊˈteɪʃn/',m:'报价',ex:'Could you send us your quotation?',cn:'请发报价'},
-{w:'lead time',p:'/liːd taɪm/',m:'交货期',ex:'What is the lead time?',cn:'交货期多久？'},
-{w:'MOQ',p:'/em əʊ kjuː/',m:'最小起订量',ex:'Our MOQ is 2 units.',cn:'起订量2台'},
-{w:'freight',p:'/freɪt/',m:'运费',ex:'Freight is included.',cn:'含运费'},
-{w:'customs clearance',p:'/ˈkʌstəmz ˈklɪərəns/',m:'清关',ex:'Documents for customs clearance.',cn:'清关文件'},
-{w:'proforma invoice',p:'/prəˈfɔːmə ˈɪnvɔɪs/',m:'形式发票',ex:'Attached proforma invoice.',cn:'附件为形式发票'},
-{w:'specification',p:'/ˌspesɪfɪˈkeɪʃn/',m:'规格',ex:'Please check the specification.',cn:'请查收规格'},
-{w:'warranty',p:'/ˈwɒrənti/',m:'质保',ex:'One-year warranty included.',cn:'含一年质保'},
-{w:'shipment',p:'/ˈʃɪpmənt/',m:'装运',ex:'Shipment by end of July.',cn:'7月底装运'},
-{w:'payment terms',p:'/ˈpeɪmənt tɜːmz/',m:'付款方式',ex:'Payment terms: T/T 30% deposit.',cn:'付款方式：30%电汇定金'},
-{w:'FOB',p:'/ef əʊ ˈbiː/',m:'离岸价',ex:'Our price is FOB Shanghai.',cn:'上海离岸价'},
-{w:'CIF',p:'/siː aɪ ˈef/',m:'到岸价',ex:'We quote CIF St. Petersburg.',cn:'到圣彼得堡到岸价'},
-{w:'packing list',p:'/ˈpækɪŋ lɪst/',m:'装箱单',ex:'Please find the packing list attached.',cn:'请查收装箱单'},
-{w:'bill of lading',p:'/bɪl əv ˈleɪdɪŋ/',m:'提单',ex:'The bill of lading will be sent tomorrow.',cn:'提单明天发出'},
-{w:'certificate of origin',p:'/səˈtɪfɪkət əv ˈɒrɪdʒɪn/',m:'原产地证',ex:'We need certificate of origin.',cn:'需要原产地证'},
-{w:'inspection',p:'/ɪnˈspekʃn/',m:'检验',ex:'Third-party inspection is accepted.',cn:'接受第三方检验'},
-{w:'installation',p:'/ˌɪnstəˈleɪʃn/',m:'安装',ex:'Installation manual is included.',cn:'含安装说明书'},
-{w:'maintenance',p:'/ˈmeɪntənəns/',m:'维护',ex:'Annual maintenance contract available.',cn:'可提供年度维护合同'},
-{w:'spare parts',p:'/speə pɑːts/',m:'备件',ex:'Spare parts list attached.',cn:'附件为备件清单'},
-{w:'after-sales service',p:'/ˈɑːftə seɪlz ˈsɜːvɪs/',m:'售后服务',ex:'We provide after-sales service worldwide.',cn:'全球售后服务'},
-{w:'capacity',p:'/kəˈpæsəti/',m:'载重/容量',ex:'The capacity is 1000kg.',cn:'载重1000公斤'},
-{w:'speed',p:'/spiːd/',m:'速度',ex:'Lifting speed is 1.0m/s.',cn:'提升速度1.0米/秒'},
-{w:'shaft',p:'/ʃɑːft/',m:'井道',ex:'Please provide shaft dimensions.',cn:'请提供井道尺寸'},
-{w:'landing',p:'/ˈlændɪŋ/',m:'层站',ex:'How many landings?',cn:'多少层站？'},
-{w:'cabin',p:'/ˈkæbɪn/',m:'轿厢',ex:'Cabin finish can be customized.',cn:'轿厢装饰可定制'},
-{w:'negotiation',p:'/nɪˌɡəʊʃiˈeɪʃn/',m:'谈判',ex:'After negotiation, we agreed on the price.',cn:'谈判后我们达成了价格一致'}
-];
-const RU_WORDS=[
-{w:'цена',p:'/tsɨˈna/',m:'价格',ex:'Какая цена?',cn:'价格多少？',lang:'ru-RU'},
-{w:'доставка',p:'/dɐˈstafkə/',m:'交货',ex:'Условия доставки?',cn:'交货条件？',lang:'ru-RU'},
-{w:'заказ',p:'/zɐˈkas/',m:'订单',ex:'Мы готовы принять заказ.',cn:'我们准备接单',lang:'ru-RU'},
-{w:'контракт',p:'/kɐnˈtrakt/',m:'合同',ex:'Подпишем контракт.',cn:'签合同',lang:'ru-RU'},
-{w:'лифт',p:'/lʲift/',m:'电梯',ex:'Лифт пассажирский.',cn:'客梯',lang:'ru-RU'},
-{w:'оплата',p:'/ɐˈplatə/',m:'付款',ex:'Условия оплаты?',cn:'付款条件？',lang:'ru-RU'},
-{w:'скидка',p:'/ˈskʲidkə/',m:'折扣',ex:'Есть ли скидка?',cn:'有折扣吗？',lang:'ru-RU'},
-{w:'гарантия',p:'/ɡɐˈrantʲɪjə/',m:'质保',ex:'Гарантия 12 месяцев.',cn:'质保12个月',lang:'ru-RU'},
-{w:'срок',p:'/srok/',m:'期限',ex:'Какой срок поставки?',cn:'交货期多久？',lang:'ru-RU'},
-{w:'поставка',p:'/pɐˈstavkə/',m:'供货',ex:'Срок поставки 30 дней.',cn:'供货期30天',lang:'ru-RU'},
-{w:'монтаж',p:'/mɐnˈtaʂ/',m:'安装',ex:'Монтаж включён?',cn:'含安装吗？',lang:'ru-RU'},
-{w:'обслуживание',p:'/əbslʊˈʐɨvənʲɪje/',m:'维护',ex:'Гарантийное обслуживание.',cn:'保修维护',lang:'ru-RU'},
-{w:'запчасти',p:'/ˈzaptɕɪstʲɪ/',m:'备件',ex:'Запчасти в наличии.',cn:'备件有库存',lang:'ru-RU'},
-{w:'качество',p:'/ˈkatɕɪstvə/',m:'质量',ex:'Высокое качество.',cn:'高质量',lang:'ru-RU'},
-{w:'комплектация',p:'/kəmplʲɪkˈtatɕɪjə/',m:'配置',ex:'Полная комплектация.',cn:'完整配置',lang:'ru-RU'},
-{w:'документы',p:'/dəkʊˈmʲentɨ/',m:'文件',ex:'Подготовьте документы.',cn:'请准备文件',lang:'ru-RU'},
-{w:'таможня',p:'/tɐˈmoʐnʲə/',m:'海关',ex:'Таможенное оформление.',cn:'海关清关',lang:'ru-RU'},
-{w:'упаковка',p:'/ʊpɐˈkovkə/',m:'包装',ex:'Упаковка деревянная.',cn:'木箱包装',lang:'ru-RU'},
-{w:'груз',p:'/ɡrus/',m:'货物',ex:'Вес груза.',cn:'货物重量',lang:'ru-RU'},
-{w:'страховка',p:'/strɐˈxofkə/',m:'保险',ex:'Страховка включена?',cn:'含保险吗？',lang:'ru-RU'},
-{w:'надёжность',p:'/nɐˈdʲoʐnəsʲtʲ/',m:'可靠性',ex:'Надёжность оборудования.',cn:'设备可靠性',lang:'ru-RU'},
-{w:'эффективность',p:'/ɨfʲɪkˈtʲivnəsʲtʲ/',m:'效率',ex:'Высокая эффективность.',cn:'高效率',lang:'ru-RU'},
-{w:'сертификация',p:'/sʲɪrtʲɪfʲɪˈkatɕɨjə/',m:'认证',ex:'Нужна сертификация.',cn:'需要认证',lang:'ru-RU'},
-{w:'мощность',p:'/ˈmoʂnəsʲtʲ/',m:'功率',ex:'Мощность двигателя.',cn:'电机功率',lang:'ru-RU'},
-{w:'этаж',p:'/ɪˈtaʂ/',m:'楼层',ex:'Остановка на 5 этаже.',cn:'5层停靠',lang:'ru-RU'},
-{w:'проект',p:'/prɐˈjɛkt/',m:'项目/方案',ex:'Проект лифта готов.',cn:'电梯方案已就绪',lang:'ru-RU'},
-{w:'переговоры',p:'/pʲɪrʲɪɡɐˈvorɨ/',m:'谈判',ex:'Назначим переговоры.',cn:'安排谈判',lang:'ru-RU'},
-{w:'образец',p:'/ɐˈbratɕɪts/',m:'样品',ex:'Пришлите образец.',cn:'请寄样品',lang:'ru-RU'}
-];
+/* === Data: Words (loaded from words.json) === */
+let EN_WORDS=[],RU_WORDS=[];
+const REVIEW_INTERVALS=[1,2,4,7,15,30]; // Ebbinghaus intervals (days between reviews)
+
+function getWordStates(lang){return load('wordStates_'+lang,{})}
+function saveWordStates(lang,st){save('wordStates_'+lang,st)}
+function getWordState(lang,word){const s=getWordStates(lang);return s[word]||null}
+function isWordDue(lang,word,today){
+  const st=getWordState(lang,word);
+  if(!st||st.lv==='mastered'||st.lv==='new')return false;
+  return new Date(st.reviewDate)<=new Date(today);
+}
+function markWordLearned(lang,word){
+  const st=getWordStates(lang);
+  if(!st[word]){st[word]={lv:'learning',learnDate:todayStr(),reviewDate:addDays(todayStr(),REVIEW_INTERVALS[0]),step:0,err:0,ok:0};saveWordStates(lang,st)}
+}
+function markWordReviewed(lang,word,correct){
+  const st=getWordStates(lang);const w=st[word];if(!w)return;
+  if(correct){w.step++;w.ok++;if(w.step>=REVIEW_INTERVALS.length){w.lv='mastered';w.reviewDate=null}else{w.reviewDate=addDays(todayStr(),REVIEW_INTERVALS[w.step]);w.lv='review'}}
+  else{w.step=Math.max(0,w.step-1);w.err++;w.reviewDate=addDays(todayStr(),1);w.lv='learning'}
+  st[word]=w;saveWordStates(lang,st);
+}
+function addErrorWord(lang,word){
+  const eb=load('errorBook_'+lang,[]);
+  const idx=eb.findIndex(e=>e.w===word);
+  if(idx>=0){eb[idx].count++;eb[idx].lastDate=todayStr()}
+  else{eb.push({w:word,count:1,lastDate:todayStr()})}
+  save('errorBook_'+lang,eb);
+}
+function getMasteredCount(lang,level){
+  const st=getWordStates(lang);const bank=lang==='en'?EN_WORDS:RU_WORDS;
+  return bank.filter(w=>(!level||w.lv===level)&&st[w.w]&&st[w.w].lv==='mastered').length;
+}
+function getLevelProgress(lang,level){
+  const bank=lang==='en'?EN_WORDS:RU_WORDS;
+  const total=bank.filter(w=>w.lv===level).length;
+  if(!total)return 0;
+  return getMasteredCount(lang,level)/total;
+}
+function getUnlockedLevels(lang){
+  const result=['core'];
+  if(getLevelProgress(lang,'core')>=0.6)result.push('intermediate');
+  if(getLevelProgress(lang,'intermediate')>=0.5)result.push('advanced');
+  return result;
+}
+
 const SENTENCES={en:[
 {t:'How are you? I hope this email finds you well.',m:'您好，希望邮件一切顺利'},
 {t:'Thank you for your inquiry about our elevators.',m:'感谢您咨询我们的电梯'},
@@ -765,11 +752,19 @@ currentDate:todayStr(),currentPage:'home',langSub:'en',newsFilter:'all',aiFilter
 dietMeal:'breakfast',menuEditing:false,menuTab:'breakfast',financeSub:'detail',financeDetailSub:'bill',financeChartPeriod:'month',
 financeRecordType:'expense',financeRecordCat:'food',financeRecordAmount:'',financeRecordNote:'',
 outfitTab:'commute',travelTab:'all',langGameMode:null,langFlashIdx:0,langSpellIdx:0,langListenIdx:0,
-favTab:'all',calMonth:null,weatherData:null,userCity:'',
+favTab:'all',calMonth:null,weatherData:null,userCity:'',wordBank:null,wordBankLoaded:false,
 
 init(){
 this.migrate();this.bindKeys();this.renderDate();this.switchModule('home');this.showSplash();
+this.loadWordBank();
 if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{reg.update();reg.addEventListener('updatefound',()=>{const nw=reg.installing;if(nw){nw.addEventListener('statechange',()=>{if(nw.state==='activated'&&navigator.serviceWorker.controller)toast('青梧笑已更新，刷新后生效')})}})}).catch(()=>{})}
+},
+loadWordBank(){
+fetch('words.json').then(r=>r.json()).then(data=>{
+EN_WORDS=data.en||[];RU_WORDS=data.ru||[];this.wordBankLoaded=true;
+if(this.currentPage==='language')this.renderPage('language');
+if(this.currentPage==='home')this.updateHome();
+}).catch(()=>{console.warn('words.json load failed')});
 },
 
 migrate(){const d=this.dayData(this.currentDate);if(!d.todos)d.todos={work:[],personal:[]};if(!d.quadrant)d.quadrant={q1:[],q2:[],q3:[],q4:[]};if(!d.exerciseDone)d.exerciseDone={};this.saveDay(this.currentDate,d)},
@@ -1077,27 +1072,49 @@ return html;
 renderLanguage(){
 const words=this.getTodayWords();
 const known=words.filter((w,i)=>{const d=this.dayData(this.currentDate);return d.wordStatus?.[this.langSub+i]==='known'}).length;
+const reviewWords=this.getReviewQueue();
+const unlocked=getUnlockedLevels(this.langSub);
+const bank=this.langSub==='en'?EN_WORDS:RU_WORDS;
+const totalInBank=bank.length;
+const mastered=getMasteredCount(this.langSub);
+const errorBook=load('errorBook_'+this.langSub,[]);
+const lvNames={core:'核心',intermediate:'进阶',advanced:'拓展'};
+let lvHtml='';
+['core','intermediate','advanced'].forEach(lv=>{
+  const prog=getLevelProgress(this.langSub,lv);
+  const isUnlocked=unlocked.includes(lv);
+  const cnt=bank.filter(w=>w.lv===lv).length;
+  const mc=getMasteredCount(this.langSub,lv);
+  lvHtml+=`<div style="display:flex;align-items:center;gap:8px;padding:6px 0"><div style="font-size:12px;font-weight:600;min-width:40px">${isUnlocked?lvNames[lv]:'🔒'+lvNames[lv]}</div><div style="flex:1;height:6px;background:rgba(255,255,255,.2);border-radius:3px;overflow:hidden"><div style="height:100%;background:${isUnlocked?'#fff':'rgba(255,255,255,.3)'};border-radius:3px;width:${Math.round(prog*100)}%"></div></div><div style="font-size:10px;opacity:.8">${mc}/${cnt}</div></div>`;
+});
 return`<div class="card" style="background:linear-gradient(135deg,var(--primary) 0%,#FF8FB1 50%,var(--accent) 100%);color:#fff">
 <div style="font-size:15px;font-weight:700;margin-bottom:6px">🌐 每日语言学习</div>
-<div style="font-size:12px;opacity:.85;margin-bottom:10px">${this.langSub==='en'?'英语':'俄语'} · 今日${words.length}词 · 已学${known}/${words.length}</div>
-<div style="height:6px;background:rgba(255,255,255,.3);border-radius:3px;overflow:hidden"><div style="height:100%;background:#fff;border-radius:3px;width:${words.length?known/words.length*100:0}%"></div></div>
+<div style="font-size:12px;opacity:.85;margin-bottom:10px">${this.langSub==='en'?'英语':'俄语'} · 词库${totalInBank}词 · 已掌握${mastered} · 今日${words.length}词</div>
+<div style="height:6px;background:rgba(255,255,255,.3);border-radius:3px;overflow:hidden;margin-bottom:10px"><div style="height:100%;background:#fff;border-radius:3px;width:${words.length?known/words.length*100:0}%"></div></div>
+${lvHtml}
 <div class="chips" style="margin-top:12px"><span class="chip ${this.langSub==='en'?'active':''}" style="background:${this.langSub==='en'?'#fff':'rgba(255,255,255,.2)'};color:${this.langSub==='en'?'var(--primary-dark)':'#fff'}" onclick="App.setLang('en')">English</span><span class="chip ${this.langSub==='ru'?'active':''}" style="background:${this.langSub==='ru'?'#fff':'rgba(255,255,255,.2)'};color:${this.langSub==='ru'?'var(--primary-dark)':'#fff'}" onclick="App.setLang('ru')">Русский</span></div>
 </div>
+${reviewWords.length?`<div class="section-title">🔁 今日复习 <span class="count">${reviewWords.length}词</span></div>
+<div class="card" style="background:var(--primary-lighter);padding:12px">
+<div style="font-size:12px;color:var(--text-light);margin-bottom:8px">艾宾浩斯遗忘曲线提醒你复习这些单词</div>
+${reviewWords.map((w,i)=>`<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border)"><div style="flex:1"><div style="font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊</span></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.m)}</div></div><button class="btn btn-yellow btn-sm" onclick="App.reviewWord('${escapeHtml(w.w)}',true)">✅ 记得</button><button class="btn btn-outline btn-sm" onclick="App.reviewWord('${escapeHtml(w.w)}',false)">❓ 忘了</button></div>`).join('')}
+</div>`:''}
 <div class="section-title">今日单词 <span class="count">${known}/${words.length}</span></div>
 ${words.map((w,i)=>this.renderWordCard(w,i)).join('')}
 <div class="section-title">🎮 练习与复习</div>
 <div class="word-game-grid">
 <div class="word-game-card" onclick="App.startListenGame()"><div class="wg-icon">👂</div><div class="wg-name">听音识词</div><div class="wg-desc">听发音选单词</div></div>
-<div class="word-game-card" onclick="App.startFlashcard()"><div class="wg-icon">🎴</div><div class="wg-name">闪卡复习</div><div class="wg-desc">当月单词轮换</div></div>
+<div class="word-game-card" onclick="App.startFlashcard()"><div class="wg-icon">🎴</div><div class="wg-name">闪卡复习</div><div class="wg-desc">今日单词闪卡</div></div>
 <div class="word-game-card" onclick="App.startSpellGame()"><div class="wg-icon">✍️</div><div class="wg-name">拼写挑战</div><div class="wg-desc">听音拼单词</div></div>
 <div class="word-game-card" onclick="App.startSentenceGame()"><div class="wg-icon">💬</div><div class="wg-name">例句跟读</div><div class="wg-desc">听例句学表达</div></div>
 </div>
+<div class="section-title">❌ 自动错题集 <span class="count">${errorBook.length}</span></div>
+<div class="card" id="errorBookCard">
+${this.renderErrorBook()}
+</div>
 <div class="section-title">📖 语句素材库</div>
 <div class="card">
-${SENTENCES[this.langSub].map((s,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--border)">
-<div style="font-size:13px;font-weight:600;margin-bottom:4px">${escapeHtml(s.t)} <span style="cursor:pointer;font-size:14px" onclick="speak('${escapeHtml(s.t)}','${this.langSub==='en'?'en-US':'ru-RU'}')">🔊</span></div>
-<div style="font-size:12px;color:var(--text-light)">${escapeHtml(s.m)}</div>
-</div>`).join('')}
+${SENTENCES[this.langSub].map((s,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--border)"><div style="font-size:13px;font-weight:600;margin-bottom:4px">${escapeHtml(s.t)} <span style="cursor:pointer;font-size:14px" onclick="speak('${escapeHtml(s.t)}','${this.langSub==='en'?'en-US':'ru-RU'}')">🔊</span></div><div style="font-size:12px;color:var(--text-light)">${escapeHtml(s.m)}</div></div>`).join('')}
 </div>
 <div class="section-title">📝 生词本</div>
 <div class="card" id="wordBookCard">
@@ -1106,21 +1123,49 @@ ${this.renderWordBook()}
 },
 getTodayWords(){
 const arr=this.langSub==='en'?EN_WORDS:RU_WORDS;
-const week=monthWeek(this.currentDate);const dayInWeek=new Date(this.currentDate).getDay();
-const base=15+(week-1)*3;const start=base%arr.length;
-return arr.slice(start,start+17).concat(arr.slice(0,Math.max(0,start+17-arr.length))).slice(0,17);
+if(!arr.length)return[];
+const week=monthWeek(this.currentDate);
+const total=15+(week-1)*3;
+const reviewQ=this.getReviewQueue();
+const reviewCount=Math.min(Math.floor(total*0.3),reviewQ.length);
+const newCount=total-reviewCount;
+const unlocked=getUnlockedLevels(this.langSub);
+const pool=arr.filter(w=>unlocked.includes(w.lv));
+const newWords=pool.filter(w=>!getWordState(this.langSub,w.w));
+const daySeed=dayIdx(this.currentDate);
+const newSlice=[];
+for(let i=0;i<Math.min(newCount,newWords.length);i++){newSlice.push(newWords[(daySeed+i)%newWords.length])}
+const reviewSlice=reviewQ.slice(0,reviewCount);
+const result=[...newSlice,...reviewSlice].slice(0,total);
+result.forEach(w=>{if(!getWordState(this.langSub,w.w))markWordLearned(this.langSub,w.w)});
+return result;
+},
+getReviewQueue(){
+const arr=this.langSub==='en'?EN_WORDS:RU_WORDS;
+if(!arr.length)return[];
+const today=this.currentDate;
+return arr.filter(w=>isWordDue(this.langSub,w.w,today));
+},
+reviewWord(word,correct){
+markWordReviewed(this.langSub,word,correct);
+haptic(correct?20:40);
+if(!correct)addErrorWord(this.langSub,word);
+this.renderPage('language');
 },
 setLang(l){this.langSub=l;this.renderPage('language')},
 renderWordCard(w,i){
 const d=this.dayData(this.currentDate);const st=d.wordStatus?.[this.langSub+i]||'';
+const wst=getWordState(this.langSub,w.w);
+const lvBadge=wst?{learning:'📖学习中',review:'🔁复习中',mastered:'✅已掌握'}[wst.lv]||'':'🆕新词';
 return`<div class="word-card" onclick="App.toggleWordDetail(${i})">
-<div class="w-word">${w.w} ${st==='known'?'✅':''}<span style="font-size:14px;margin-left:auto;cursor:pointer" onclick="event.stopPropagation();App.speakWord(${i})">🔊</span></div>
-<div class="w-phonetic">${w.p||''}</div>
-<div class="w-meaning">${w.m}</div>
+<div class="w-word">${escapeHtml(w.w)} ${st==='known'?'✅':''}<span style="font-size:10px;color:var(--text-lighter);margin-left:6px">${w.cat||''}</span><span style="font-size:14px;margin-left:auto;cursor:pointer" onclick="event.stopPropagation();App.speakWord(${i})">🔊</span></div>
+<div class="w-phonetic">${escapeHtml(w.p||'')}</div>
+<div class="w-meaning">${escapeHtml(w.m)}</div>
+<div style="font-size:10px;color:var(--text-lighter);margin-top:2px">${lvBadge}</div>
 <div class="word-example" id="wex_${i}">
-<div class="ex-line">${w.ex||w.s||''}</div>
-<div class="ex-cn">${w.cn||w.m||''}</div>
-<button class="btn btn-yellow btn-sm" style="margin-top:6px" onclick="event.stopPropagation();speak('${escapeHtml(w.ex||w.s||w.w)}','${w.lang||'en-US'}')">🔊 听例句</button>
+<div class="ex-line">${escapeHtml(w.ex||w.s||'')}</div>
+<div class="ex-cn">${escapeHtml(w.ec||w.cn||w.m||'')}</div>
+<button class="btn btn-yellow btn-sm" style="margin-top:6px" onclick="event.stopPropagation();speak('${escapeHtml(w.ex||w.s||w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊 听例句</button>
 </div>
 <div style="display:flex;gap:6px;margin-top:8px" onclick="event.stopPropagation()">
 <button class="btn ${st==='known'?'btn-primary':'btn-outline'} btn-sm" onclick="App.markWord(${i},'known')">认识</button>
@@ -1129,21 +1174,28 @@ return`<div class="word-card" onclick="App.toggleWordDetail(${i})">
 </div>`;
 },
 toggleWordDetail(i){const el=$('wex_'+i);if(el)el.classList.toggle('show')},
-speakWord(i){const words=this.getTodayWords();const w=words[i];if(w)speak(w.w,w.lang||'en-US');haptic(8)},
-getWordProgress(){const d=this.dayData(this.currentDate);const st=d.wordStatus||{};const vals=Object.values(st).filter((_,i)=>i<17);if(!vals.length)return 0;return vals.filter(s=>s==='known').length/vals.length},
+speakWord(i){const words=this.getTodayWords();const w=words[i];if(w)speak(w.w,w.lang==='ru'?'ru-RU':'en-US');haptic(8)},
+getWordProgress(){const words=this.getTodayWords();if(!words.length)return 0;const d=this.dayData(this.currentDate);let known=0;words.forEach((w,i)=>{if(d.wordStatus?.[this.langSub+i]==='known')known++});return known/words.length},
 renderWordBook(){
-const all=this.langSub==='en'?EN_WORDS:RU_WORDS;
-const unknown=[];
-for(let i=0;i<all.length;i++){
-const ws=load('wordBook_'+this.langSub,[]);
-if(ws.includes(i))unknown.push(all[i]);
-}
-if(!unknown.length)return'<div class="empty"><div class="empty-icon">📚</div><div class="empty-text">还没有标记不认识的单词<br>点击单词卡片"不认识"即可加入</div></div>';
-return`<div style="font-size:12px;color:var(--text-light);margin-bottom:8px">共${unknown.length}个生词</div>${unknown.map(w=>`<div style="padding:8px 0;border-bottom:1px solid var(--border)"><div style="font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang||'en-US'}')">🔊</span></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.p||'')} · ${escapeHtml(w.m||'')}</div></div>`).join('')}<button class="btn btn-yellow btn-sm" style="margin-top:8px" onclick="App.clearWordBook()">清空生词本</button>`;
+const wb=load('wordBook_'+this.langSub,[]);
+const bank=this.langSub==='en'?EN_WORDS:RU_WORDS;
+if(!wb.length)return'<div class="empty"><div class="empty-icon">📚</div><div class="empty-text">还没有标记不认识的单词<br>点击单词卡片"不认识"即可加入</div></div>';
+const words=wb.map(idx=>bank[idx]).filter(Boolean);
+return`<div style="font-size:12px;color:var(--text-light);margin-bottom:8px">共${words.length}个生词</div>${words.map(w=>`<div style="padding:8px 0;border-bottom:1px solid var(--border)"><div style="font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊</span></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.p||'')} · ${escapeHtml(w.m||'')}</div></div>`).join('')}<button class="btn btn-yellow btn-sm" style="margin-top:8px" onclick="App.clearWordBook()">清空生词本</button>`;
 },
+renderErrorBook(){
+const eb=load('errorBook_'+this.langSub,[]);
+if(!eb.length)return'<div class="empty"><div class="empty-icon">📝</div><div class="empty-text">还没有错题<br>练习中答错的单词会自动收录</div></div>';
+const bank=this.langSub==='en'?EN_WORDS:RU_WORDS;
+const sorted=[...eb].sort((a,b)=>b.count-a.count);
+return`<div style="font-size:12px;color:var(--text-light);margin-bottom:8px">共${eb.length}个易错词 · 按错误次数排序</div>${sorted.map(e=>{const w=bank.find(x=>x.w===e.w)||{w:e.w,m:'',p:''};return`<div style="padding:8px 0;border-bottom:1px solid var(--border)"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊</span></div><div style="font-size:10px;background:var(--danger);color:#fff;padding:2px 6px;border-radius:8px">错${e.count}次</div></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.p||'')} · ${escapeHtml(w.m||'')}</div></div>`}).join('')}<button class="btn btn-yellow btn-sm" style="margin-top:8px" onclick="App.clearErrorBook()">清空错题集</button>`;
+},
+clearErrorBook(){save('errorBook_'+this.langSub,[]);this.renderPage('language');toast('错题集已清空')},
 markWord(i,st){
 const d=this.dayData(this.currentDate);d.wordStatus=d.wordStatus||{};d.wordStatus[this.langSub+i]=st;this.saveDay(this.currentDate,d);
-if(st==='unknown'){const wb=load('wordBook_'+this.langSub,[]);const realIdx=(this.langSub==='en'?EN_WORDS:RU_WORDS).indexOf(this.getTodayWords()[i]);if(realIdx>=0&&!wb.includes(realIdx)){wb.push(realIdx);save('wordBook_'+this.langSub,wb)}}
+const words=this.getTodayWords();const w=words[i];
+if(st==='known'&&w){markWordLearned(this.langSub,w.w)}
+if(st==='unknown'&&w){const wb=load('wordBook_'+this.langSub,[]);const bank=this.langSub==='en'?EN_WORDS:RU_WORDS;const realIdx=bank.indexOf(w);if(realIdx>=0&&!wb.includes(realIdx)){wb.push(realIdx);save('wordBook_'+this.langSub,wb)}addErrorWord(this.langSub,w.w)}
 this.renderPage('language');this.updateHome();haptic(12);
 },
 clearWordBook(){save('wordBook_'+this.langSub,[]);this.renderPage('language');toast('生词本已清空')},
@@ -1160,23 +1212,24 @@ const w=q[this._listenIdx];const opts=shuffle(this.getTodayWords()).slice(0,4);i
 const shOpts=shuffle(opts);
 this.openModal(`听音识词 ${this._listenIdx+1}/${q.length}`,`
 <div style="text-align:center;padding:16px 0">
-<button class="btn btn-yellow" style="font-size:20px;padding:14px 28px" onclick="speak('${escapeHtml(w.w)}','${w.lang||'en-US'}')">🔊 点击播放</button>
+<button class="btn btn-yellow" style="font-size:20px;padding:14px 28px" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊 点击播放</button>
 <div style="font-size:12px;color:var(--text-light);margin-top:8px">听发音，选择正确的单词</div>
 </div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-${shOpts.map(o=>`<button class="btn btn-outline" onclick="App.answerListen('${escapeHtml(o.w)}','${escapeHtml(w.w)}')">${o.w}</button>`).join('')}
+${shOpts.map(o=>`<button class="btn btn-outline" onclick="App.answerListen('${escapeHtml(o.w)}','${escapeHtml(w.w)}')">${escapeHtml(o.w)}</button>`).join('')}
 </div>`);
-setTimeout(()=>speak(w.w,w.lang||'en-US'),300);
+setTimeout(()=>speak(w.w,w.lang==='ru'?'ru-RU':'en-US'),300);
 },
 answerListen(ans,correct){
 haptic(ans===correct?20:40);
-if(ans===correct){toast('✅ 正确！')}else{toast(`❌ 正确答案：${correct}`)}
+if(ans===correct){toast('✅ 正确！');markWordReviewed(this.langSub,correct,true)}
+else{toast(`❌ 正确答案：${correct}`);addErrorWord(this.langSub,correct);markWordReviewed(this.langSub,correct,false)}
 this._listenIdx++;setTimeout(()=>this.renderListenQ(),800);
 },
 
 /* Flashcard */
 startFlashcard(){
-const allWords=this.getMonthWords();
+const allWords=this.getTodayWords();
 this._flashCards=shuffle(allWords).slice(0,15);
 this._flashIdx=0;this._flashFlipped=false;
 this.renderFlashcard();
@@ -1190,21 +1243,21 @@ const w=cards[this._flashIdx];
 this.openModal(`闪卡复习 ${this._flashIdx+1}/${cards.length}`,`
 <div onclick="App.flipFlash()" style="cursor:pointer;text-align:center;padding:30px 16px;background:var(--primary-lighter);border-radius:16px;margin-bottom:12px">
 <div id="flashContent" style="min-height:80px;display:flex;flex-direction:column;align-items:center;justify-content:center">
-<div style="font-size:24px;font-weight:700;color:var(--text)">${w.w}</div>
-<div style="font-size:13px;color:var(--accent-dark);margin-top:6px">${w.p||''}</div>
+<div style="font-size:24px;font-weight:700;color:var(--text)">${escapeHtml(w.w)}</div>
+<div style="font-size:13px;color:var(--accent-dark);margin-top:6px">${escapeHtml(w.p||'')}</div>
 </div>
 <div style="font-size:11px;color:var(--text-lighter);margin-top:12px">点击翻面查看释义</div>
 </div>
 <div style="display:flex;gap:8px">
 <button class="btn btn-outline" onclick="App.flashPrev()">上一个</button>
-<button class="btn btn-yellow" onclick="speak('${escapeHtml(w.w)}','${w.lang||'en-US'}')">🔊 听发音</button>
+<button class="btn btn-yellow" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊 听发音</button>
 <button class="btn btn-primary" onclick="App.flashNext()">下一个</button>
 </div>`);
 },
 flipFlash(){
 const el=$('flashContent');if(!el)return;const cards=this._flashCards;const w=cards[this._flashIdx];
-if(this._flashFlipped){el.innerHTML=`<div style="font-size:24px;font-weight:700">${w.w}</div><div style="font-size:13px;color:var(--accent-dark);margin-top:6px">${w.p||''}</div>`;this._flashFlipped=false}
-else{el.innerHTML=`<div style="font-size:18px;font-weight:600;color:var(--primary-dark)">${w.m}</div><div style="font-size:12px;color:var(--text-light);margin-top:6px">${w.ex||w.s||''}</div><div style="font-size:11px;color:var(--text-lighter);margin-top:4px">${w.cn||''}</div>`;this._flashFlipped=true}
+if(this._flashFlipped){el.innerHTML=`<div style="font-size:24px;font-weight:700">${escapeHtml(w.w)}</div><div style="font-size:13px;color:var(--accent-dark);margin-top:6px">${escapeHtml(w.p||'')}</div>`;this._flashFlipped=false}
+else{el.innerHTML=`<div style="font-size:18px;font-weight:600;color:var(--primary-dark)">${escapeHtml(w.m)}</div><div style="font-size:12px;color:var(--text-light);margin-top:6px">${escapeHtml(w.ex||w.s||'')}</div><div style="font-size:11px;color:var(--text-lighter);margin-top:4px">${escapeHtml(w.ec||w.cn||'')}</div>`;this._flashFlipped=true}
 haptic(8);
 },
 flashNext(){this._flashIdx++;this._flashFlipped=false;this.renderFlashcard()},
@@ -1221,22 +1274,22 @@ const q=this._spellQ;if(!q||this._spellIdx>=q.length){this.openModal('拼写挑�
 const w=q[this._spellIdx];
 this.openModal(`拼写挑战 ${this._spellIdx+1}/${q.length}`,`
 <div style="text-align:center;padding:16px 0">
-<button class="btn btn-yellow" style="font-size:20px;padding:14px 28px" onclick="speak('${escapeHtml(w.w)}','${w.lang||'en-US'}')">🔊 听发音</button>
+<button class="btn btn-yellow" style="font-size:20px;padding:14px 28px" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊 听发音</button>
 <div style="font-size:12px;color:var(--text-light);margin-top:8px">听到什么就拼什么</div>
-<div style="font-size:13px;color:var(--accent-dark);margin-top:4px">释义：${w.m}</div>
+<div style="font-size:13px;color:var(--accent-dark);margin-top:4px">释义：${escapeHtml(w.m)}</div>
 </div>
 <div class="input-group"><input class="input" id="spellInput" placeholder="输入单词..." autocomplete="off" autocapitalize="off"></div>
 <button class="btn btn-primary btn-block" onclick="App.checkSpell()">提交答案</button>
 <div id="spellResult" style="margin-top:8px"></div>`);
-setTimeout(()=>speak(w.w,w.lang||'en-US'),300);
+setTimeout(()=>speak(w.w,w.lang==='ru'?'ru-RU':'en-US'),300);
 setTimeout(()=>{const inp=$('spellInput');if(inp)inp.focus()},500);
 },
 checkSpell(){
 const q=this._spellQ;const w=q[this._spellIdx];const ans=$('spellInput').value.trim();
 const correct=w.w.toLowerCase();const user=ans.toLowerCase();
 const el=$('spellResult');
-if(user===correct){el.innerHTML=`<div style="color:var(--success);font-size:13px;font-weight:600">✅ 正确！</div>`;haptic(20);toast('✅ 正确！')}
-else{el.innerHTML=`<div style="color:var(--danger);font-size:13px;font-weight:600">❌ 正确答案：<span style="color:var(--text)">${w.w}</span></div>`;haptic(40);toast(`❌ 答案：${w.w}`)}
+if(user===correct){el.innerHTML=`<div style="color:var(--success);font-size:13px;font-weight:600">✅ 正确！</div>`;haptic(20);toast('✅ 正确！');markWordReviewed(this.langSub,w.w,true)}
+else{el.innerHTML=`<div style="color:var(--danger);font-size:13px;font-weight:600">❌ 正确答案：<span style="color:var(--text)">${escapeHtml(w.w)}</span></div>`;haptic(40);toast(`❌ 答案：${w.w}`);addErrorWord(this.langSub,w.w);markWordReviewed(this.langSub,w.w,false)}
 this._spellIdx++;setTimeout(()=>this.renderSpellQ(),1500);
 },
 
@@ -1249,8 +1302,8 @@ this.openModal('例句跟读',`
 <button class="btn btn-yellow" style="font-size:20px;padding:14px 28px" onclick="speak('${escapeHtml(s.t)}','${this.langSub==='ru'?'ru-RU':'en-US'}')">🔊 听原声</button>
 </div>
 <div style="background:var(--primary-light);border-radius:12px;padding:14px;margin:12px 0">
-<div style="font-size:16px;font-weight:600;color:var(--primary-dark)">${s.t}</div>
-<div style="font-size:13px;color:var(--text-light);margin-top:6px">${s.m}</div>
+<div style="font-size:16px;font-weight:600;color:var(--primary-dark)">${escapeHtml(s.t)}</div>
+<div style="font-size:13px;color:var(--text-light);margin-top:6px">${escapeHtml(s.m)}</div>
 </div>
 <button class="btn btn-primary btn-block" onclick="App.closeModal()">跟读完成 ✓</button>`);
 setTimeout(()=>speak(s.t,this.langSub==='ru'?'ru-RU':'en-US'),300);

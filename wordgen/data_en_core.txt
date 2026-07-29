@@ -1,0 +1,322 @@
+inquiry|询盘|ɪnˈkwaɪəri|We received an inquiry from a Russian buyer.|我们收到了俄罗斯买家的询盘。|询盘回复|core
+quotation|报价|kwoʊˈteɪʃn|Please send us your quotation by Friday.|请在周五前发送报价。|询盘回复|core
+specification|规格|ˌspesɪfɪˈkeɪʃn|The specification meets international standards.|规格符合国际标准。|询盘回复|core
+catalog|产品目录|ˈkætəlɔːɡ|Here is our latest product catalog.|这是我们最新的产品目录。|询盘回复|core
+brochure|宣传册|broʊˈʃʊr|Could you send me your company brochure?|能发一份公司宣传册吗？|询盘回复|core
+sample|样品|ˈsæmpl|We'd like to request a sample for testing.|我们想索取一个样品测试。|询盘回复|core
+MOQ|起订量|ˌem oʊ ˈkjuː|What is your MOQ for this product?|这款产品的起订量是多少？|询盘回复|core
+lead time|交货周期|liːd|The lead time is 15-20 days.|交货周期是15-20天。|询盘回复|core
+delivery time|交货时间|dɪˈlɪvəri|Delivery time depends on the order quantity.|交货时间取决于订单数量。|询盘回复|core
+freight|运费|freɪt|Freight is not included in the unit price.|运费不包含在单价中。|询盘回复|core
+packaging|包装|ˈpækɪdʒɪŋ|Custom packaging is available upon request.|可按要求提供定制包装。|询盘回复|core
+label|标签|ˈleɪbl|Each product comes with a label.|每件产品都配有标签。|询盘回复|core
+brand|品牌|brænd|We are a well-known brand in China.|我们是中国知名品牌。|询盘回复|core
+OEM|代工|ˌoʊ iː ˈem|We provide OEM services for overseas clients.|我们为海外客户提供代工服务。|询盘回复|core
+ODM|贴牌设计|ˌoʊ diː ˈem|Our ODM team can design products to your needs.|我们的ODM团队可按需设计产品。|询盘回复|core
+customization|定制|ˌkʌstəməˈzeɪʃn|We offer full customization for bulk orders.|大宗订单支持全面定制。|询盘回复|core
+certificate|证书|sərˈtɪfɪkət|All products come with a quality certificate.|所有产品均附质量证书。|询盘回复|core
+compliance|合规|kəmˈplaɪəns|Our factory is in full compliance with EU regulations.|我们工厂完全符合欧盟法规。|询盘回复|core
+standard|标准|ˈstændərd|This model meets CE standards.|该型号符合CE标准。|询盘回复|core
+quality|质量|ˈkwɑːləti|Quality is our top priority.|质量是我们的首要考虑。|询盘回复|core
+grade|等级|ɡreɪd|We offer different grades for different budgets.|我们提供不同等级以适应不同预算。|询盘回复|core
+material|材质|məˈtɪriəl|What material is used for the housing?|外壳用的是什么材质？|询盘回复|core
+dimension|尺寸|daɪˈmenʃn|Please confirm the dimension before ordering.|下单前请确认尺寸。|询盘回复|core
+capacity|容量|kəˈpæsəti|The capacity ranges from 500ml to 2L.|容量从500毫升到2升不等。|询盘回复|core
+model|型号|ˈmɑːdl|Which model are you interested in?|您对哪个型号感兴趣？|询盘回复|core
+trial order|试订单|ˈtraɪəl|We'd like to place a trial order first.|我们想先下一个试订单。|询盘回复|core
+proforma invoice|形式发票|proʊˈfɔːrmə|Please find the proforma invoice attached.|附件为形式发票。|询盘回复|core
+commercial invoice|商业发票|kəˈmɜːrʃl|The commercial invoice will be sent with the goods.|商业发票将随货发送。|询盘回复|core
+packing list|装箱单|ˈpækɪŋ|The packing list shows the contents of each carton.|装箱单列出了每箱的内容。|询盘回复|core
+origin|产地|ˈɔːrɪdʒɪn|The country of origin is China.|原产国为中国。|询盘回复|core
+HS code|海关编码|ˌeɪtʃ ˈes|Please provide the HS code for customs declaration.|请提供海关编码以便报关。|询盘回复|core
+incoterm|贸易术语|ˈɪŋkoʊtɜːrm|Which incoterm do you prefer for this order?|此订单您希望用哪种贸易术语？|询盘回复|core
+FOB|离岸价|ˌef oʊ ˈbiː|Our price is FOB Shanghai.|我们的价格是FOB上海。|询盘回复|core
+CIF|到岸价|ˌsiː aɪ ˈef|We can offer CIF price including insurance.|我们可以提供含保险的CIF价。|询盘回复|core
+EXW|出厂价|ˌiː eks ˈdʌbəljuː|EXW price means the buyer handles all shipping.|出厂价意味着买方承担所有运输。|询盘回复|core
+unit price|单价|ˈjuːnɪt|The unit price depends on the order quantity.|单价取决于订单数量。|询盘回复|core
+bulk order|大宗订单|bʌlk|We offer discounts for bulk orders.|大宗订单可享折扣。|询盘回复|core
+quantity|数量|ˈkwɑːntəti|What quantity do you need for the first order?|首单您需要多少数量？|询盘回复|core
+assortment|品种搭配|əˈsɔːrtmənt|We offer a wide assortment of products.|我们提供丰富的产品种类。|询盘回复|core
+RFQ|询价单|ˌɑːr ef ˈkjuː|We sent an RFQ to three suppliers.|我们向三家供应商发送了询价单。|询盘回复|core
+bid|投标|bɪd|We submitted a bid for the government project.|我们为政府项目提交了投标。|询盘回复|core
+tender|招标|ˈtendər|The public tender opens on March 1st.|公开招标于3月1日开始。|询盘回复|core
+prototype|原型|ˈproʊtətaɪp|The prototype will be ready in two weeks.|原型将在两周内完成。|询盘回复|core
+pilot run|试产|ˈpaɪlət|The pilot run produced 100 units successfully.|试产成功生产了100件。|询盘回复|core
+mass production|量产|mæs|Mass production starts after sample approval.|样品确认后开始量产。|询盘回复|core
+yield rate|良率|jiːld|The yield rate improved to 98.5%.|良率提升至98.5%。|询盘回复|core
+defect rate|不良率|ˈdiːfekt|We maintain a defect rate below 0.3%.|我们将不良率控制在0.3%以下。|询盘回复|core
+tolerance|公差|ˈtɑːlərəns|The tolerance for this part is 0.05mm.|此零件公差为0.05毫米。|询盘回复|core
+BOM|物料清单|ˌbiː oʊ ˈem|The BOM includes 45 components.|物料清单包含45个零件。|询盘回复|core
+SKU|库存单位|ˌes keɪ ˈjuː|Each product variant has a unique SKU.|每个产品变体有唯一的库存单位。|询盘回复|core
+batch|批次|bætʃ|This batch was produced on March 15th.|此批次于3月15日生产。|询盘回复|core
+shelf life|保质期|ʃelf|The shelf life is 24 months from production date.|保质期为生产日期起24个月。|询盘回复|core
+storage condition|储存条件|ˈstɔːrɪdʒ|Store in a cool dry place away from sunlight.|储存于阴凉干燥处避光保存。|询盘回复|core
+negotiation|谈判|nɪˌɡoʊʃiˈeɪʃn|We are open to negotiation on price.|我们对价格谈判持开放态度。|报价谈判|core
+counteroffer|还价|ˈkaʊntərˌɔːfər|Your counteroffer is acceptable to us.|您的还价我们可以接受。|报价谈判|core
+discount|折扣|ˈdɪskaʊnt|We can offer a 5% discount for orders over 1000 units.|1000件以上订单可享5%折扣。|报价谈判|core
+markup|加价|ˈmɑːrkʌp|The markup covers packaging and handling.|加价涵盖包装和操作费用。|报价谈判|core
+margin|利润率|ˈmɑːrdʒɪn|Our profit margin is very thin on this item.|这款产品利润率很薄。|报价谈判|core
+profit|利润|ˈprɑːfɪt|We need to maintain a reasonable profit.|我们需要保持合理利润。|报价谈判|core
+cost|成本|kɑːst|Raw material costs have risen recently.|近期原材料成本上涨。|报价谈判|core
+expense|费用|ɪkˈspens|Shipping expenses are borne by the buyer.|运输费用由买方承担。|报价谈判|core
+budget|预算|ˈbʌdʒɪt|This price fits within our budget.|这个价格在我们的预算范围内。|报价谈判|core
+payment terms|付款条件|ˈpeɪmənt|Our standard payment terms are 30% deposit.|标准付款条件是30%定金。|报价谈判|core
+deposit|定金|dɪˈpɑːzɪt|A 30% deposit is required before production.|生产前需付30%定金。|报价谈判|core
+balance|尾款|ˈbæləns|The balance is due before shipment.|尾款需在发货前付清。|报价谈判|core
+installment|分期付款|ɪnˈstɔːrlmənt|We accept installment payments for large orders.|大订单可接受分期付款。|报价谈判|core
+currency|货币|ˈkɜːrənsi|All prices are quoted in US dollars.|所有价格以美元报价。|报价谈判|core
+exchange rate|汇率|ɪksˈtʃeɪndʒ|The exchange rate affects our pricing.|汇率影响我们的定价。|报价谈判|core
+quote|报价|kwoʊt|Let me quote you our best price.|让我给您报最优价格。|报价谈判|core
+offer|报价/要约|ˈɔːfər|This is our best offer for this season.|这是本季我们的最优报价。|报价谈判|core
+accept|接受|əkˈsept|We accept your offer of $5 per unit.|我们接受您每件5美元的报价。|报价谈判|core
+reject|拒绝|rɪˈdʒekt|Unfortunately we have to reject this offer.|很遗憾我们不得不拒绝此报价。|报价谈判|core
+concession|让步|kənˈseʃn|We can make a concession on the price.|我们可以在价格上做出让步。|报价谈判|core
+compromise|折中|ˈkɑːmprəmaɪz|Let's find a compromise that works for both.|让我们找一个双方都能接受的折中方案。|报价谈判|core
+terms|条款|tɜːrmz|Let's discuss the terms of cooperation.|让我们讨论合作条款。|报价谈判|core
+condition|条件|kənˈdɪʃn|Under what conditions can you lower the price?|在什么条件下您可以降价？|报价谈判|core
+agreement|协议|əˈɡriːmənt|We have reached an agreement on all terms.|我们已就所有条款达成协议。|报价谈判|core
+contract|合同|ˈkɑːntrækt|The contract will be signed next week.|合同将于下周签署。|报价谈判|core
+sign|签署|saɪn|Both parties need to sign the contract.|双方都需要签署合同。|报价谈判|core
+amend|修改|əˈmend|Can we amend clause 5 of the contract?|我们可以修改合同第5条吗？|报价谈判|core
+clause|条款|klɔːz|This clause protects both parties.|此条款保护双方权益。|报价谈判|core
+penalty|违约金|ˈpenəlti|A penalty applies for late delivery.|延迟交货将产生违约金。|报价谈判|core
+warranty|保修|ˈwɔːrənti|We provide a 12-month warranty on all products.|所有产品提供12个月保修。|报价谈判|core
+guarantee|保证|ˌɡærənˈtiː|We guarantee product quality and delivery time.|我们保证产品质量和交货时间。|报价谈判|core
+after-sales|售后|ˌæftərˈseɪlz|Our after-sales team is available 24/7.|我们的售后团队全天候在线。|报价谈判|core
+firm offer|实盘|fɜːrm|This is a firm offer valid for 15 days.|此实盘有效期为15天。|报价谈判|core
+negotiable|可协商的|nɪˈɡoʊʃiəbl|The price is negotiable for large quantities.|大数量价格可协商。|报价谈判|core
+competitive|有竞争力的|kəmˈpetɪtɪv|Our prices are highly competitive in the market.|我们的价格在市场上极具竞争力。|报价谈判|core
+price list|价目表|praɪs|Our latest price list is attached.|随附我们最新的价目表。|报价谈判|core
+volume discount|量价折扣|ˈvɑːljuːm|Volume discount applies to orders over 5000 pieces.|5000件以上订单享量价折扣。|报价谈判|core
+VAT|增值税|ˌviː eɪ ˈtiː|VAT is 13% in China for most goods.|中国大多数商品增值税为13%。|报价谈判|core
+tax rebate|退税|tæks|We benefit from the export tax rebate policy.|我们受益于出口退税政策。|报价谈判|core
+customs declaration|报关|ˈkʌstəmz|The customs declaration must be accurate.|报关必须准确。|报价谈判|core
+fluctuation|波动|ˌflʌktʃuˈeɪʃn|Price fluctuation affects our profit margin.|价格波动影响我们的利润率。|报价谈判|core
+shipment|发货|ˈʃɪpmənt|The shipment is scheduled for next Monday.|发货安排在下周一。|物流交货|core
+consignment|发货批次|kənˈsaɪnmənt|This consignment contains 500 cartons.|此批次包含500箱。|物流交货|core
+container|集装箱|kənˈteɪnər|We need a 20-foot container for this order.|此订单需要一个20尺集装箱。|物流交货|core
+LCL|拼箱|ˌel siː ˈel|For small orders we can arrange LCL shipping.|小订单可安排拼箱运输。|物流交货|core
+FCL|整箱|ˌef siː ˈel|FCL is more cost-effective for large volumes.|大批量用整箱更划算。|物流交货|core
+forwarder|货代|ˈfɔːrwərdər|Our forwarder will handle the shipping.|我们的货代将处理运输。|物流交货|core
+carrier|承运人|ˈkæriər|The carrier is responsible for transit damage.|承运人负责运输途中的损坏。|物流交货|core
+tracking|物流追踪|ˈtrækɪŋ|You can track your shipment online.|您可以在线追踪物流。|物流交货|core
+customs|海关|ˈkʌstəmz|The goods are held at customs for inspection.|货物在海关被扣留检查。|物流交货|core
+clearance|清关|ˈklɪrəns|Customs clearance takes 2-3 business days.|清关需要2-3个工作日。|物流交货|core
+duty|关税|ˈduːti|Import duty is 5% of the declared value.|进口关税为申报价值的5%。|物流交货|core
+tariff|关税税率|ˈtærɪf|The tariff rate varies by product category.|关税税率因产品类别而异。|物流交货|core
+port|港口|pɔːrt|The nearest port is Shanghai.|最近的港口是上海。|物流交货|core
+vessel|船只|ˈvesl|The vessel departs on the 15th of each month.|船只每月15日出发。|物流交货|core
+shipping mark|唛头|ˈʃɪpɪŋ|Please put the shipping mark on each carton.|请在每箱上标注唛头。|物流交货|core
+pallet|托盘|ˈpælət|Goods are packed on pallets for easy loading.|货物装在托盘上便于装卸。|物流交货|core
+carton|纸箱|ˈkɑːrtn|Each carton contains 24 units.|每箱装24件。|物流交货|core
+loading|装货|ˈloʊdɪŋ|Loading is completed and ready for departure.|装货完成准备出发。|物流交货|core
+transit|运输中|ˈtrænzɪt|Your goods are in transit to the warehouse.|您的货物正在运往仓库途中。|物流交货|core
+arrival|到港|əˈraɪvl|The estimated arrival date is March 20th.|预计到港日期为3月20日。|物流交货|core
+delivery|交付|dɪˈlɪvəri|Delivery will be made to your warehouse.|将交付至您的仓库。|物流交货|core
+dispatch|派发|dɪˈspætʃ|We will dispatch the goods within 3 days.|我们将在3天内发货。|物流交货|core
+ETD|预计发货日|ˌiː tiː ˈdiː|The ETD is March 15th.|预计发货日为3月15日。|物流交货|core
+ETA|预计到港日|ˌiː tiː ˈeɪ|The ETA is April 2nd.|预计到港日为4月2日。|物流交货|core
+demurrage|滞期费|dɪˈmɜːrɪdʒ|Demurrage charges apply if the container is not returned on time.|集装箱未按时归还将产生滞期费。|物流交货|core
+inspection|检验|ɪnˈspekʃn|Pre-shipment inspection is required.|发货前检验是必须的。|物流交货|core
+damage|损坏|ˈdæmɪdʒ|Please report any damage within 48 hours.|请在48小时内报告任何损坏。|物流交货|core
+shortage|短缺|ˈʃɔːrtɪdʒ|We found a shortage of 10 units in the shipment.|我们发现货物少了10件。|物流交货|core
+claim|索赔|kleɪm|We filed a claim for the damaged goods.|我们为损坏的货物提出了索赔。|物流交货|core
+compensation|赔偿|ˌkɑːmpenˈseɪʃn|We request compensation for the loss.|我们要求赔偿损失。|物流交货|core
+insurance|保险|ɪnˈʃʊrəns|Marine insurance covers transit risks.|海运保险覆盖运输风险。|物流交货|core
+bill of lading|提单|bɪl|The bill of lading is the title document.|提单是物权凭证。|物流交货|core
+booking|订舱|ˈbʊkɪŋ|Booking confirmation was received from the carrier.|已收到承运人的订舱确认。|物流交货|core
+gross weight|毛重|ɡroʊs|The gross weight is 12000 kg.|毛重为12000公斤。|物流交货|core
+net weight|净重|net|The net weight is 11500 kg.|净重为11500公斤。|物流交货|core
+CBM|立方米|ˌsiː biː ˈem|The total volume is 28 CBM.|总体积为28立方米。|物流交货|core
+reefer|冷藏柜|ˈriːfər|Reefer containers maintain temperature.|冷藏柜保持恒温。|物流交货|core
+door-to-door|门到门|dɔːr|We offer door-to-door delivery service.|我们提供门到门配送服务。|物流交货|core
+transshipment|转运|trænsˈʃɪpmənt|Transshipment is required at Singapore port.|需要在新加坡港转运。|物流交货|core
+direct sailing|直航|dəˈrekt|Direct sailing saves 5 days transit time.|直航节省5天运输时间。|物流交货|core
+letter of credit|信用证|ˈletər|Payment by letter of credit is the safest method.|信用证付款是最安全的方式。|支付方式|core
+L/C|信用证|ˌel ˈsiː|We require an irrevocable L/C at sight.|我们要求不可撤销即期信用证。|支付方式|core
+T/T|电汇|ˌtiː ˈtiː|Payment by T/T is fast and convenient.|电汇付款快捷方便。|支付方式|core
+wire transfer|电汇|ˈwaɪər|Please send the payment by wire transfer.|请通过电汇发送付款。|支付方式|core
+remittance|汇款|rɪˈmɪtns|We accept remittance through SWIFT.|我们接受通过SWIFT汇款。|支付方式|core
+sight|即期|saɪt|A sight L/C means payment on presentation of documents.|即期信用证意味着提交单据即付款。|支付方式|core
+usance|远期|ˈjuːzəns|A usance L/C allows deferred payment.|远期信用证允许延期付款。|支付方式|core
+draft|汇票|dræft|Please attach the draft to the shipping documents.|请将汇票附在运输单据上。|支付方式|core
+beneficiary|受益人|ˌbenɪˈfɪʃieri|Our company is the beneficiary of the L/C.|我公司是信用证的受益人。|支付方式|core
+issuing bank|开证行|ˈɪʃuːɪŋ|The issuing bank guarantees payment to the seller.|开证行保证向卖方付款。|支付方式|core
+advising bank|通知行|ədˈvaɪzɪŋ|The advising bank confirms the L/C terms.|通知行确认信用证条款。|支付方式|core
+discrepancy|不符点|dɪsˈkrepənsi|Please correct the discrepancy in the documents.|请更正单据中的不符点。|支付方式|core
+amendment|修改|əˈmendmənt|An L/C amendment is needed for the price change.|价格变更需要修改信用证。|支付方式|core
+settlement|结算|ˈsetlmənt|The settlement date is 15 days after shipment.|结算日期为发货后15天。|支付方式|core
+receipt|收据|rɪˈsiːt|Please keep the payment receipt for your records.|请保留付款收据以备查。|支付方式|core
+invoice|发票|ˈɪnvɔɪs|The invoice amount includes packaging costs.|发票金额包含包装费。|支付方式|core
+outstanding|未付清|aʊtˈstændɪŋ|There is an outstanding balance of $5,000.|还有5000美元未付清。|支付方式|core
+overdue|逾期|ˌoʊvərˈduː|The payment is 15 days overdue.|付款已逾期15天。|支付方式|core
+remit|汇出|rɪˈmɪt|Please remit the funds to our account.|请将款项汇至我们的账户。|支付方式|core
+account|账户|əˈkaʊnt|Please transfer to our company bank account.|请转账至我公司银行账户。|支付方式|core
+advance payment|预付款|ədˈvæns|Advance payment of 30% is required.|需预付30%的款项。|支付方式|core
+deferred payment|延期付款|dɪˈfɜːrd|We offer deferred payment for VIP clients.|VIP客户可享受延期付款。|支付方式|core
+D/P|付款交单|ˌdiː ˈpiː|Under D/P documents are released upon payment.|付款交单项下付款后放单。|支付方式|core
+D/A|承兑交单|ˌdiː ˈeɪ|Under D/A documents are released upon acceptance.|承兑交单项下承兑后放单。|支付方式|core
+open account|赊销|ˈoʊpən|Open account terms carry the highest seller risk.|赊销条款卖方风险最高。|支付方式|core
+PayPal|贝宝|ˈpeɪpæl|We accept PayPal for small orders.|小额订单可接受PayPal。|支付方式|core
+escrow|第三方托管|ˈeskrəʊ|Escrow payment protects both buyer and seller.|第三方托管付款保护买卖双方。|支付方式|core
+breach|违约|briːtʃ|Either party may terminate for breach of contract.|任何一方均可因对方违约而终止合同。|合同条款|core
+liability|责任|ˌlaɪəˈbɪləti|The seller's liability is limited to the product value.|卖方责任以产品价值为限。|合同条款|core
+indemnity|赔偿保证|ɪnˈdemnəti|The supplier shall provide indemnity for defects.|供应商应就缺陷提供赔偿保证。|合同条款|core
+arbitration|仲裁|ˌɑːrbɪˈtreɪʃn|Disputes shall be settled by arbitration in Beijing.|争议应通过在北京仲裁解决。|合同条款|core
+jurisdiction|管辖权|ˌdʒʊrɪsˈdɪkʃn|The contract is subject to Chinese jurisdiction.|合同受中国法律管辖。|合同条款|core
+governing law|适用法律|ˈɡʌvərnɪŋ|The governing law is PRC law.|适用法律为中华人民共和国法律。|合同条款|core
+force majeure|不可抗力|fɔːrs|Delivery delays caused by force majeure are excused.|不可抗力导致的延迟交货可免责。|合同条款|core
+termination|终止|ˌtɜːrmɪˈneɪʃn|Either party may request termination with 30 days notice.|任何一方可提前30天通知终止。|合同条款|core
+confidentiality|保密|ˌkɑːnfɪˌdenʃiˈæləti|Both parties agree to confidentiality of terms.|双方同意对条款保密。|合同条款|core
+intellectual property|知识产权|ˌɪntəˈlektʃuəl|All intellectual property rights are reserved.|所有知识产权均予保留。|合同条款|core
+exclusivity|独家权|ˌekskluˈsɪvəti|We grant exclusivity for the European market.|我们授予欧洲市场的独家权。|合同条款|core
+territory|区域|ˈterətɔːri|The territory covers all of Southeast Asia.|区域覆盖整个东南亚。|合同条款|core
+duration|期限|dʊˈreɪʃn|The contract duration is one year.|合同期限为一年。|合同条款|core
+renewal|续约|rɪˈnuːəl|Automatic renewal unless notice is given.|除非收到通知否则自动续约。|合同条款|core
+obligation|义务|ˌɑːblɪˈɡeɪʃn|Each party has obligations under the contract.|各方在合同下均有义务。|合同条款|core
+warranty clause|保修条款|ˈwɔːrənti|The warranty clause covers manufacturing defects.|保修条款覆盖制造缺陷。|合同条款|core
+dispute resolution|争议解决|dɪˈspjuːt|We prefer mediation before dispute resolution.|争议解决前我们更倾向于调解。|合同条款|core
+binding|有约束力的|ˈbaɪndɪŋ|The contract is binding upon both parties.|合同对双方具有约束力。|合同条款|core
+fulfill|履行|fʊlˈfɪl|We will fulfill all obligations under the agreement.|我们将履行协议下的所有义务。|合同条款|core
+default|违约|dɪˈfɔːlt|In case of default a penalty shall apply.|违约情况下应支付罚金。|合同条款|core
+remedy|补救|ˈremədi|The buyer may seek a remedy for defective goods.|买方可就缺陷货物寻求补救。|合同条款|core
+complaint|投诉|kəmˈpleɪnt|We received a complaint about product quality.|我们收到关于产品质量的投诉。|售后投诉|core
+defect|缺陷|ˈdiːfekt|The defect rate is below 0.5%.|缺陷率低于0.5%。|售后投诉|core
+faulty|有缺陷的|ˈfɔːlti|Please send back the faulty products for replacement.|请将有缺陷的产品退回更换。|售后投诉|core
+return|退货|rɪˈtɜːrn|Returns are accepted within 30 days of delivery.|收货后30天内可退货。|售后投诉|core
+refund|退款|ˈriːfʌnd|We will process a full refund for the returned goods.|我们将为退货办理全额退款。|售后投诉|core
+replacement|换货|rɪˈpleɪsmənt|Free replacement is provided for defective products.|次品免费换货。|售后投诉|core
+repair|维修|rɪˈper|We offer free repair during the warranty period.|保修期内免费维修。|售后投诉|core
+feedback|反馈|ˈfiːdbæk|We value customer feedback for improvement.|我们重视客户反馈以持续改进。|售后投诉|core
+satisfaction|满意度|ˌsætɪsˈfækʃn|Customer satisfaction is our ultimate goal.|客户满意是我们的最终目标。|售后投诉|core
+resolve|解决|rɪˈzɑːlv|We will resolve the issue within 48 hours.|我们将在48小时内解决问题。|售后投诉|core
+apologize|道歉|əˈpɑːlədʒaɪz|We sincerely apologize for the inconvenience.|对给您带来的不便我们深表歉意。|售后投诉|core
+inconvenience|不便|ˌɪnkənˈviːniəns|Sorry for the inconvenience caused.|为造成的不便深表歉意。|售后投诉|core
+investigate|调查|ɪnˈvestɪɡeɪt|We will investigate the cause of the problem.|我们将调查问题的原因。|售后投诉|core
+root cause|根本原因|ruːt|We need to find the root cause of the defect.|我们需要找到缺陷的根本原因。|售后投诉|core
+corrective action|纠正措施|kəˈrektɪv|Corrective action has been taken to prevent recurrence.|已采取纠正措施防止再发。|售后投诉|core
+compensation|赔偿|ˌkɑːmpenˈseɪʃn|We offer compensation for the quality issue.|我们为质量问题提供赔偿。|售后投诉|core
+escalate|升级|ˈeskəleɪt|The complaint was escalated to the manager.|投诉被升级到经理处。|售后投诉|core
+urgent|紧急|ˈɜːrdʒənt|This is an urgent matter that needs immediate attention.|这是需要立即处理的紧急事项。|售后投诉|core
+follow up|跟进|ˈfɑːloʊ|We will follow up on the complaint until resolved.|我们将跟进投诉直到解决。|售后投诉|core
+acknowledge|确认收到|əkˈnɑːlɪdʒ|We acknowledge receipt of your complaint.|确认收到您的投诉。|售后投诉|core
+agenda|议程|əˈdʒendə|The meeting agenda includes three items.|会议议程包含三项。|商务会议|core
+minutes|会议纪要|ˈmɪnɪts|The minutes will be circulated after the meeting.|会议纪要将在会后分发。|商务会议|core
+participant|参会者|pɑːrˈtɪsɪpənt|All participants should arrive 10 minutes early.|所有参会者应提前10分钟到达。|商务会议|core
+presentation|演示|ˌpriːzenˈteɪʃn|The sales presentation was very convincing.|销售演示非常有说服力。|商务会议|core
+proposal|方案|prəˈpoʊzl|We submitted our proposal to the committee.|我们向委员会提交了方案。|商务会议|core
+deadline|截止日期|ˈdedlaɪn|The deadline for submission is Friday.|提交截止日期为周五。|商务会议|core
+schedule|日程|ˈskedʒuːl|Let's schedule a meeting for next Tuesday.|让我们安排下周二开会。|商务会议|core
+postpone|推迟|poʊstˈpoʊn|We need to postpone the meeting to next week.|我们需要将会议推迟到下周。|商务会议|core
+cancel|取消|ˈkænsl|The meeting was canceled due to bad weather.|因天气恶劣会议被取消。|商务会议|core
+attend|参加|əˈtend|I will attend the trade fair in Canton.|我将参加广交会。|商务会议|core
+chairperson|主持人|ˈtʃerpɜːrsn|The chairperson opened the meeting at 10 AM.|主持人在上午10点宣布开会。|商务会议|core
+resolution|决议|ˌrezəˈluːʃn|The board passed a resolution to expand production.|董事会通过决议扩大生产。|商务会议|core
+vote|投票|voʊt|We need to vote on the new pricing strategy.|我们需要对新定价策略投票。|商务会议|core
+consensus|共识|kənˈsensəs|We reached a consensus on the marketing plan.|我们就营销计划达成共识。|商务会议|core
+brainstorm|头脑风暴|ˈbreɪnstɔːrm|Let's brainstorm ideas for the new campaign.|让我们为新活动头脑风暴。|商务会议|core
+strategy|战略|ˈstrætədʒi|Our market strategy focuses on Southeast Asia.|我们的市场战略聚焦东南亚。|商务会议|core
+objective|目标|əbˈdʒektɪv|The main objective is to increase market share.|主要目标是提高市场份额。|商务会议|core
+target|目标|ˈtɑːrɡɪt|We set a sales target of 10 million units.|我们设定销售目标为1000万件。|商务会议|core
+performance|绩效|pərˈfɔːrməns|Our quarterly performance exceeded expectations.|我们季度绩效超出预期。|商务会议|core
+KPI|关键指标|ˌkeɪ piː ˈaɪ|Our KPI for this quarter is customer retention.|本季度的关键指标是客户留存率。|商务会议|core
+revenue|营收|ˈrevənuː|Our annual revenue reached $50 million.|我们年营收达到5000万美元。|商务会议|core
+growth|增长|ɡroʊθ|We expect 20% growth in the European market.|我们预计欧洲市场增长20%。|商务会议|core
+forecast|预测|ˈfɔːrkæst|The sales forecast for Q3 is optimistic.|第三季度销售预测乐观。|商务会议|core
+analyze|分析|ˈænəlaɪz|We need to analyze the competition data.|我们需要分析竞争数据。|商务会议|core
+report|报告|rɪˈpɔːrt|The monthly report shows positive trends.|月报显示积极趋势。|商务会议|core
+trend|趋势|trend|The market trend favors eco-friendly products.|市场趋势有利于环保产品。|商务会议|core
+competitor|竞争对手|kəmˈpetɪtər|Our main competitor lowered their prices.|我们的主要竞争对手降价了。|商务会议|core
+market share|市场份额|ˈmɑːrkɪt|We hold 25% market share in Asia.|我们在亚洲拥有25%的市场份额。|商务会议|core
+attachment|附件|əˈtætʃmənt|Please find the report in the attachment.|报告请见附件。|日常邮件|core
+enclosed|随附|ɪnˈkloʊzd|Enclosed please find the product specification.|随附产品规格说明书。|日常邮件|core
+regarding|关于|rɪˈɡɑːrdɪŋ|I'm writing regarding your inquiry of March 1st.|我写信是关于您3月1日的询盘。|日常邮件|core
+subject|主题|ˈsʌbdʒekt|The email subject should be clear and concise.|邮件主题应清晰简洁。|日常邮件|core
+recipient|收件人|rɪˈsɪpiənt|Please add all recipients in the To field.|请在收件人栏添加所有收件人。|日常邮件|core
+forward|转发|ˈfɔːrwərd|Please forward this email to your manager.|请将此邮件转发给您的经理。|日常邮件|core
+reply|回复|rɪˈplaɪ|We look forward to your reply at your earliest convenience.|期待您尽快回复。|日常邮件|core
+confirm|确认|kənˈfɜːrm|Please confirm receipt of this email.|请确认收到此邮件。|日常邮件|core
+appreciate|感谢|əˈpriːʃieɪt|We appreciate your prompt response.|感谢您的及时回复。|日常邮件|core
+assistance|协助|əˈsɪstəns|Thank you for your assistance with this matter.|感谢您在此事上的协助。|日常邮件|core
+cooperation|合作|koʊˌɑːpəˈreɪʃn|We look forward to our continued cooperation.|期待我们继续合作。|日常邮件|core
+sincerely|诚挚地|sɪnˈsɪrli|Sincerely yours, ABC Trading Co.|诚挚地，ABC贸易公司。|日常邮件|core
+best regards|顺祝商祺|best|Best regards, Sales Team.|顺祝商祺，销售团队。|日常邮件|core
+as per|按照|æz|As per our agreement the goods will ship on March 15th.|按照我们的协议货物将于3月15日发货。|日常邮件|core
+FYI|供参考|ˌef waɪ ˈaɪ|FYI the meeting has been rescheduled to 3 PM.|供参考会议已改至下午3点。|日常邮件|core
+ASAP|尽快|ˌeɪ es eɪˈpiː|Please reply ASAP as this is urgent.|请尽快回复此事紧急。|日常邮件|core
+kindly|恳请|ˈkaɪndli|Kindly review the attached contract.|恳请审阅随附合同。|日常邮件|core
+notify|通知|ˈnoʊtɪfaɪ|Please notify us once the payment is made.|付款后请通知我们。|日常邮件|core
+remind|提醒|rɪˈmaɪnd|This is a kind reminder about the pending payment.|这是一条关于待付款的善意提醒。|日常邮件|core
+pending|待处理|ˈpendɪŋ|Your order is pending production.|您的订单待生产。|日常邮件|core
+process|处理|ˈprɑːses|We are processing your order now.|我们正在处理您的订单。|日常邮件|core
+arrange|安排|əˈreɪndʒ|We will arrange the shipment as requested.|我们将按要求安排发货。|日常邮件|core
+available|可用的|əˈveɪləbl|The product is available in three colors.|该产品有三种颜色可选。|日常邮件|core
+in stock|有库存|ɪn|We have 5000 units in stock.|我们有5000件库存。|日常邮件|core
+out of stock|缺货|aʊt|This item is temporarily out of stock.|此商品暂时缺货。|日常邮件|core
+replenish|补货|rɪˈplenɪʃ|We will replenish the stock next week.|我们将于下周补货。|日常邮件|core
+expedite|加急|ˈekspədaɪt|Can you expedite the shipping for an extra fee?|能加急发货吗额外费用多少？|日常邮件|core
+rush order|加急订单|rʌʃ|We accept rush orders with a 10% surcharge.|加急订单加收10%附加费。|日常邮件|core
+remark|备注|rɪˈmɑːrk|Please note your special requirements in the remark.|请在备注中注明您的特殊要求。|日常邮件|core
+note|注意|noʊt|Please note that prices are subject to change.|请注意价格如有变更恕不另行通知。|日常邮件|core
+important|重要的|ɪmˈpɔːrtnt|Important: Please verify your shipping address.|重要：请核实您的收货地址。|日常邮件|core
+notice|通知|ˈnoʊtɪs|Please take notice of the new shipping policy.|请注意新的运输政策。|日常邮件|core
+launch|发布|lɔːntʃ|The product launch is scheduled for April 1st.|产品发布定于4月1日。|日常邮件|core
+inform|告知|ɪnˈfɔːrm|We regret to inform you that the delivery is delayed.|我们遗憾地告知您交货延迟了。|日常邮件|core
+pleased|高兴|pliːzd|We are pleased to offer you a special discount.|我们很高兴为您提供特别折扣。|日常邮件|core
+regret|遗憾|rɪˈɡret|We regret any inconvenience this may cause.|对由此可能造成的不便我们深表遗憾。|日常邮件|core
+effective|生效|ɪˈfektɪv|The new price is effective from April 1st.|新价格自4月1日起生效。|日常邮件|core
+valid|有效|ˈvælɪd|This quotation is valid for 30 days.|此报价有效期为30天。|日常邮件|core
+expire|到期|ɪkˈspaɪər|The offer expires on March 31st.|报价于3月31日到期。|日常邮件|core
+extend|延长|ɪkˈstend|We can extend the validity to 45 days.|我们可以将有效期延长至45天。|日常邮件|core
+review|审阅|rɪˈvjuː|Please review the attached document carefully.|请仔细审阅随附文件。|日常邮件|core
+approve|批准|əˈpruːv|The proposal was approved by the board.|方案已获董事会批准。|日常邮件|core
+revise|修改|rɪˈvaɪz|Please revise the contract as discussed.|请按讨论修改合同。|日常邮件|core
+finalize|最终确定|ˈfaɪnəlaɪz|Let's finalize the details before signing.|让我们在签约前最终确定细节。|日常邮件|core
+proceed|继续|proʊˈsiːd|We will proceed with the order once payment is received.|收到付款后我们将继续处理订单。|日常邮件|core
+ensure|确保|ɪnˈʃʊr|We ensure all products meet quality standards.|我们确保所有产品符合质量标准。|日常邮件|core
+verify|核实|ˈverɪfaɪ|Please verify the bank details before transfer.|转账前请核实银行信息。|日常邮件|core
+clarify|澄清|ˈklerɪfaɪ|Let me clarify the payment terms for you.|让我为您澄清付款条件。|日常邮件|core
+specify|明确说明|ˈspesɪfaɪ|Please specify your packaging requirements.|请明确说明您的包装要求。|日常邮件|core
+suggest|建议|səˈdʒest|I suggest we meet next Wednesday to discuss.|我建议我们下周三见面讨论。|日常邮件|core
+recommend|推荐|ˌrekəˈmend|We recommend the premium model for better durability.|我们推荐高端型号更耐用。|日常邮件|core
+prefer|更倾向于|prɪˈfɜːr|We prefer payment by L/C for large orders.|大订单我们更倾向于信用证付款。|日常邮件|core
+consider|考虑|kənˈsɪdər|Please consider our counteroffer seriously.|请认真考虑我们的还价。|日常邮件|core
+discuss|讨论|dɪˈskʌs|We should discuss this matter in person.|我们应该当面讨论此事。|日常邮件|core
+address|处理/解决|əˈdres|We will address this issue immediately.|我们将立即处理此问题。|日常邮件|core
+handle|处理|ˈhændl|Our team will handle the logistics arrangement.|我们的团队将处理物流安排。|日常邮件|core
+coordinate|协调|koʊˈɔːrdɪneɪt|We will coordinate with the factory on the schedule.|我们将与工厂协调日程。|日常邮件|core
+communicate|沟通|kəˈmjuːnɪkeɪt|Please communicate any changes to us promptly.|如有任何变更请及时与我们沟通。|日常邮件|core
+contact|联系|ˈkɑːntækt|Please contact us if you have any questions.|如有任何问题请联系我们。|日常邮件|core
+respond|回复|rɪˈspɑːnd|We will respond to your email within 24 hours.|我们将在24小时内回复您的邮件。|日常邮件|core
+inquire|询问|ɪnˈkwaɪər|I'd like to inquire about your minimum order quantity.|我想询问你们的最低起订量。|日常邮件|core
+request|请求|rɪˈkwest|We request a formal quotation for 10000 units.|我们请求10000件的正式报价。|日常邮件|core
+require|需要|rɪˈkwaɪər|This product requires special storage conditions.|此产品需要特殊储存条件。|日常邮件|core
+demand|需求|dɪˈmænd|There is high demand for eco-friendly products.|对环保产品的需求很高。|日常邮件|core
+supply|供应|səˈplaɪ|We can supply up to 50000 units per month.|我们每月最多可供5万件。|日常邮件|core
+manufacture|生产|ˌmænjuˈfæktʃər|We manufacture all products in-house.|我们自主生产所有产品。|日常邮件|core
+export|出口|ɪkˈspɔːrt|We export to over 50 countries worldwide.|我们出口到全球50多个国家。|日常邮件|core
+import|进口|ˈɪmpɔːrt|They import raw materials from Australia.|他们从澳大利亚进口原材料。|日常邮件|core
+wholesale|批发|ˈhoʊlseɪl|We offer wholesale prices for distributors.|我们为经销商提供批发价。|日常邮件|core
+retail|零售|ˈriːteɪl|The retail price is 30% higher than wholesale.|零售价比批发价高30%。|日常邮件|core
+distributor|经销商|dɪˈstrɪbjuːtər|We are looking for a distributor in Russia.|我们正在寻找俄罗斯的经销商。|日常邮件|core
+agent|代理|ˈeɪdʒənt|Our agent in Moscow handles all Russian orders.|我们在莫斯科的代理处理所有俄罗斯订单。|日常邮件|core
+partner|合作伙伴|ˈpɑːrtnər|We have been partners for over 10 years.|我们合作已超过10年。|日常邮件|core
+supplier|供应商|səˈplaɪər|We are a reliable supplier of electronic components.|我们是可靠的电子元件供应商。|日常邮件|core
+buyer|买方|ˈbaɪər|The buyer requested a product demonstration.|买方要求产品演示。|日常邮件|core
+client|客户|ˈklaɪənt|We value every client relationship.|我们重视每一位客户关系。|日常邮件|core
+customer|顾客|ˈkʌstəmər|Customer satisfaction drives our business.|客户满意是我们的动力。|日常邮件|core
+procurement|采购|prəˈkʊrmənt|The procurement department handles all purchasing.|采购部门负责所有采购事务。|询盘回复|core
+requisition|请购单|ˌrekwɪˈzɪʃn|Submit a requisition for office supplies.|提交办公用品请购单。|询盘回复|core
+evaluation|评估|ɪˌvæljuˈeɪʃn|The supplier evaluation takes two weeks.|供应商评估需要两周。|询盘回复|core
+qualification|资质|ˌkwɑːlɪfɪˈkeɪʃn|Please provide your supplier qualification documents.|请提供供应商资质文件。|询盘回复|core
+audit|审核|ˈɔːdɪt|We conduct an annual factory audit.|我们每年进行工厂审核。|询盘回复|core
+serial number|序列号|ˈsɪriəl|Each unit has a unique serial number.|每件产品有唯一序列号。|询盘回复|core
+traceability|可追溯性|ˌtreɪsəˈbɪləti|Full traceability from raw material to finished product.|从原材料到成品全面可追溯。|询盘回复|core
+handling|操作|ˈhændlɪŋ|Proper handling prevents product damage.|正确操作可防止产品损坏。|询盘回复|core
+precaution|预防措施|prɪˈkɔːʃn|Take precautions when handling fragile items.|搬运易碎品时须采取预防措施。|询盘回复|core
+RFQ|询价单|ˌɑːr ef ˈkjuː|We sent an RFQ to three suppliers.|我们向三家供应商发送了询价单。|询盘回复|core
+RFP|方案请求|ˌɑːr ef ˈpiː|The RFP deadline is next Friday.|方案请求截止日期为下周五。|询盘回复|core
+specification sheet|规格表|ˌspesɪfɪˈkeɪʃn|The specification sheet lists all technical parameters.|规格表列出所有技术参数。|询盘回复|core
+datasheet|数据手册|ˈdeɪtəʃiːt|Please refer to the datasheet for electrical specs.|电气规格请参考数据手册。|询盘回复|core
+lot number|批号|lɑːt|Please provide the lot number for traceability.|请提供批号以便追溯。|询盘回复|core
+expiration|过期|ˌekspɪˈreɪʃn|Check the expiration date before use.|使用前请检查过期日期。|询盘回复|core

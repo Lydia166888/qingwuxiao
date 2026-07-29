@@ -1,0 +1,281 @@
+procurement|采购|prəˈkʊrmənt|The procurement department handles all purchasing.|采购部门负责所有采购事务。|询盘回复|intermediate
+requisition|请购单|ˌrekwɪˈzɪʃn|Submit a requisition for office supplies.|提交办公用品请购单。|询盘回复|intermediate
+RFP|方案请求|ˌɑːr ef ˈpiː|The RFP deadline is next Friday.|方案请求截止日期为下周五。|询盘回复|intermediate
+benchmark|基准|ˈbentʃmɑːrk|We benchmark our prices against competitors.|我们将价格与竞争对手作基准对比。|询盘回复|intermediate
+calibration|校准|ˌkælɪˈbreɪʃn|Regular calibration ensures measurement accuracy.|定期校准确保测量精度。|询盘回复|intermediate
+flowchart|流程图|ˈfloʊtʃɑːrt|The production flowchart has 12 steps.|生产流程图有12个步骤。|询盘回复|intermediate
+commodity|商品|kəˈmɑːdəti|Coffee is a traded commodity on the exchange.|咖啡是交易所交易的商品。|报价谈判|intermediate
+hedging|套期保值|ˈhedʒɪŋ|We use hedging to manage currency risk.|我们用套期保值管理汇率风险。|报价谈判|intermediate
+futures|期货|ˈfjuːtʃərz|Futures contracts lock in the commodity price.|期货合约锁定商品价格。|报价谈判|intermediate
+spot price|现货价|spɑːt|The spot price is higher than the futures price.|现货价高于期货价。|报价谈判|intermediate
+prevailing|现行|prɪˈveɪlɪŋ|The prevailing rate is $5 per unit.|现行价格为每件5美元。|报价谈判|intermediate
+non-binding|无约束力|nɑːn|This estimate is non-binding and subject to change.|此估算无约束力如有变更恕不另行通知。|报价谈判|intermediate
+provisional|暂定|prəˈvɪʒənl|This is a provisional quote pending final specs.|这是待最终规格确认的暂定报价。|报价谈判|intermediate
+estimate|估算|ˈestɪmət|The cost estimate is approximately $50000.|成本估算约5万美元。|报价谈判|intermediate
+price break|价格阶梯|praɪs|We offer price breaks at 1000 and 5000 units.|1000件和5000件有价格阶梯优惠。|报价谈判|intermediate
+tier pricing|阶梯定价|tɪr|Tier pricing rewards larger order volumes.|阶梯定价鼓励大批量订购。|报价谈判|intermediate
+seasonal pricing|季节定价|ˈsiːzənl|Seasonal pricing applies during peak demand.|旺季采用季节定价。|报价谈判|intermediate
+promotional price|促销价|prəˈmoʊʃənl|The promotional price ends on March 31st.|促销价于3月31日结束。|报价谈判|intermediate
+list price|标价|lɪst|The list price is before any discounts.|标价为折扣前价格。|报价谈判|intermediate
+net price|净价|net|The net price excludes taxes and shipping.|净价不含税和运费。|报价谈判|intermediate
+gross price|含税价|ɡroʊs|The gross price includes VAT.|含税价含增值税。|报价谈判|intermediate
+duty-free|免税|ˌduːti|Duty-free zones attract foreign investment.|免税区吸引外资。|报价谈判|intermediate
+declared value|申报价值|dɪˈklerd|The declared value should match the invoice.|申报价值应与发票一致。|报价谈判|intermediate
+bonded|保税|ˈbɑːndɪd|Goods are stored in a bonded warehouse.|货物存放在保税仓库。|报价谈判|intermediate
+anti-dumping|反倾销|ˌænti|Anti-dumping duties apply to certain imports.|某些进口商品适用反倾销税。|报价谈判|intermediate
+quota|配额|ˈkwoʊtə|Import quotas limit the annual volume.|进口配额限制年度数量。|报价谈判|intermediate
+sanction|制裁|ˈsæŋkʃn|Trade sanctions affect payment methods.|贸易制裁影响付款方式。|报价谈判|intermediate
+embargo|禁运|ɪmˈbɑːrɡoʊ|The embargo prohibits all exports to that country.|禁运禁止向该国出口所有商品。|报价谈判|intermediate
+clean B/L|清洁提单|kliːn|A clean B/L indicates no damage was noted.|清洁提单表示无损坏记录。|物流交货|intermediate
+on-board B/L|已装船提单|ɑːn|An on-board B/L confirms the goods are loaded.|已装船提单确认货物已装船。|物流交货|intermediate
+telex release|电放|ˈtelɪks|Telex release saves time on document delivery.|电放节省单据传递时间。|物流交货|intermediate
+endorse|背书|ɪnˈdɔːrs|The B/L must be endorsed by the shipper.|提单必须由发货人背书。|物流交货|intermediate
+consignee|收货人|ˌkɑːnsɪˈniː|The consignee name must match the L/C.|收货人名称必须与信用证一致。|物流交货|intermediate
+shipper|发货人|ˈʃɪpər|The shipper is responsible for export clearance.|发货人负责出口清关。|物流交货|intermediate
+notify party|通知方|ˈnoʊtɪfaɪ|The notify party receives arrival notice.|通知方接收到港通知。|物流交货|intermediate
+stuffing|装箱|ˈstʌfɪŋ|Container stuffing takes about 2 hours.|装箱大约需要2小时。|物流交货|intermediate
+sealing|封箱|ˈsiːlɪŋ|The sealing number is recorded on the B/L.|封箱号记录在提单上。|物流交货|intermediate
+tare|皮重|ter|The tare weight of the container is 2200 kg.|集装箱皮重为2200公斤。|物流交货|intermediate
+TEU|标准箱|ˌtiː iː ˈjuː|A 40-foot container equals 2 TEU.|40尺柜等于2个标准箱。|物流交货|intermediate
+FEU|40尺柜|ˌef iː ˈjuː|We booked one FEU for this shipment.|此批货我们订了一个40尺柜。|物流交货|intermediate
+flat rack|框架柜|flæt|Flat racks are used for oversized cargo.|框架柜用于超大货物。|物流交货|intermediate
+open top|开顶柜|oʊpən|Open top containers are for tall cargo.|开顶柜用于超高货物。|物流交货|intermediate
+dangerous goods|危险品|ˈdeɪndʒərəs|Dangerous goods require special handling.|危险品需要特殊处理。|物流交货|intermediate
+hazardous|危险品|ˈhæzərdəs|Hazardous materials need proper labeling.|危险材料需要正确标签。|物流交货|intermediate
+MSDS|安全数据表|ˌem es diː ˈes|An MSDS is required for chemical shipments.|化学品运输需要安全数据表。|物流交货|intermediate
+stowage|积载|ˈstoʊɪdʒ|Proper stowage prevents cargo damage.|正确积载防止货物损坏。|物流交货|intermediate
+lashing|绑扎|ˈlæʃɪŋ|Lashing secures the cargo during transit.|绑扎在运输途中固定货物。|物流交货|intermediate
+dunnage|衬垫|ˈdʌnɪdʒ|Dunnage protects cargo from moisture and impact.|衬垫保护货物免受潮湿和冲击。|物流交货|intermediate
+ventilation|通风|ˌventɪˈleɪʃn|Proper ventilation prevents condensation.|适当通风防止冷凝。|物流交货|intermediate
+cold chain|冷链|koʊld|The cold chain must be maintained throughout.|冷链必须全程保持。|物流交货|intermediate
+multimodal|多式联运|ˌmʌltiˈmoʊdl|Multimodal transport combines sea and rail.|多式联运结合海运和铁路。|物流交货|intermediate
+connecting vessel|接转船|kəˈnektɪŋ|The connecting vessel arrives on March 20th.|接转船于3月20日到达。|物流交货|intermediate
+deviation|绕航|ˌdiːviˈeɪʃn|Route deviation increases fuel costs.|航线绕航增加燃油成本。|物流交货|intermediate
+berth|泊位|bɜːrθ|The vessel will berth at Pier 5.|船只将停靠5号码头。|物流交货|intermediate
+pilotage|引航|ˈpaɪlətɪdʒ|Pilotage is compulsory for large vessels.|大型船只必须引航。|物流交货|intermediate
+stevedore|装卸工|ˈstiːvədɔːr|Stevedores load and unload cargo at the port.|装卸工在港口装卸货物。|物流交货|intermediate
+wharfage|码头费|ˈhwɔːrfɪdʒ|Wharfage is charged per ton of cargo.|码头费按吨计收。|物流交货|intermediate
+THC|码头操作费|ˌtiː eɪtʃ ˈsiː|THC at the origin port is paid by the shipper.|起运港码头操作费由发货人支付。|物流交货|intermediate
+CFS|集装箱货运站|ˌsiː ef ˈes|LCL cargo is consolidated at the CFS.|拼箱货在集装箱货运站拼装。|物流交货|intermediate
+CY|集装箱堆场|ˌsiː ˈwaɪ|FCL cargo is delivered to the CY.|整箱货交付至集装箱堆场。|物流交货|intermediate
+documentary credit|跟单信用证|ˌdɑːkjuˈmentri|A documentary credit requires compliant documents.|跟单信用证需要合规单据。|支付方式|intermediate
+confirmed L/C|保兑信用证|kənˈfɜːrmd|A confirmed L/C adds a second bank's guarantee.|保兑信用证增加第二家银行的保证。|支付方式|intermediate
+transferable L/C|可转让信用证|trænsˈfɜːrəbl|A transferable L/C can be assigned to a third party.|可转让信用证可转让给第三方。|支付方式|intermediate
+revolving L/C|循环信用证|rɪˈvɑːlvɪŋ|A revolving L/C restores credit after each use.|循环信用证在每次使用后恢复额度。|支付方式|intermediate
+back-to-back L/C|背对背信用证|bæk|Back-to-back L/C is used by intermediaries.|中间商使用背对背信用证。|支付方式|intermediate
+standby L/C|备用信用证|ˈstændbaɪ|A standby L/C serves as a payment guarantee.|备用信用证作为付款保证。|支付方式|intermediate
+bank guarantee|银行保函|bæŋk|A bank guarantee ensures performance.|银行保函确保履约。|支付方式|intermediate
+performance bond|履约保函|pərˈfɔːrməns|A performance bond guarantees contract completion.|履约保函保证合同完成。|支付方式|intermediate
+advance payment guarantee|预付款保函|ədˈvæns|An advance payment guarantee protects the buyer's deposit.|预付款保函保护买方的定金。|支付方式|intermediate
+forfaiting|福费廷|fɔːrˈfeɪtɪŋ|Forfaiting eliminates payment risk for the exporter.|福费廷消除出口商的收款风险。|支付方式|intermediate
+factoring|保理|ˈfæktərɪŋ|Factoring provides immediate cash for receivables.|保理为应收账款提供即期现金。|支付方式|intermediate
+collection|托收|kəˈlekʃn|Documentary collection is less secure than L/C.|跟单托收不如信用证安全。|支付方式|intermediate
+acceptance|承兑|əkˈseptəns|The buyer's acceptance of the draft is required.|需要买方对汇票的承兑。|支付方式|intermediate
+dishonor|拒付|dɪsˈɑːnər|The bank will notify us of any dishonor.|银行会通知我们任何拒付情况。|支付方式|intermediate
+recourse|追索权|ˈriːkɔːrs|We retain recourse against the drawer.|我们对出票人保留追索权。|支付方式|intermediate
+maturity|到期日|məˈtʃʊrəti|The maturity date of the draft is June 15th.|汇票到期日为6月15日。|支付方式|intermediate
+discounting|贴现|ˈdɪskaʊntɪŋ|Bank discounting provides funds before maturity.|银行贴现提供到期前资金。|支付方式|intermediate
+consignment sale|寄售|kənˈsaɪnmənt|Under consignment sale payment is made after sale.|寄售项下售后付款。|支付方式|intermediate
+credit limit|信用额度|ˈkredɪt|The buyer's credit limit is $100,000.|买方信用额度为10万美元。|支付方式|intermediate
+credit risk|信用风险|ˈkredɪt|We assess credit risk before extending terms.|我们给予信用期前评估信用风险。|支付方式|intermediate
+credit insurance|信用保险|ˈkredɪt|Trade credit insurance covers non-payment risk.|贸易信用保险覆盖不付款风险。|支付方式|intermediate
+Sinosure|中信保|ˈsaɪnoʊʃʊr|Sinosure covers up to 90% of the invoice value.|中信保覆盖高达发票价值90%。|支付方式|intermediate
+country risk|国别风险|ˈkʌntri|Country risk affects credit terms and insurance.|国别风险影响信用条款和保险。|支付方式|intermediate
+political risk|政治风险|pəˈlɪtɪkl|Political risk may disrupt payment flows.|政治风险可能中断付款流程。|支付方式|intermediate
+commercial risk|商业风险|kəmˈmɜːrʃl|Commercial risk includes buyer default and insolvency.|商业风险包括买方违约和破产。|支付方式|intermediate
+forward contract|远期合约|ˈfɔːrwərd|A forward contract locks in the exchange rate.|远期合约锁定汇率。|支付方式|intermediate
+SWIFT|环球银行金融电讯|swɪft|Payment instructions are sent via SWIFT.|付款指令通过SWIFT发送。|支付方式|intermediate
+IBAN|国际银行账号|ˈaɪbæn|Please provide your IBAN for the transfer.|请提供国际银行账号以便转账。|支付方式|intermediate
+correspondent bank|代理行|ˌkɔːrəˈspɑːndənt|The correspondent bank processes international payments.|代理行处理国际付款。|物流交货|intermediate
+certificate of origin|原产地证|sərˈtɪfɪkət|A certificate of origin is required for preferential tariffs.|优惠关税需要原产地证。|物流交货|intermediate
+GSP|普惠制|ˌdʒiː es ˈpiː|GSP certificates reduce import duties.|普惠制证书降低进口关税。|物流交货|intermediate
+FORM A|普惠制产地证|fɔːrm|FORM A provides tariff preference in developed markets.|普惠制产地证在发达市场提供关税优惠。|物流交货|intermediate
+FORM E|中国-东盟产地证|fɔːrm|FORM E is used for ASEAN trade.|中国-东盟产地证用于东盟贸易。|物流交货|intermediate
+inspection certificate|检验证书|ɪnˈspekʃn|An inspection certificate verifies product quality.|检验证书验证产品质量。|物流交货|intermediate
+health certificate|卫生证书|helθ|A health certificate is required for food exports.|食品出口需要卫生证书。|物流交货|intermediate
+phytosanitary|植物检疫|ˌfaɪtoʊˈsænɪteri|A phytosanitary certificate is needed for plant products.|植物产品需要植物检疫证书。|物流交货|intermediate
+fumigation|熏蒸|ˌfjuːmɪˈɡeɪʃn|Fumigation certification is needed for wood packaging.|木制包装需要熏蒸认证。|物流交货|intermediate
+declaration of conformity|符合性声明|ˌdekləˈreɪʃn|A declaration of conformity confirms CE compliance.|符合性声明确认符合CE标准。|物流交货|intermediate
+test report|检测报告|test|The test report shows all parameters are within spec.|检测报告显示所有参数在规格内。|物流交货|intermediate
+accreditation|认证|əˌkredɪˈteɪʃn|Our testing lab has international accreditation.|我们的测试实验室有国际认证。|物流交货|intermediate
+notified body|公告机构|ˈnoʊtɪfaɪd|A notified body assesses product conformity.|公告机构评估产品符合性。|物流交货|intermediate
+technical file|技术档案|ˈteknɪkl|The technical file contains all design documents.|技术档案包含所有设计文件。|物流交货|intermediate
+risk assessment|风险评估|rɪsk|A risk assessment is part of the CE process.|风险评估是CE流程的一部分。|物流交货|intermediate
+user manual|用户手册|ˈjuːzər|The user manual must be in the destination language.|用户手册必须使用目的地语言。|物流交货|intermediate
+compliance|合规性|kəmˈplaɪəns|Product compliance is verified before shipment.|发货前验证产品合规性。|物流交货|intermediate
+regulatory|监管|ˈreɡjələtɔːri|Regulatory requirements differ across markets.|各市场监管要求不同。|物流交货|intermediate
+directive|指令|dəˈrektɪv|The EU directive restricts hazardous substances.|欧盟指令限制有害物质。|物流交货|intermediate
+regulation|法规|ˌreɡjuˈleɪʃn|The regulation takes effect on January 1st.|法规于1月1日生效。|物流交货|intermediate
+exemption|豁免|ɪɡˈzempʃn|An exemption applies to small batch imports.|小批量进口可获豁免。|物流交货|intermediate
+authorization|授权|ˌɔːθərəˈzeɪʃn|Market authorization is required for medical devices.|医疗器械需要市场授权。|物流交货|intermediate
+registration|注册|ˌredʒɪˈstreɪʃn|Product registration takes 3-6 months.|产品注册需要3-6个月。|物流交货|intermediate
+recall|召回|rɪˈkɔːl|A product recall was initiated due to safety concerns.|因安全问题发起了产品召回。|物流交货|intermediate
+ban|禁止|bæn|The use of certain chemicals is banned.|某些化学品的使用被禁止。|物流交货|intermediate
+restriction|限制|rɪˈstrɪkʃn|Import restrictions apply to dual-use goods.|进口限制适用于军民两用商品。|物流交货|intermediate
+license|许可证|ˈlaɪsns|An export license is required for controlled items.|受控物品需要出口许可证。|物流交货|intermediate
+permit|许可|ˈpɜːrmɪt|An import permit must be obtained before shipment.|进口许可证必须在发货前获得。|物流交货|intermediate
+detention|扣留|dɪˈtenʃn|The goods were detained pending documentation.|货物因文件问题被扣留。|物流交货|intermediate
+seizure|没收|ˈsiːʒər|Customs seizure occurs for prohibited items.|禁止品会被海关没收。|物流交货|intermediate
+valuation|估价|ˈvæljuˈeɪʃn|Customs valuation follows the WTO agreement.|海关估价遵循WTO协议。|物流交货|intermediate
+classification|归类|ˌklæsɪfɪˈkeɪʃn|Correct HS classification determines the duty rate.|正确的HS归类决定关税税率。|物流交货|intermediate
+origin rule|原产地规则|ˈɔːrɪdʒɪn|Origin rules determine preferential tariff eligibility.|原产地规则决定优惠关税资格。|物流交货|intermediate
+drawback|退税|ˈdrɔːbæk|Duty drawback refunds import duties on re-exported goods.|退税退还再出口商品的进口关税。|物流交货|intermediate
+bonded warehouse|保税仓库|ˈbɑːndɪd|A bonded warehouse defers duty payment until withdrawal.|保税仓库延迟纳税至提货时。|物流交货|intermediate
+free trade zone|自由贸易区|friː|The factory is in a free trade zone.|工厂位于自由贸易区内。|物流交货|intermediate
+cross-border|跨境|krɔːs|Cross-border e-commerce is growing rapidly.|跨境电商快速增长。|物流交货|intermediate
+e-commerce|电子商务|iː|B2B e-commerce platforms connect global buyers and sellers.|B2B电商平台连接全球买卖双方。|物流交货|intermediate
+digital trade|数字贸易|ˈdɪdʒɪtl|Digital trade includes cross-border data transfers.|数字贸易包括跨境数据传输。|物流交货|intermediate
+marketplace|交易平台|ˈmɑːrkɪtpleɪs|Online marketplaces like Alibaba facilitate trade.|阿里巴巴等在线交易平台促进贸易。|物流交货|intermediate
+verification|验证|ˌverɪfɪˈkeɪʃn|Supplier verification builds buyer trust.|供应商验证建立买方信任。|物流交货|intermediate
+reputation|声誉|ˌrepjuˈteɪʃn|Our reputation for quality is well-known.|我们以质量著称的声誉广为人知。|物流交货|intermediate
+testimonial|客户评价|ˌtestɪˈmoʊniəl|Customer testimonials boost our credibility.|客户评价提升我们的信誉。|物流交货|intermediate
+case study|案例|keɪs|Our case studies demonstrate successful projects.|我们的案例展示了成功的项目。|物流交货|intermediate
+portfolio|作品集|pɔːrtˈfoʊlioʊ|Our portfolio showcases 200+ projects.|我们的作品集展示了200多个项目。|物流交货|intermediate
+exhibition|展览|ˌeksɪˈbɪʃn|The exhibition attracted 50000 visitors.|展览吸引了5万名参观者。|物流交货|intermediate
+trade fair|贸易展会|treɪd|The Canton Trade Fair is held twice a year.|广交会每年举办两次。|物流交货|intermediate
+booth|展位|buːð|We booked a 36-square-meter booth.|我们订了36平方米的展位。|物流交货|intermediate
+elevator pitch|电梯演讲|ˈelɪveɪtər|An elevator pitch summarizes your business in 30 seconds.|电梯演讲在30秒内概述您的业务。|物流交货|intermediate
+networking|社交|ˈnetwɜːrkɪŋ|Networking at trade fairs builds valuable connections.|在贸易展会上社交建立有价值的人脉。|物流交货|intermediate
+rapport|融洽|ræˈpɔːrt|Good rapport with clients leads to repeat business.|与客户良好的融洽关系带来回头客。|物流交货|intermediate
+loyalty|忠诚|ˈlɔɪəlti|Customer loyalty drives sustainable growth.|客户忠诚度驱动可持续增长。|物流交货|intermediate
+retention|留存|rɪˈtenʃn|Customer retention is cheaper than acquisition.|客户留存比获客成本低。|物流交货|intermediate
+acquisition|获客|ˌækwɪˈzɪʃn|Customer acquisition cost is $50 per client.|获客成本为每位客户50美元。|物流交货|intermediate
+lifetime value|终身价值|ˈlaɪftaɪm|Customer lifetime value justifies acquisition spend.|客户终身价值证明获客支出合理。|物流交货|intermediate
+churn|流失|tʃɜːrn|Reducing customer churn is a top priority.|降低客户流失是首要任务。|物流交货|intermediate
+engagement|参与|ɪnˈɡeɪdʒmənt|Customer engagement increases brand loyalty.|客户参与度提高品牌忠诚度。|物流交货|intermediate
+NPS|净推荐值|ˌen piː ˈes|Our NPS score is 68 which is excellent.|我们的净推荐值为68非常优秀。|物流交货|intermediate
+survey|调查|ˈsɜːrveɪ|We conduct quarterly customer satisfaction surveys.|我们每季度进行客户满意度调查。|物流交货|intermediate
+rating|评分|ˈreɪtɪŋ|Our average customer rating is 4.8 out of 5.|我们的平均客户评分为4.8分。|物流交货|intermediate
+review|评价|rɪˈvjuː|Positive reviews boost online sales.|好评促进在线销售。|物流交货|intermediate
+criticism|批评|ˈkrɪtɪsɪzəm|We take customer criticism seriously and improve.|我们认真对待客户批评并改进。|物流交货|intermediate
+suggestion|建议|səˈdʒestʃən|Customer suggestions often lead to product improvements.|客户建议经常带来产品改进。|物流交货|intermediate
+preference|偏好|ˈprefrəns|Understanding customer preference is key to success.|了解客户偏好是成功的关键。|物流交货|intermediate
+personalization|个性化|ˌpɜːrsənələˈzeɪʃn|Personalization enhances the customer experience.|个性化提升客户体验。|物流交货|intermediate
+segmentation|细分|ˌseɡmenˈteɪʃn|Market segmentation targets different customer groups.|市场细分针对不同客户群体。|物流交货|intermediate
+target audience|目标受众|ˈtɑːrɡɪt|Our target audience is mid-sized enterprises.|我们的目标受众是中型企业。|物流交货|intermediate
+buyer persona|买方画像|ˈbaɪər|A buyer persona guides content creation.|买方画像指导内容创作。|物流交货|intermediate
+customer journey|客户旅程|ˈkʌstəmər|The customer journey maps touchpoints from awareness to purchase.|客户旅程从认知到购买的接触点。|物流交货|intermediate
+touchpoint|接触点|ˈtʌtʃpɔɪnt|Each touchpoint should deliver a consistent message.|每个接触点应传递一致的信息。|物流交货|intermediate
+funnel|漏斗|ˈfʌnl|The sales funnel narrows from prospects to customers.|销售漏斗从潜在客户到成交客户逐渐收窄。|物流交货|intermediate
+lead|潜在客户|liːd|We generate 200 leads per month from our website.|我们每月从网站产生200个潜在客户。|物流交货|intermediate
+prospect|意向客户|ˈprɑːspekt|A qualified prospect is ready for a sales call.|合格的意向客户可以进行销售拜访。|物流交货|intermediate
+conversion|转化|kənˈvɜːrʒn|Our website conversion rate is 3.5%.|我们网站转化率为3.5%。|物流交货|intermediate
+conversion rate|转化率|kənˈvɜːrʒn|Improving the conversion rate increases ROI.|提高转化率增加投资回报率。|物流交货|intermediate
+ROI|投资回报率|ˌɑːr oʊ ˈaɪ|The marketing ROI exceeded our expectations.|营销投资回报率超出预期。|物流交货|intermediate
+LTV|客户终身价值|ˌel tiː ˈviː|The LTV to CAC ratio should be above 3:1.|客户终身价值与获客成本比应高于3:1。|物流交货|intermediate
+metrics|指标|ˈmetrɪks|Key metrics guide our business decisions.|关键指标指导我们的商业决策。|物流交货|intermediate
+OKR|目标与关键结果|ˌoʊ keɪ ˈɑːr|Our OKR framework aligns team goals.|我们的OKR框架统一团队目标。|物流交货|intermediate
+dashboard|仪表盘|ˈdæʃbɔːrd|The dashboard shows real-time sales data.|仪表盘显示实时销售数据。|物流交货|intermediate
+analytics|分析|ˌænəˈlɪtɪks|Data analytics reveals hidden patterns.|数据分析揭示隐藏的模式。|物流交货|intermediate
+machine learning|机器学习|məˈʃiːn|Machine learning predicts customer behavior.|机器学习预测客户行为。|物流交货|intermediate
+automation|自动化|ˌɔːtəˈmeɪʃn|Marketing automation saves time and resources.|营销自动化节省时间和资源。|物流交货|intermediate
+CRM|客户关系管理|ˌsiː ɑːr ˈem|Our CRM system tracks all customer interactions.|我们的CRM系统跟踪所有客户互动。|物流交货|intermediate
+ERP|企业资源计划|ˌiː ɑːr ˈpiː|The ERP system integrates all business processes.|ERP系统整合所有业务流程。|物流交货|intermediate
+SCM|供应链管理|ˌes siː ˈem|SCM software optimizes the supply chain.|供应链管理软件优化供应链。|物流交货|intermediate
+WMS|仓储管理|ˌdʌbəljuː em ˈes|The WMS tracks inventory in real-time.|仓储管理系统实时跟踪库存。|物流交货|intermediate
+EDI|电子数据交换|ˌiː diː ˈaɪ|EDI enables paperless document exchange between partners.|电子数据交换实现伙伴间无纸化单据交换。|物流交货|intermediate
+API|应用程序接口|ˌeɪ piː ˈaɪ|The API connects our system to the logistics platform.|API将我们的系统连接到物流平台。|物流交货|intermediate
+integration|集成|ˌɪntɪˈɡreɪʃn|System integration streamlines operations.|系统集成简化运营。|物流交货|intermediate
+blockchain|区块链|ˈblɑːktʃeɪn|Blockchain ensures supply chain transparency.|区块链确保供应链透明度。|物流交货|intermediate
+IoT|物联网|ˌaɪ oʊ ˈtiː|IoT sensors monitor cargo conditions in real-time.|物联网传感器实时监控货物状态。|物流交货|intermediate
+transparency|透明度|trænsˈpærənsi|Supply chain transparency builds consumer trust.|供应链透明度建立消费者信任。|物流交货|intermediate
+sustainability|可持续性|səˌsteɪnəˈbɪləti|Sustainability is a competitive advantage.|可持续性是竞争优势。|物流交货|intermediate
+ESG|环境社会治理|ˌiː es ˈdʒiː|ESG scores influence investor decisions.|ESG评分影响投资决策。|物流交货|intermediate
+carbon footprint|碳足迹|ˈkɑːrbən|Reducing carbon footprint is a corporate goal.|减少碳足迹是企业目标。|物流交货|intermediate
+recyclable|可回收|ˌriːˈsaɪkləbl|All our packaging is recyclable.|我们所有包装均可回收。|物流交货|intermediate
+biodegradable|可降解|ˌbaɪoʊdɪˈɡreɪdəbl|Biodegradable materials reduce environmental impact.|可降解材料减少环境影响。|物流交货|intermediate
+renewable|可再生|rɪˈnuːəbl|We use renewable energy in production.|生产中使用可再生能源。|物流交货|intermediate
+energy efficient|节能|ˈenərdʒi|Energy-efficient products qualify for rebates.|节能产品可获得补贴。|物流交货|intermediate
+circular economy|循环经济|ˈsɜːrkjələr|The circular economy reduces waste and costs.|循环经济减少浪费和成本。|物流交货|intermediate
+lean|精益|liːn|Lean manufacturing eliminates waste in production.|精益生产消除生产中的浪费。|物流交货|intermediate
+Six Sigma|六西格玛|sɪks|Six Sigma methodology reduces defect rates.|六西格玛方法论降低不良率。|物流交货|intermediate
+Kaizen|改善|kaɪˈzən|Kaizen encourages continuous small improvements.|改善鼓励持续的小改进。|物流交货|intermediate
+PDCA|戴明环|ˌpiː diː ˈsiː ˈeɪ|The PDCA cycle drives continuous improvement.|PDCA循环驱动持续改进。|物流交货|intermediate
+root cause analysis|根因分析|ruːt|Root cause analysis prevents recurring problems.|根因分析防止问题复发。|物流交货|intermediate
+bottleneck|瓶颈|ˈbɑːtlnek|Identifying bottlenecks improves throughput.|识别瓶颈提高吞吐量。|物流交货|intermediate
+throughput|吞吐量|ˈθruːpʊt|Factory throughput increased by 15%.|工厂吞吐量提高15%。|物流交货|intermediate
+capacity planning|产能规划|kəˈpæsəti|Capacity planning ensures demand is met.|产能规划确保满足需求。|物流交货|intermediate
+just-in-time|准时制|dʒʌst|Just-in-time inventory minimizes storage costs.|准时制库存最小化仓储成本。|物流交货|intermediate
+safety stock|安全库存|ˈseɪfti|Safety stock prevents stockouts during demand spikes.|安全库存防止需求激增时断货。|物流交货|intermediate
+reorder point|再订货点|riːˈɔːrdər|The reorder point triggers automatic replenishment.|再订货点触发自动补货。|物流交货|intermediate
+economic order quantity|经济订货量|ˌekəˈnɑːmɪk|EOQ minimizes total inventory costs.|经济订货量最小化总库存成本。|物流交货|intermediate
+ABC analysis|ABC分析|ˌeɪ biː ˈsiː|ABC analysis categorizes inventory by value.|ABC分析按价值分类库存。|物流交货|intermediate
+stockout|缺货|ˈstɑːkaʊt|Stockouts cost us $10000 in lost sales last month.|上月缺货造成1万美元销售损失。|物流交货|intermediate
+overstock|积压|ˈoʊvərstɑːk|Overstock ties up working capital.|库存积压占用营运资金。|物流交货|intermediate
+obsolete|过期|ˌɑːbsəˈliːt|Obsolete inventory must be written off.|过期库存必须核销。|物流交货|intermediate
+FIFO|先进先出|ˌef aɪ ef oʊ|FIFO ensures older stock is used first.|先进先出确保先使用旧库存。|物流交货|intermediate
+batch tracking|批次追踪|bætʃ|Batch tracking enables targeted recalls.|批次追踪实现定向召回。|物流交货|intermediate
+barcode|条形码|ˈbɑːrkoʊd|Barcode scanning speeds up warehouse operations.|条形码扫描加快仓库操作。|物流交货|intermediate
+RFID|射频识别|ˌɑːr ef aɪ ˈdiː|RFID tags enable contactless inventory tracking.|射频识别标签实现非接触式库存跟踪。|物流交货|intermediate
+anti-counterfeit|防伪|ˌænti|Anti-counterfeit labels protect brand integrity.|防伪标签保护品牌完整性。|物流交货|intermediate
+authentication|验证|ɔːˌθentɪˈkeɪʃn|Product authentication builds consumer confidence.|产品验证建立消费者信心。|物流交货|intermediate
+counterfeit|仿冒品|ˈkaʊntərfɪt|Counterfeit products damage brand reputation.|仿冒品损害品牌声誉。|物流交货|intermediate
+infringement|侵权|ɪnˈfrɪndʒmənt|Trademark infringement is a serious legal matter.|商标侵权是严重的法律问题。|物流交货|intermediate
+patent|专利|ˈpætnt|We hold 15 patents for our technology.|我们拥有15项技术专利。|物流交货|intermediate
+trademark|商标|ˈtreɪdmɑːrk|Our trademark is registered in 30 countries.|我们的商标在30个国家注册。|物流交货|intermediate
+copyright|版权|ˈkɑːpiraɪt|Copyright protects original creative works.|版权保护原创作品。|物流交货|intermediate
+trade secret|商业秘密|treɪd|Trade secrets include formulas and processes.|商业秘密包括配方和工艺。|物流交货|intermediate
+licensing|许可|ˈlaɪsənsɪŋ|Licensing generates recurring royalty income.|许可产生持续版税收入。|物流交货|intermediate
+royalty|版税|ˈrɔɪəlti|The royalty rate is 5% of net sales.|版税率为净销售额的5%。|物流交货|intermediate
+franchise|特许经营|ˈfræntʃaɪz|Franchise agreements specify operational standards.|特许经营协议规定运营标准。|物流交货|intermediate
+joint venture|合资企业|dʒɔɪnt|The joint venture combines two companies' strengths.|合资企业结合两家公司的优势。|物流交货|intermediate
+merger|合并|ˈmɜːrdʒər|The merger creates the largest supplier in Asia.|合并创造了亚洲最大的供应商。|物流交货|intermediate
+acquisition|收购|ˌækwɪˈzɪʃn|The acquisition expands our product portfolio.|收购扩展了我们的产品组合。|物流交货|intermediate
+due diligence|尽职调查|duː|Due diligence is essential before any acquisition.|收购前尽职调查至关重要。|物流交货|intermediate
+valuation|估值|ˌvæljuˈeɪʃn|Company valuation is based on revenue and growth.|公司估值基于营收和增长。|物流交货|intermediate
+equity|股权|ˈekwəti|Equity financing dilutes existing shareholders.|股权融资稀释现有股东。|物流交货|intermediate
+venture capital|风险投资|ˈventʃər|Venture capital funds high-growth startups.|风险投资资助高增长初创企业。|物流交货|intermediate
+angel investor|天使投资人|ˈeɪndʒəl|Angel investors provide early-stage capital.|天使投资人提供早期资本。|物流交货|intermediate
+crowdfunding|众筹|ˈkraʊdfʌndɪŋ|Crowdfunding validates market demand pre-launch.|众筹在发布前验证市场需求。|物流交货|intermediate
+IPO|首次公开募股|ˌaɪ piː ˈoʊ|The IPO raised $200 million for expansion.|首次公开募股筹集2亿美元用于扩张。|物流交货|intermediate
+shareholder|股东|ˈʃerhoʊldər|Shareholders vote on major company decisions.|股东对重大公司决策投票。|物流交货|intermediate
+dividend|股息|ˈdɪvɪdend|The company pays quarterly dividends to shareholders.|公司每季度向股东支付股息。|物流交货|intermediate
+board of directors|董事会|bɔːrd|The board of directors approves the annual budget.|董事会批准年度预算。|物流交货|intermediate
+stakeholder|利益相关方|ˈsteɪkhoʊldər|Stakeholders include employees customers and investors.|利益相关方包括员工、客户和投资者。|物流交货|intermediate
+governance|治理|ˈɡʌvərnəns|Corporate governance ensures accountability.|公司治理确保问责制。|物流交货|intermediate
+ethics|道德|ˈeθɪks|Business ethics guide our decision-making.|商业道德指导我们的决策。|物流交货|intermediate
+CSR|企业社会责任|ˌsiː es ˈɑːr|CSR programs support local communities.|企业社会责任项目支持当地社区。|物流交货|intermediate
+diversity|多样性|daɪˈvɜːrsəti|Workplace diversity fosters innovation.|职场多样性促进创新。|物流交货|intermediate
+remote work|远程办公|rɪˈmoʊt|Remote work became standard after the pandemic.|疫情后远程办公成为常态。|物流交货|intermediate
+hybrid|混合|ˈhaɪbrɪd|A hybrid work model combines office and remote.|混合办公模式结合办公室和远程。|物流交货|intermediate
+agile|敏捷|ˈædʒəl|Agile methodology adapts quickly to changes.|敏捷方法论快速适应变化。|物流交货|intermediate
+scrum|冲刺|skrʌm|Daily scrum meetings keep the team aligned.|每日站会保持团队同步。|物流交货|intermediate
+sprint|迭代|sprint|Each sprint delivers a working product increment.|每个迭代交付可用的产品增量。|物流交货|intermediate
+milestone|里程碑|ˈmaɪlstoʊn|We achieved a major milestone with the product launch.|产品发布是我们达到的重大里程碑。|物流交货|intermediate
+deliverable|交付物|dɪˈlɪvərəbl|Each project phase has specific deliverables.|每个项目阶段有特定的交付物。|物流交货|intermediate
+scope|范围|skoʊp|Project scope must be clearly defined.|项目范围必须明确定义。|物流交货|intermediate
+scope creep|范围蔓延|skoʊp|Scope creep is the top cause of project failure.|范围蔓延是项目失败的首要原因。|物流交货|intermediate
+Gantt chart|甘特图|ɡænt|A Gantt chart visualizes the project schedule.|甘特图可视化项目进度。|物流交货|intermediate
+critical path|关键路径|ˈkrɪtɪkl|The critical path determines the project duration.|关键路径决定项目工期。|物流交货|intermediate
+dependency|依赖关系|dɪˈpendənsi|Task dependencies affect the schedule.|任务依赖关系影响进度。|物流交货|intermediate
+budget overrun|预算超支|ˈbʌdʒɪt|Budget overruns threaten project viability.|预算超支威胁项目可行性。|物流交货|intermediate
+risk management|风险管理|rɪsk|Risk management identifies threats early.|风险管理及早识别威胁。|物流交货|intermediate
+contingency|应急|kənˈtɪndʒənsi|A contingency budget covers unexpected costs.|应急预算覆盖意外费用。|物流交货|intermediate
+mitigation|缓解|ˌmɪtɪˈɡeɪʃn|Risk mitigation reduces the impact of threats.|风险缓解减少威胁的影响。|物流交货|intermediate
+change request|变更请求|tʃeɪndʒ|A formal change request is required for scope modifications.|范围修改需要正式变更请求。|物流交货|intermediate
+quality assurance|质量保证|ˈkwɑːləti|Quality assurance prevents defects before they occur.|质量保证在缺陷发生前预防。|物流交货|intermediate
+quality control|质量控制|ˈkwɑːləti|Quality control inspects finished products.|质量控制检查成品。|物流交货|intermediate
+sampling|抽样|ˈsæmplɪŋ|Random sampling checks quality across batches.|随机抽样检查各批次质量。|物流交货|intermediate
+AQL|可接受质量水平|ˌeɪ kjuː ˈel|The AQL for major defects is 2.5%.|重大缺陷的可接受质量水平为2.5%。|物流交货|intermediate
+rework|返工|riːˈwɜːrk|Rework adds cost and delays delivery.|返工增加成本并延迟交货。|物流交货|intermediate
+scrap|报废|skræp|Defective units beyond repair are scrapped.|无法修复的缺陷品报废。|物流交货|intermediate
+cycle time|周期时间|ˈsaɪkl|Reducing cycle time increases output.|缩短周期时间增加产出。|物流交货|intermediate
+OEE|设备综合效率|ˌoʊ iː ˈiː|Our OEE target is 85%.|设备综合效率目标为85%。|物流交货|intermediate
+downtime|停机|ˈdaʊntaɪm|Unplanned downtime costs $5000 per hour.|计划外停机每小时损失5000美元。|物流交货|intermediate
+preventive maintenance|预防性维护|prɪˈventɪv|Preventive maintenance reduces breakdowns.|预防性维护减少故障。|物流交货|intermediate
+spare parts|备件|sper|Spare parts inventory ensures quick repairs.|备件库存确保快速维修。|物流交货|intermediate
+validation|验证|ˌvælɪˈdeɪʃn|Process validation ensures consistent quality.|工艺验证确保一致的质量。|物流交货|intermediate
+commissioning|调试|kəˈmɪʃnɪŋ|Plant commissioning takes 2 weeks.|工厂调试需要2周。|物流交货|intermediate
+training|培训|ˈtreɪnɪŋ|Operator training is provided on-site.|操作员培训在现场进行。|物流交货|intermediate
+SOP|标准操作程序|ˌes oʊ ˈpiː|SOPs ensure consistent production processes.|标准操作程序确保一致的生产流程。|物流交货|intermediate
+batch record|批记录|bætʃ|Batch records document each production run.|批记录记录每次生产。|物流交货|intermediate
+traceability matrix|追溯矩阵|ˌtreɪsəˈbɪləti|A traceability matrix links requirements to tests.|追溯矩阵将需求与测试关联。|物流交货|intermediate
+change control|变更控制|tʃeɪndʒ|Change control prevents unauthorized modifications.|变更控制防止未授权修改。|物流交货|intermediate
+deviation|偏差|ˌdiːviˈeɪʃn|Any deviation from SOP must be documented.|任何偏离标准操作程序的情况必须记录。|物流交货|intermediate
+CAPA|纠正预防措施|ˈkæpə|CAPA addresses the root cause of problems.|纠正预防措施解决问题的根本原因。|物流交货|intermediate
+nonconformance|不符合|ˌnɑːnkənˈfɔːrməns|Nonconformance reports trigger investigations.|不符合报告触发调查。|物流交货|intermediate
+ISO 9001|质量管理体系|ˈaɪsoʊ|ISO 9001 is the international quality standard.|ISO 9001是国际质量标准。|物流交货|intermediate
+ISO 14001|环境管理体系|ˈaɪsoʊ|ISO 14001 certification shows environmental responsibility.|ISO 14001认证展示环境责任。|物流交货|intermediate
+ISO 45001|职业健康安全|ˈaɪsoʊ|ISO 45001 ensures workplace safety.|ISO 45001确保工作场所安全。|物流交货|intermediate
+HACCP|危害分析|ˈhæsˌʌp|HACCP identifies food safety hazards.|危害分析识别食品安全危害。|物流交货|intermediate
+GMP|良好生产规范|ˌdʒiː em ˈpiː|GMP is mandatory for pharmaceutical manufacturing.|良好生产规范是药品生产的强制要求。|物流交货|intermediate

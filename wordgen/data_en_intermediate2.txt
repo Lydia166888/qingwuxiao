@@ -1,0 +1,191 @@
+marketing|营销|ˈmɑːrkɪtɪŋ|Our marketing strategy targets B2B customers.|我们的营销战略针对B2B客户。|商务会议|intermediate
+advertising|广告|ˈædvərtaɪzɪŋ|Online advertising reaches global audiences.|在线广告触达全球受众。|商务会议|intermediate
+branding|品牌建设|ˈbrændɪŋ|Branding creates long-term customer loyalty.|品牌建设创造长期客户忠诚度。|商务会议|intermediate
+positioning|定位|pəˈzɪʃənɪŋ|Product positioning differentiates us from competitors.|产品定位使我们与竞争对手区分。|商务会议|intermediate
+campaign|活动|kæmˈpeɪn|We launched a digital marketing campaign in Q1.|我们在第一季度启动了数字营销活动。|商务会议|intermediate
+promotion|促销|prəˈmoʊʃn|The promotion boosted sales by 30%.|促销使销售额提升了30%。|商务会议|intermediate
+lead generation|获客|liːd|Inbound lead generation costs less than outbound.|入站获客成本低于出站获客。|商务会议|intermediate
+cold call|冷呼|koʊld|Cold calling remains effective in B2B sales.|冷呼在B2B销售中仍然有效。|商务会议|intermediate
+warm lead|暖线索|wɔːrm|A warm lead from a referral converts better.|推荐的暖线索转化率更高。|商务会议|intermediate
+qualified lead|合格线索|ˈkwɑːlɪfaɪd|Sales reps focus on qualified leads only.|销售代表只关注合格线索。|商务会议|intermediate
+pipeline|销售管道|ˈpaɪplaɪn|Our sales pipeline has $2M in potential deals.|我们的销售管道有200万美元的潜在交易。|商务会议|intermediate
+forecasting|预测|ˈfɔːrkæstɪŋ|Accurate sales forecasting improves inventory planning.|准确的销售预测改善库存规划。|商务会议|intermediate
+quota|配额/指标|ˈkwoʊtə|The sales team exceeded their quarterly quota.|销售团队超额完成季度指标。|商务会议|intermediate
+commission|佣金|kəˈmɪʃn|Sales reps earn 5% commission on each deal.|销售代表每笔交易赚取5%佣金。|商务会议|intermediate
+incentive|激励|ɪnˈsentɪv|Performance incentives motivate the sales team.|绩效激励激励销售团队。|商务会议|intermediate
+bonus|奖金|ˈboʊnəs|Year-end bonuses reward top performers.|年终奖金奖励优秀员工。|商务会议|intermediate
+territory|销售区域|ˈterətɔːri|Each rep manages an assigned territory.|每位代表管理一个指定区域。|商务会议|intermediate
+account|客户账户|əˈkaʊnt|He manages three key accounts in Europe.|他管理欧洲三个大客户。|商务会议|intermediate
+key account|大客户|kiː|Key accounts generate 80% of our revenue.|大客户产生我们80%的营收。|商务会议|intermediate
+upsell|向上销售|ˈʌpsel|Upselling premium features increases average order value.|向上销售高端功能提高平均订单价值。|商务会议|intermediate
+cross-sell|交叉销售|krɔːs|Cross-selling complementary products boosts revenue.|交叉销售互补产品提升营收。|商务会议|intermediate
+renewal|续约|rɪˈnuːəl|Subscription renewals are tracked monthly.|订阅续约按月跟踪。|商务会议|intermediate
+churn|流失|tʃɜːrn|Reducing churn is critical for SaaS businesses.|减少流失对SaaS企业至关重要。|商务会议|intermediate
+onboarding|入职引导|ˈɔːnbɔːrdɪŋ|A smooth onboarding process increases retention.|顺畅的入职引导提高留存率。|商务会议|intermediate
+demo|演示|ˈdemoʊ|The product demo convinced the client to buy.|产品演示说服了客户购买。|商务会议|intermediate
+trial|试用|ˈtraɪəl|A 14-day free trial lets customers test the product.|14天免费试用让客户测试产品。|商务会议|intermediate
+pilot|试点|ˈpaɪlət|The pilot program validated our solution.|试点项目验证了我们的方案。|商务会议|intermediate
+proof of concept|概念验证|pruːf|A POC demonstrates feasibility before full deployment.|概念验证在全量部署前展示可行性。|商务会议|intermediate
+reference|推荐人|ˈrefrəns|A customer reference strengthens our proposal.|客户推荐增强我们的提案。|商务会议|intermediate
+case study|案例|keɪs|Case studies showcase successful implementations.|案例展示成功的实施。|商务会议|intermediate
+testimonial|证言|ˌtestɪˈmoʊniəl|Video testimonials are very persuasive.|视频证言非常有说服力。|商务会议|intermediate
+referral|转介绍|rɪˈfɜːrəl|Referral programs generate high-quality leads.|转介绍计划产生高质量线索。|商务会议|intermediate
+word of mouth|口碑|wɜːrd|Positive word of mouth drives organic growth.|正面口碑驱动有机增长。|商务会议|intermediate
+viral|病毒式传播|ˈvaɪrəl|The viral video reached 10 million views.|病毒式视频达到1000万观看。|商务会议|intermediate
+SEO|搜索引擎优化|ˌes iː ˈoʊ|SEO improves our website's visibility in search results.|搜索引擎优化提高网站在搜索结果中的可见度。|商务会议|intermediate
+SEM|搜索引擎营销|ˌes iː ˈem|SEM includes both SEO and paid search advertising.|搜索引擎营销包括SEO和付费搜索广告。|商务会议|intermediate
+PPC|按点击付费|ˌpiː piː ˈsiː|PPC campaigns charge per click on ads.|按点击付费活动按广告点击收费。|商务会议|intermediate
+CPC|每次点击成本|ˌsiː piː ˈsiː|The average CPC is $2.50 for our keywords.|我们关键词的平均每次点击成本为2.50美元。|商务会议|intermediate
+CTR|点击率|ˌsiː tiː ˈɑːr|A high CTR indicates relevant ad copy.|高点击率表示广告文案相关。|商务会议|intermediate
+impression|展示|ɪmˈpreʃn|The ad received 100000 impressions last month.|广告上月获得10万次展示。|商务会议|intermediate
+conversion|转化|kənˈvɜːrʒn|Website conversion optimization increased sales 20%.|网站转化优化使销售额增长20%。|商务会议|intermediate
+landing page|落地页|ˈlændɪŋ|A well-designed landing page improves conversion rates.|设计良好的落地页提高转化率。|商务会议|intermediate
+call to action|行动号召|kɔːl|A strong call to action drives user engagement.|强有力的行动号召驱动用户参与。|商务会议|intermediate
+bounce rate|跳出率|baʊns|A high bounce rate indicates poor landing page experience.|高跳出率表明落地页体验差。|商务会议|intermediate
+engagement rate|参与率|ɪnˈɡeɪdʒmənt|Social media engagement rate measures interaction quality.|社交媒体参与率衡量互动质量。|商务会议|intermediate
+content marketing|内容营销|ˈkɑːntent|Content marketing builds brand authority.|内容营销建立品牌权威。|商务会议|intermediate
+email marketing|邮件营销|ˈiːmeɪl|Email marketing has the highest ROI.|邮件营销投资回报率最高。|商务会议|intermediate
+social media|社交媒体|ˈsoʊʃl|Social media presence increases brand awareness.|社交媒体曝光提高品牌知名度。|商务会议|intermediate
+influencer|网红|ˈɪnfluənsər|Influencer marketing reaches niche audiences.|网红营销触达细分受众。|商务会议|intermediate
+affiliate|联盟|əˈfɪliət|Affiliate programs pay partners for referred sales.|联盟计划为转介销售向合作伙伴支付佣金。|商务会议|intermediate
+webinar|网络研讨会|ˈwebɪnɑːr|Our weekly webinar attracts 500 attendees.|我们每周的网络研讨会吸引500名参会者。|商务会议|intermediate
+podcast|播客|ˈpɑːdkæst|Industry podcasts position us as thought leaders.|行业播客将我们定位为思想领袖。|商务会议|intermediate
+blog|博客|blɑːɡ|Our company blog drives organic traffic.|我们公司博客驱动自然流量。|商务会议|intermediate
+white paper|白皮书|waɪt|Technical white papers educate B2B buyers.|技术白皮书教育B2B买家。|商务会议|intermediate
+ebook|电子书|ˈiːbʊk|Downloadable ebooks capture lead information.|可下载电子书获取线索信息。|商务会议|intermediate
+infographic|信息图|ˌɪnfoʊˈɡræfɪk|Infographics simplify complex data visually.|信息图以视觉方式简化复杂数据。|商务会议|intermediate
+video marketing|视频营销|ˈvɪdioʊ|Video marketing increases engagement significantly.|视频营销显著提高参与度。|商务会议|intermediate
+live streaming|直播|laɪv|Live streaming product demos boost conversion.|直播产品演示提升转化。|商务会议|intermediate
+customer story|客户故事|ˈkʌstəmər|Customer stories provide social proof.|客户故事提供社会证明。|商务会议|intermediate
+user-generated content|用户生成内容|ˈjuːzər|UGC builds authentic brand advocacy.|用户生成内容建立真实的品牌拥护。|商务会议|intermediate
+brand awareness|品牌知名度|brænd|Brand awareness campaigns precede product launches.|品牌知名度活动在产品发布之前进行。|商务会议|intermediate
+brand equity|品牌资产|brænd ˈekwəti|Strong brand equity commands premium pricing.|强大的品牌资产支持溢价定价。|商务会议|intermediate
+brand loyalty|品牌忠诚度|brænd ˈlɔɪəlti|Brand loyalty reduces customer acquisition costs.|品牌忠诚度降低获客成本。|商务会议|intermediate
+brand identity|品牌形象|brænd aɪˈdentəti|Our brand identity reflects quality and innovation.|我们的品牌形象体现质量和创新。|商务会议|intermediate
+brand guidelines|品牌指南|brænd ˈɡaɪdlaɪnz|Brand guidelines ensure consistent visual identity.|品牌指南确保一致的视觉形象。|商务会议|intermediate
+logo|标志|ˈloʊɡoʊ|The new logo modernized our brand image.|新标志使我们的品牌形象现代化。|商务会议|intermediate
+slogan|标语|ˈsloʊɡən|Our slogan communicates our value proposition.|我们的标语传达价值主张。|商务会议|intermediate
+tagline|品牌口号|ˈtæɡlaɪn|A memorable tagline sticks in customers' minds.|令人难忘的品牌口号留在客户心中。|商务会议|intermediate
+messaging|信息传递|ˈmesɪdʒɪŋ|Consistent messaging strengthens brand recall.|一致的信息传递增强品牌记忆。|商务会议|intermediate
+tone of voice|语调|toʊn|Our tone of voice is professional yet approachable.|我们的语调专业但平易近人。|商务会议|intermediate
+value proposition|价值主张|ˈvæljuː|Our value proposition differentiates us from competitors.|我们的价值主张使我们与竞争对手区分。|商务会议|intermediate
+unique selling proposition|独特卖点|juːˈniːk|Our USP is same-day shipping worldwide.|我们的独特卖点是全球当日发货。|商务会议|intermediate
+competitive analysis|竞争分析|kəmˈpetɪtɪv|We conduct quarterly competitive analysis.|我们每季度进行竞争分析。|商务会议|intermediate
+SWOT analysis|SWOT分析|swɒt|A SWOT analysis identifies strengths weaknesses opportunities and threats.|SWOT分析识别优势劣势机会和威胁。|商务会议|intermediate
+PEST analysis|PEST分析|pest|PEST analysis examines political economic social and technological factors.|PEST分析检查政治经济社会和技术因素。|商务会议|intermediate
+Porter's five forces|波特五力|ˈpɔːrtərz|Porter's five forces model analyzes industry competitiveness.|波特五力模型分析行业竞争力。|商务会议|intermediate
+market research|市场调研|ˈmɑːrkɪt|Market research guides product development decisions.|市场调研指导产品开发决策。|商务会议|intermediate
+focus group|焦点小组|ˈfoʊkəs|Focus groups provide qualitative customer insights.|焦点小组提供定性客户洞察。|商务会议|intermediate
+survey|调查|ˈsɜːrveɪ|Online surveys collect quantitative data efficiently.|在线调查高效收集定量数据。|商务会议|intermediate
+interview|访谈|ˈɪntərvjuː|Customer interviews reveal unmet needs.|客户访谈揭示未被满足的需求。|商务会议|intermediate
+observation|观察|ˌɑːbzərˈveɪʃn|Ethnographic observation studies users in context.|民族志观察在情境中研究用户。|商务会议|intermediate
+usability testing|可用性测试|ˌjuːzəˈbɪləti|Usability testing identifies interface friction points.|可用性测试识别界面摩擦点。|商务会议|intermediate
+A/B test|A/B测试|eɪ beɪ|A/B testing optimizes conversion through experiments.|A/B测试通过实验优化转化。|商务会议|intermediate
+beta testing|测试|ˈbeɪtə|Beta testing validates products before launch.|测试在发布前验证产品。|商务会议|intermediate
+pilot program|试点项目|ˈpaɪlət|The pilot program tests the solution with real users.|试点项目与真实用户测试方案。|商务会议|intermediate
+proof of concept|概念验证|pruːf əv|A POC demonstrates technical feasibility.|概念验证展示技术可行性。|商务会议|intermediate
+minimum viable product|最小可行产品|ˈmɪnɪməm|An MVP tests core functionality with minimal features.|最小可行产品以最少功能测试核心功能。|商务会议|intermediate
+product-market fit|产品市场契合|ˈprɑːdʌkt|Product-market fit means the product meets market demand.|产品市场契合意味着产品满足市场需求。|商务会议|intermediate
+go-to-market|上市策略|ɡoʊ|Our go-to-market strategy targets mid-size enterprises.|我们的上市策略针对中型企业。|商务会议|intermediate
+launch|发布|lɔːntʃ|The product launch is scheduled for Q3.|产品发布定于第三季度。|商务会议|intermediate
+rollout|推出|ˈroʊlaʊt|The phased rollout minimizes deployment risk.|分阶段推出降低部署风险。|商务会议|intermediate
+scaling|扩展|ˈskeɪlɪŋ|Scaling operations requires additional investment.|扩展运营需要额外投资。|商务会议|intermediate
+growth|增长|ɡroʊθ|Sustainable growth requires both acquisition and retention.|可持续增长需要获客和留存。|商务会议|intermediate
+expansion|扩张|ɪkˈspænʃn|International expansion diversifies revenue sources.|国际扩张使收入来源多元化。|商务会议|intermediate
+diversification|多元化|daɪˌvɜːrsɪfɪˈkeɪʃn|Product diversification reduces market risk.|产品多元化降低市场风险。|商务会议|intermediate
+vertical integration|纵向一体化|ˈvɜːrtɪkl|Vertical integration controls the entire supply chain.|纵向一体化控制整个供应链。|商务会议|intermediate
+horizontal integration|横向一体化|ˌhɔːrɪˈzɑːntl|Horizontal integration merges with competitors.|横向一体化与竞争对手合并。|商务会议|intermediate
+outsourcing|外包|ˈaʊtsɔːrsɪŋ|Outsourcing non-core activities reduces costs.|外包非核心活动降低成本。|商务会议|intermediate
+insourcing|内包|ˈɪnsɔːrsɪŋ|Insourcing brings outsourced functions back in-house.|内包将外包功能收回内部。|商务会议|intermediate
+offshoring|离岸外包|ˌɑːfˈʃɔːrɪŋ|Offshoring to Vietnam reduces labor costs.|离岸外包到越南降低劳动成本。|商务会议|intermediate
+nearshoring|近岸外包|ˈnɪrʃɔːrɪŋ|Nearshoring to Mexico shortens supply chains.|近岸外包到墨西哥缩短供应链。|商务会议|intermediate
+reshoring|回岸|riːˈʃɔːrɪŋ|Reshoring manufacturing returns jobs to the home country.|回岸制造将工作带回本国。|商务会议|intermediate
+automation|自动化|ˌɔːtəˈmeɪʃn|Factory automation reduces labor costs and errors.|工厂自动化降低劳动成本和错误。|商务会议|intermediate
+robotics|机器人|roʊˈbɑːtɪks|Industrial robotics performs repetitive tasks precisely.|工业机器人精确执行重复性任务。|商务会议|intermediate
+AI|人工智能|ˌeɪ ˈaɪ|AI-powered analytics predict customer behavior.|AI驱动的分析预测客户行为。|商务会议|intermediate
+big data|大数据|bɪɡ ˈdeɪtə|Big data analytics uncovers hidden market patterns.|大数据分析揭示隐藏的市场模式。|商务会议|intermediate
+cloud computing|云计算|klaʊd|Cloud computing enables scalable IT infrastructure.|云计算实现可扩展的IT基础设施。|商务会议|intermediate
+SaaS|软件即服务|sæs|SaaS subscriptions replaced perpetual licenses.|SaaS订阅取代了永久许可。|商务会议|intermediate
+PaaS|平台即服务|pæs|PaaS provides a development platform in the cloud.|PaaS在云中提供开发平台。|商务会议|intermediate
+IaaS|基础设施即服务|aɪæs|IaaS provides virtualized computing resources.|IaaS提供虚拟化计算资源。|商务会议|intermediate
+API|应用编程接口|ˌeɪ piː ˈaɪ|The API enables third-party integrations.|API实现第三方集成。|商务会议|intermediate
+SDK|软件开发工具包|ˌes diː ˈkeɪ|The SDK helps developers build on our platform.|SDK帮助开发者在我们的平台上构建。|商务会议|intermediate
+open source|开源|ˈoʊpən sɔːrs|Open source software reduces licensing costs.|开源软件降低许可成本。|商务会议|intermediate
+proprietary|专有的|prəˈpraɪətəri|Proprietary technology creates competitive moats.|专有技术创造竞争壁垒。|商务会议|intermediate
+intellectual property|知识产权|ˌɪntəˈlektʃuəl|Protecting intellectual property is crucial in tech.|保护知识产权在科技行业至关重要。|商务会议|intermediate
+patent|专利|ˈpætnt|We filed 20 patent applications this year.|我们今年提交了20项专利申请。|商务会议|intermediate
+trademark|商标|ˈtreɪdmɑːrk|Our trademark is registered in 50 countries.|我们的商标在50个国家注册。|商务会议|intermediate
+copyright|版权|ˈkɑːpiraɪt|Copyright protects our software code.|版权保护我们的软件代码。|商务会议|intermediate
+trade secret|商业秘密|treɪd ˈsiːkrət|Our formula is a protected trade secret.|我们的配方是受保护的商业秘密。|商务会议|intermediate
+licensing|授权|ˈlaɪsənsɪŋ|Licensing our technology generates royalty income.|授权我们的技术产生版税收入。|商务会议|intermediate
+royalty|版税|ˈrɔɪəlti|The royalty rate is 5% of net sales.|版税率为净销售额的5%。|商务会议|intermediate
+franchise|特许经营|ˈfræntʃaɪz|Franchise expansion requires strong brand recognition.|特许经营扩张需要强大的品牌认知。|商务会议|intermediate
+joint venture|合资企业|dʒɔɪnt ˈventʃər|The joint venture combines our technology with local market knowledge.|合资企业将我们的技术与当地市场知识结合。|商务会议|intermediate
+wholly owned|全资|ˈhoʊlli|A wholly owned subsidiary gives full control.|全资子公司给予完全控制权。|商务会议|intermediate
+representative office|代表处|ˌreprɪˈzentətɪv|We opened a representative office in Moscow.|我们在莫斯科开设了代表处。|商务会议|intermediate
+branch|分公司|bræntʃ|The Shanghai branch handles all Asian operations.|上海分公司处理所有亚洲业务。|商务会议|intermediate
+subsidiary|子公司|səbˈsɪdieri|Our German subsidiary serves the European market.|我们的德国子公司服务欧洲市场。|商务会议|intermediate
+holding company|控股公司|ˈhoʊldɪŋ|The holding company manages multiple subsidiaries.|控股公司管理多个子公司。|商务会议|intermediate
+conglomerate|集团|kənˈɡlɑːmərət|The conglomerate operates in diverse industries.|该集团在多个行业运营。|商务会议|intermediate
+startup|初创企业|ˈstɑːrtʌp|The startup raised $10M in Series A funding.|初创企业A轮融资1000万美元。|商务会议|intermediate
+incubator|孵化器|ˈɪŋkjubeɪtər|The business incubator supports early-stage startups.|商业孵化器支持早期初创企业。|商务会议|intermediate
+accelerator|加速器|əkˈseləreɪtər|The accelerator program lasts 3 months.|加速器项目持续3个月。|商务会议|intermediate
+venture capital|风险投资|ˈventʃər ˈkæpɪtl|Venture capital funding reached $50M this round.|本轮风险投资融资5000万美元。|商务会议|intermediate
+angel investor|天使投资人|ˈeɪndʒəl|Angel investors typically invest $50K-$500K.|天使投资人通常投资5万至50万美元。|商务会议|intermediate
+seed funding|种子资金|siːd|Seed funding covers initial development costs.|种子资金覆盖初始开发成本。|商务会议|intermediate
+Series A|A轮|ˈsɪriːz eɪ|Series A funding supports scaling operations.|A轮融资支持扩展运营。|商务会议|intermediate
+Series B|B轮|ˈsɪriːz biː|Series B funding accelerates growth.|B轮融资加速增长。|商务会议|intermediate
+IPO|首次公开募股|ˌaɪ piː ˈoʊ|The IPO raised $200M at $20 per share.|首次公开募股以每股20美元筹集2亿美元。|商务会议|intermediate
+valuation|估值|ˌvæljuˈeɪʃn|The pre-money valuation is $50M.|投前估值5000万美元。|商务会议|intermediate
+due diligence|尽职调查|duː ˈdɪlɪdʒəns|Due diligence takes 4-6 weeks before closing.|交割前尽职调查需要4-6周。|商务会议|intermediate
+term sheet|投资意向书|tɜːrm ʃiːt|The term sheet outlines investment conditions.|投资意向书概述投资条件。|商务会议|intermediate
+equity|股权|ˈekwəti|The investor takes 20% equity in the company.|投资者获得公司20%股权。|商务会议|intermediate
+dilution|稀释|daɪˈluːʃn|Subsequent funding rounds cause equity dilution.|后续融资轮导致股权稀释。|商务会议|intermediate
+board seat|董事席位|bɔːrd siːt|The investor requests a board seat.|投资者要求一个董事席位。|商务会议|intermediate
+liquidation preference|清算优先权|ˌlɪkwɪˈdeɪʃn|Liquidation preference protects investor capital.|清算优先权保护投资者资本。|商务会议|intermediate
+anti-dilution|反稀释|ˌænti daɪˈluːʃn|Anti-dilution provisions protect against down rounds.|反稀释条款保护免受降价融资影响。|商务会议|intermediate
+vesting|归属|ˈvestɪŋ|Founder shares vest over 4 years with a 1-year cliff.|创始人股份4年归属1年悬崖期。|商务会议|intermediate
+cliff|悬崖期|klɪf|No shares vest before the 1-year cliff.|1年悬崖期前无股份归属。|商务会议|intermediate
+exit|退出|ˈeksɪt|The exit strategy targets acquisition within 5 years.|退出战略目标5年内被收购。|商务会议|intermediate
+acquisition|收购|ˌækwɪˈzɪʃn|The acquisition was valued at $100M.|收购估值为1亿美元。|商务会议|intermediate
+merger|合并|ˈmɜːrdʒər|The merger creates the largest player in the industry.|合并创造了行业最大企业。|商务会议|intermediate
+LBO|杠杆收购|ˌel biː ˈoʊ|An LBO uses debt to finance the acquisition.|杠杆收购使用债务融资收购。|商务会议|intermediate
+spin-off|分拆|ˈspɪn ɑːf|The spin-off creates an independent company.|分拆创建一家独立公司。|商务会议|intermediate
+divestiture|剥离|daɪˈvestɪtʃər|The divestiture focuses on core business.|剥离聚焦核心业务。|商务会议|intermediate
+restructuring|重组|riːˈstrʌktʃərɪŋ|Corporate restructuring improves efficiency.|企业重组提高效率。|商务会议|intermediate
+turnaround|扭转|ˈtɜːrnəraʊnd|The turnaround strategy returned the company to profitability.|扭转战略使公司恢复盈利。|商务会议|intermediate
+bankruptcy|破产|ˈbæŋkrʌptsi|The company filed for Chapter 11 bankruptcy protection.|公司申请第11章破产保护。|商务会议|intermediate
+liquidation|清算|ˌlɪkwɪˈdeɪʃn|Liquidation sells all assets to pay creditors.|清算出售所有资产以偿还债权人。|商务会议|intermediate
+receivership|接管|rɪˈsiːvərʃɪp|The court placed the company in receivership.|法院将公司置于接管状态。|商务会议|intermediate
+insolvency|资不抵债|ɪnˈsɑːlvənsi|Insolvency occurs when liabilities exceed assets.|当负债超过资产时发生资不抵债。|商务会议|intermediate
+cash flow|现金流|kæʃ floʊ|Positive cash flow sustains business operations.|正现金流维持企业运营。|商务会议|intermediate
+working capital|营运资金|ˈwɜːrkɪŋ ˈkæpɪtl|Working capital finances daily operations.|营运资金为日常运营提供资金。|商务会议|intermediate
+burn rate|资金消耗|bɜːrn reɪt|The monthly burn rate is $100K.|每月资金消耗10万美元。|商务会议|intermediate
+runway|资金跑道|ˈrʌnweɪ|With current burn rate our runway is 18 months.|按当前消耗率我们的资金跑道为18个月。|商务会议|intermediate
+profitability|盈利能力|ˌprɑːfɪtəˈbɪləti|Achieving profitability is the top priority for Q4.|第四季度首要目标是实现盈利。|商务会议|intermediate
+break-even|盈亏平衡|breɪk ˈiːvən|We expect to reach break-even by Q3.|我们预计第三季度达到盈亏平衡。|商务会议|intermediate
+gross margin|毛利率|ɡroʊs ˈmɑːrdʒɪn|The gross margin improved to 45%.|毛利率提升至45%。|商务会议|intermediate
+net margin|净利率|net ˈmɑːrdʒɪn|Net margin after tax was 12%.|税后净利率为12%。|商务会议|intermediate
+EBITDA|息税折旧摊销前利润|ˌiː bɪt ˈdə|EBITDA reached $10M this quarter.|本季度息税折旧摊销前利润达1000万美元。|商务会议|intermediate
+revenue recognition|收入确认|ˈrevənuː|Revenue recognition follows ASC 606 standards.|收入确认遵循ASC 606标准。|商务会议|intermediate
+accrual|权责发生制|əˈkruːəl|Accrual accounting matches revenue with expenses.|权责发生制将收入与费用匹配。|商务会议|intermediate
+depreciation|折旧|dɪˌpriːʃiˈeɪʃn|Equipment depreciation is calculated over 5 years.|设备折旧按5年计算。|商务会议|intermediate
+amortization|摊销|ˌæmərtəˈzeɪʃn|Intangible asset amortization spreads cost over useful life.|无形资产摊销在使用寿命内分摊成本。|商务会议|intermediate
+capital expenditure|资本支出|ˈkæpɪtl ɪkˈspendɪtʃər|CapEx for new equipment is $2M.|新设备资本支出200万美元。|商务会议|intermediate
+operating expense|运营支出|ˈɑːpəreɪtɪŋ ɪkˈspendɪtʃər|OpEx includes rent salaries and utilities.|运营支出包括租金工资和水电费。|商务会议|intermediate
+fixed cost|固定成本|fɪkst kɑːst|Rent is a fixed cost regardless of production volume.|租金是不随产量变化的固定成本。|商务会议|intermediate
+variable cost|可变成本|ˈveriəbl kɑːst|Raw materials are a variable cost.|原材料是可变成本。|商务会议|intermediate
+overhead|间接费用|ˈoʊvərhed|Manufacturing overhead includes indirect labor and utilities.|制造间接费用包括间接人工和水电费。|商务会议|intermediate
+SG&A|销售管理费用|ˌes dʒiː eɪ|SG&A expenses were 15% of revenue.|销售管理费用为收入的15%。|商务会议|intermediate
+COGS|销货成本|kɒɡz|COGS includes direct materials and labor.|销货成本包括直接材料和人工。|商务会议|intermediate
+balance sheet|资产负债表|ˈbæləns ʃiːt|The balance sheet shows assets liabilities and equity.|资产负债表显示资产负债和权益。|商务会议|intermediate
+income statement|利润表|ˈɪnkʌm ˈsteɪtmənt|The income statement reports revenue and expenses.|利润表报告收入和费用。|商务会议|intermediate
+cash flow statement|现金流量表|kæʃ floʊ ˈsteɪtmənt|The cash flow statement tracks cash movements.|现金流量表跟踪现金流动。|商务会议|intermediate
+audit|审计|ˈɔːdɪt|The annual audit verifies financial statements.|年度审计验证财务报表。|商务会议|intermediate
+internal control|内部控制|ɪnˈtɜːrnl kənˈtroʊl|Internal controls prevent fraud and errors.|内部控制防止欺诈和错误。|商务会议|intermediate
+compliance|合规|kəmˈplaɪəns|Financial compliance ensures regulatory adherence.|财务合规确保遵守法规。|商务会议|intermediate
+transparency|透明度|trænsˈpærənsi|Financial transparency builds investor confidence.|财务透明度建立投资者信心。|商务会议|intermediate
+disclosure|披露|dɪsˈkloʊʒər|Mandatory disclosure of material events protects investors.|重大事件的强制披露保护投资者。|商务会议|intermediate
+governance|治理|ˈɡʌvərnəns|Corporate governance frameworks define accountability.|公司治理框架定义问责制。|商务会议|intermediate
+fiduciary|受托责任|fɪˈduːʃieri|Board members have fiduciary duties to shareholders.|董事对股东负有受托责任。|商务会议|intermediate
+stakeholder|利益相关方|ˈsteɪkhoʊldər|Balancing stakeholder interests is key to sustainability.|平衡利益相关方利益是可持续性的关键。|商务会议|intermediate

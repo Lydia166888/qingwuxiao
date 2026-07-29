@@ -1,11 +1,12 @@
-/* Service Worker - 青梧笑 离线缓存 v19 */
-const CACHE_NAME = "qingwuxiao-v19";
+/* Service Worker - 青梧笑 离线缓存 v20 */
+const CACHE_NAME = "qingwuxiao-v20";
 const ASSETS = [
   "./",
   "./index.html",
   "./manifest.json",
   "./icon-192.png",
-  "./icon-512.png"
+  "./icon-512.png",
+  "./words.json"
 ];
 
 /* 安装：预缓存核心资源（容错，单个失败不影响整体） */
@@ -35,6 +36,25 @@ self.addEventListener("fetch", (event) => {
   const isRoot = url.pathname === "/" ||
     url.pathname.endsWith("/index.html") ||
     url.pathname.endsWith("/青梧笑.html");
+
+  /* words.json: 缓存优先，失败回退网络 */
+  const isWordBank = url.pathname.endsWith("/words.json");
+
+  if (isWordBank) {
+    event.respondWith(
+      caches.match(event.request).then((cached) => {
+        if (cached) return cached;
+        return fetch(event.request).then((response) => {
+          if (response.ok) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+          }
+          return response;
+        });
+      })
+    );
+    return;
+  }
 
   event.respondWith(
     isRoot
