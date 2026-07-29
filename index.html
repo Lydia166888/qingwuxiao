@@ -31,22 +31,28 @@ ul{list-style:none}
 #app{max-width:560px;margin:0 auto;height:100%;display:flex;flex-direction:row;position:relative;background:var(--bg);box-shadow:0 0 40px rgba(255,107,157,.1)}
 #main{flex:1;min-width:0;height:100%;display:flex;flex-direction:column;position:relative}
 
-/* Splash - 粉黄梦幻渐变 */
-.splash{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,#FF6B9D 0%,#FF8FAB 30%,#FFB088 60%,#FFD93D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:30px;transition:opacity .5s,visibility .5s;overflow-y:auto}
+/* Splash - 粉黄果冻·清新自然 */
+.splash{position:fixed;inset:0;z-index:100;background:linear-gradient(165deg,#FF8FB1 0%,#FFB07C 45%,#FFD93D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:28px;transition:opacity .6s,visibility .6s;overflow-y:auto}
 .splash.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.splash-top{font-size:15px;opacity:1;letter-spacing:1px;margin-bottom:6px;text-shadow:0 1px 4px rgba(0,0,0,.15)}
-.splash-weather{display:flex;align-items:center;gap:8px;font-size:15px;opacity:1;margin-bottom:16px;background:rgba(255,255,255,.2);padding:6px 16px;border-radius:20px;backdrop-filter:blur(8px)}
-.splash-avatar{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:36px;margin-bottom:20px;backdrop-filter:blur(4px);border:2px solid rgba(255,255,255,.4);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.splash-greeting{font-size:28px;font-weight:700;margin-bottom:10px;letter-spacing:1px}
-.splash-quote{font-size:16px;font-weight:600;margin-bottom:8px;max-width:300px;line-height:1.6;text-shadow:0 1px 4px rgba(0,0,0,.15)}
-.splash-sub{font-size:13px;opacity:1;margin-bottom:16px;text-shadow:0 1px 3px rgba(0,0,0,.12)}
-.splash-almanac{background:rgba(255,255,255,.18);backdrop-filter:blur(10px);border-radius:16px;padding:12px 18px;margin-bottom:24px;max-width:320px;border:1px solid rgba(255,255,255,.2)}
-.splash-almanac .sa-row{display:flex;gap:16px;justify-content:center}
-.splash-almanac .sa-item{display:flex;align-items:center;gap:4px;font-size:14px}
-.splash-almanac .sa-label{font-size:12px;opacity:1;margin-right:2px}
+.splash .petal{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);pointer-events:none;animation:petalFloat linear infinite}
+@keyframes petalFloat{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.6}90%{opacity:.4}100%{transform:translateY(-120px) rotate(360deg);opacity:0}}
+.splash-card{background:rgba(255,255,255,.28);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.45);border-radius:24px;padding:26px 24px 22px;max-width:300px;box-shadow:0 12px 40px rgba(255,107,157,.18);display:flex;flex-direction:column;align-items:center;animation:cardIn .6s ease}
+@keyframes cardIn{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+.splash-top{font-size:13px;letter-spacing:1.5px;opacity:.95;margin-bottom:10px}
+.splash-weather{display:inline-flex;align-items:center;gap:6px;font-size:13px;opacity:.95;margin-bottom:18px;background:rgba(255,255,255,.3);padding:5px 14px;border-radius:16px;backdrop-filter:blur(6px)}
+.splash-avatar{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;border:1px solid rgba(255,255,255,.5);animation:breathe 4s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(1);box-shadow:0 4px 18px rgba(255,255,255,.3)}50%{transform:scale(1.05);box-shadow:0 6px 24px rgba(255,255,255,.45)}}
+.splash-greeting{font-size:24px;font-weight:600;margin-bottom:8px;letter-spacing:.5px}
+.splash-quote{font-size:14px;font-weight:500;margin-bottom:4px;max-width:260px;line-height:1.7;opacity:.96}
+.splash-sub{font-size:12px;opacity:.85;margin-bottom:16px}
+.splash-almanac{background:rgba(255,255,255,.22);border-radius:14px;padding:10px 16px;margin-bottom:22px;max-width:280px;border:1px solid rgba(255,255,255,.3)}
+.splash-almanac .sa-row{display:flex;gap:14px;justify-content:center}
+.splash-almanac .sa-item{display:flex;align-items:center;gap:4px;font-size:12px}
+.splash-almanac .sa-label{font-size:11px;opacity:.9;margin-right:2px}
 .splash-almanac .sa-yi{color:#FFF9C4}
 .splash-almanac .sa-ji{color:#FFCDD2}
-.splash-btn{background:#fff;color:var(--primary-dark);border:none;border-radius:30px;padding:13px 44px;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.08);margin-bottom:8px;transition:transform .2s}
+.splash-btn{background:#fff;color:var(--primary-dark);border:none;border-radius:26px;padding:12px 40px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 6px 20px rgba(255,107,157,.2);margin-bottom:6px;transition:transform .2s;animation:btnPulse 3s ease-in-out infinite}
+@keyframes btnPulse{0%,100%{box-shadow:0 6px 20px rgba(255,107,157,.2)}50%{box-shadow:0 6px 28px rgba(255,107,157,.35)}}
 .splash-btn:active{transform:scale(.96)}
 .splash-hint{font-size:11px;opacity:.7}
 
@@ -220,6 +226,40 @@ ul{list-style:none}
 .quadrant .q-item{display:flex;align-items:center;gap:4px;padding:3px 0}
 .quadrant .q-item .q-del{color:var(--text-lighter);cursor:pointer;font-size:13px;margin-left:auto}
 
+/* Plan - 周历条 & 子标签 */
+.plan-weekbar{display:flex;align-items:center;gap:6px;padding:10px 12px;background:var(--jelly);border-radius:14px;margin-bottom:12px;backdrop-filter:blur(8px)}
+.plan-weekbar .pw-arrow{width:28px;height:28px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--primary);cursor:pointer;font-size:14px;box-shadow:0 2px 6px rgba(0,0,0,.05);flex-shrink:0}
+.plan-weekbar .pw-arrow:active{background:var(--primary-light)}
+.pw-days{display:flex;gap:4px;flex:1;justify-content:space-between}
+.pw-day{flex:1;text-align:center;padding:5px 0;border-radius:10px;cursor:pointer;transition:all .2s}
+.pw-day .pw-dow{font-size:10px;color:var(--text-light)}
+.pw-day .pw-num{font-size:14px;font-weight:600;color:var(--text);margin-top:1px}
+.pw-day.today{background:var(--primary-light)}
+.pw-day.today .pw-num{color:var(--primary-dark)}
+.pw-day.selected{background:linear-gradient(135deg,var(--primary),var(--accent))}
+.pw-day.selected .pw-dow,.pw-day.selected .pw-num{color:#fff}
+.plan-subtabs{display:flex;gap:6px;margin-bottom:14px;overflow-x:auto;padding-bottom:2px}
+.plan-subtabs::-webkit-scrollbar{display:none}
+.plan-subtab{flex-shrink:0;padding:7px 16px;border-radius:20px;font-size:13px;font-weight:500;background:var(--bg);color:var(--text-light);cursor:pointer;transition:all .2s}
+.plan-subtab.active{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;box-shadow:0 3px 10px rgba(255,107,157,.25)}
+.cl-item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}
+.cl-item:last-child{border-bottom:none}
+.cl-check{width:22px;height:22px;border-radius:50%;border:2px solid #e8ccd4;flex-shrink:0;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.cl-check.checked{background:var(--success);border-color:var(--success)}
+.cl-check.checked::after{content:'✓';color:#fff;font-size:12px;font-weight:bold}
+.cl-text{flex:1;font-size:13px;line-height:1.5}
+.cl-item.checked .cl-text{text-decoration:line-through;color:var(--text-lighter)}
+.habit-card{padding:12px;border-radius:14px;background:var(--bg);margin-bottom:10px}
+.habit-row{display:flex;align-items:center;gap:10px}
+.habit-dot{flex:1;display:flex;gap:4px;justify-content:flex-end}
+.habit-dot .hd{width:20px;height:20px;border-radius:6px;background:var(--bg-secondary,#f0eef0);border:1px solid #eee}
+.habit-dot .hd.done{background:linear-gradient(135deg,var(--primary),var(--accent));border-color:transparent}
+.diary-mood{display:flex;gap:10px;justify-content:center;margin-bottom:10px}
+.diary-mood .dm{font-size:24px;cursor:pointer;opacity:.5;transition:all .2s}
+.diary-mood .dm.active{opacity:1;transform:scale(1.15)}
+.diary-ta{width:100%;min-height:120px;border:1px solid var(--border);border-radius:12px;padding:12px;font-size:13px;line-height:1.7;resize:vertical;font-family:inherit;background:#fff;color:var(--text)}
+.diary-summary{background:var(--primary-lighter);border-radius:12px;padding:10px 12px;font-size:12px;color:var(--text-light);line-height:1.7;margin-bottom:10px}
+
 /* Plan */
 .plan-summary-card{padding:16px}
 .plan-summary-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
@@ -374,13 +414,16 @@ ul{list-style:none}
 </head>
 <body>
 <div class="splash" id="splash">
-  <div class="splash-top" id="splashDate">--</div>
-  <div class="splash-weather" id="splashWeather">📍 定位中...</div>
-  <div class="splash-avatar">✿</div>
-  <div class="splash-greeting">嗨，笑笑</div>
-  <div class="splash-quote" id="splashQuote">--</div>
-  <div class="splash-sub">今天也要好好吃饭、好好流汗</div>
-  <div class="splash-almanac" id="splashAlmanac"></div>
+  <div id="splashPetals"></div>
+  <div class="splash-card">
+    <div class="splash-top" id="splashDate">--</div>
+    <div class="splash-weather" id="splashWeather">📍 定位中...</div>
+    <div class="splash-avatar">✿</div>
+    <div class="splash-greeting">嗨，笑笑</div>
+    <div class="splash-quote" id="splashQuote">--</div>
+    <div class="splash-sub">今天也要好好吃饭、好好流汗</div>
+    <div class="splash-almanac" id="splashAlmanac"></div>
+  </div>
   <button class="splash-btn" onclick="App.hideSplash()">开始今天 ✨</button>
   <div class="splash-hint">点一下，开启今日计划</div>
 </div>
@@ -587,6 +630,10 @@ const ALMANAC_YI=['祭祀','祈福','出行','嫁娶','搬家','开市','交易'
 const ALMANAC_JI=['开市','动土','嫁娶','出行','搬家','安葬','祭祀','祈福','签约','求医','针灸','诉讼','远行','乘船','登山','伐木','畋猎','嫁娶','安床','破土'];
 const QUOTES=['好好吃饭，慢慢变好','今天也是发光的自己','小事做完，进步稳稳','你比昨天更棒了','坚持就是超能力','轻盈生活，温柔前行','每一步都算数','好体态从当下开始','温柔且有力量','做自己的光','小步前进也是前进','今天也要元气满满'];
 
+const HAPPY_THINGS=['泡一杯自己喜欢的茶','给植物浇一次水','抬头看云五分钟','整理一个抽屉','给好友发一句问候','散步十分钟','听一首老歌','写三件感恩的小事','换一套干净的床单','晒一会儿太阳','读两页喜欢的书','做一次深呼吸','给家人打个电话','整理桌面','喝够八杯水','早睡一次','吃一顿好吃的早餐','记录一个灵感','整理手机相册','涂一点护手霜','看一次日落','给未来的自己写一句话','整理收件箱','买一束小花','换一个喜欢的壁纸','做一组拉伸','写日记五分钟','认真吃一顿饭','关掉通知一小时','和宠物玩一会儿','睡前放下手机'];
+const WISH_POOL=['学会一首俄语歌','存下第一笔旅行基金','读完五本好书','独自完成一次短途旅行','学会做三道拿手菜','坚持运动一百天','拍一组满意的照片','给爸妈准备一份礼物','整理完所有旧笔记','掌握一门新技能','完成一次断舍离','写满一本日记','养成一早睡的习惯','看完一部经典纪录片','学会简单的理财记账','给朋友写一封手写信','跑完人生第一次五公里','种活一盆植物','收藏一本喜欢的相册','完成今年的语言学习目标'];
+const DEFAULT_HABITS=[{id:'water',name:'喝水8杯',icon:'💧'},{id:'sleep',name:'早睡',icon:'🌙'},{id:'sport',name:'运动',icon:'🏃'},{id:'read',name:'阅读',icon:'📖'},{id:'word',name:'背单词',icon:'🔤'}];
+
 /* === Data: News pool (multi-platform) === */
 const NEWS_POOL=[
 {cat:'经贸',title:'中欧班列7月开行量创新高，机电产品出口占比提升',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=中欧班列开行量创新高机电产品出口'},
@@ -753,6 +800,7 @@ dietMeal:'breakfast',menuEditing:false,menuTab:'breakfast',financeSub:'detail',f
 financeRecordType:'expense',financeRecordCat:'food',financeRecordAmount:'',financeRecordNote:'',
 outfitTab:'commute',travelTab:'all',langGameMode:null,langFlashIdx:0,langSpellIdx:0,langListenIdx:0,
 favTab:'all',calMonth:null,weatherData:null,userCity:'',wordBank:null,wordBankLoaded:false,
+planSub:'schedule',planWeekRef:null,
 
 init(){
 this.migrate();this.bindKeys();this.renderDate();this.switchModule('home');this.showSplash();
@@ -792,6 +840,7 @@ const splash=$('splash');if(!splash)return;
 const d=new Date();const w=['日','一','二','三','四','五','六'];
 $('splashDate').textContent=`${d.getMonth()+1}月${d.getDate()}日 · 周${w[d.getDay()]}`;
 $('splashQuote').textContent=rotate(QUOTES,d.getDate());
+this.genPetals();
 this.loadWeather();
 this.loadAlmanac();
 splash.classList.remove('hidden');
@@ -809,20 +858,22 @@ pos=>{this.fetchWeather(pos.coords.latitude,pos.coords.longitude)},
 },
 async fetchWeather(lat,lon){
 try{
-const res=await fetch(`https://wttr.in/${lat},${lon}?format=%C+%t&lang=zh`);
-const txt=await res.text();
-const parts=txt.trim().split(/\s+/);
-const rawCond=parts[0]||'晴';
-const rawTemp=parts[1]||'--';
-const temp=rawTemp.replace(/[+°C]/g,'').trim()||'--';
-const condMap={'晴':'☀️','多云':'⛅','阴':'☁️','雨':'🌧','小雨':'🌦','中雨':'🌧','大雨':'⛈','暴雨':'⛈','雷阵雨':'⛈','雪':'❄️','小雪':'🌨','雾':'🌫','霾':'😷','沙尘':'🌪'};
-let icon='🌤';
-for(const k in condMap){if(rawCond.includes(k)){icon=condMap[k];break}}
-const data={icon,temp,text:rawCond,city:'当前位置',date:todayStr()};
+const ctrl=new AbortController();const tid=setTimeout(()=>ctrl.abort(),5000);
+const res=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true&timezone=auto`,{signal:ctrl.signal});
+clearTimeout(tid);
+const j=await res.json();const cw=j.current_weather;
+if(!cw)throw new Error('no data');
+const wmo={'0':'☀️ 晴','1':'🌤️ 大部晴','2':'⛅ 多云','3':'☁️ 阴','45':'🌫️ 雾','48':'🌫️ 雾凇','51':'🌦️ 小毛雨','53':'🌦️ 毛雨','55':'🌧️ 中毛雨','61':'🌧️ 小雨','63':'🌧️ 中雨','65':'🌧️ 大雨','66':'🌧️ 冻雨','67':'🌧️ 冻雨','71':'🌨️ 小雪','73':'🌨️ 中雪','75':'❄️ 大雪','77':'❄️ 雪粒','80':'🌦️ 阵雨','81':'🌧️ 中阵雨','82':'🌧️ 强阵雨','95':'⛈️ 雷雨','96':'⛈️ 雷暴冰雹','99':'⛈️ 强雷暴'};
+const code=String(cw.weathercode);
+const entry=wmo[code]||'🌤️ 未知';
+const icon=entry.split(' ')[0];
+const text=entry.split(' ').slice(1).join(' ');
+const temp=Math.round(cw.temperature);
+const data={icon,temp,text,city:'当前位置',date:todayStr()};
 save('weather_cache',data);
 $('splashWeather').innerHTML=`${data.icon} ${data.temp}° ${data.text} · 📍 ${data.city}`;
 }catch(e){
-const data={icon:'🌤',temp:'--',text:'天气获取失败',city:'点击重试',date:''};
+const data={icon:'🌤️',temp:'--',text:'天气暂不可用',city:'点击重试',date:''};
 $('splashWeather').innerHTML=`${data.icon} ${data.temp}° ${data.text} · 📍 ${data.city}`;
 $('splashWeather').onclick=()=>{this.loadWeather()};
 }
@@ -834,6 +885,7 @@ const ji=shuffle(ALMANAC_JI).slice(0,3).join('、');
 $('splashAlmanac').innerHTML=`<div class="sa-row"><div class="sa-item"><span class="sa-label">宜</span><span class="sa-yi">${yi}</span></div><div class="sa-item"><span class="sa-label">忌</span><span class="sa-ji">${ji}</span></div></div>`;
 },
 hideSplash(){const splash=$('splash');if(splash)splash.classList.add('hidden');this.switchModule('home')},
+genPetals(){const box=$('splashPetals');if(!box||box.childElementCount)return;const colors=['rgba(255,255,255,.6)','rgba(255,240,245,.5)','rgba(255,250,220,.5)'];for(let i=0;i<10;i++){const p=document.createElement('div');p.className='petal';const s=4+Math.random()*7;p.style.width=s+'px';p.style.height=s+'px';p.style.left=Math.random()*100+'%';p.style.bottom=(-20-Math.random()*60)+'px';p.style.background=colors[i%3];p.style.animationDuration=(5+Math.random()*6)+'s';p.style.animationDelay=(Math.random()*6)+'s';box.appendChild(p)}},
 
 switchModule(p){this.currentPage=p;document.querySelectorAll('.nav-item').forEach(el=>el.classList.toggle('active',el.dataset.page===p));document.querySelectorAll('.page').forEach(el=>el.classList.toggle('active',el.id==='page-'+p));this.renderPage(p);$('content').scrollTop=0},
 renderPage(p){const el=$('page-'+p);const m={home:'renderHome',plan:'renderPlan',diet:'renderDiet',finance:'renderFinance',language:'renderLanguage',exercise:'renderExercise',news:'renderNews',invest:'renderInvest',ai:'renderAI',outfit:'renderOutfit',travel:'renderTravel'};if(m[p])el.innerHTML=this[m[p]]()},
@@ -880,6 +932,38 @@ return`<div class="comp-card ${done?'done':''}" onclick="App.switchModule('${pag
 
 /* === PLAN === */
 renderPlan(){
+return`${this.renderPlanWeekbar()}<div class="plan-subtabs">
+<div class="plan-subtab ${this.planSub==='schedule'?'active':''}" onclick="App.setPlanSub('schedule')">日程</div>
+<div class="plan-subtab ${this.planSub==='list'?'active':''}" onclick="App.setPlanSub('list')">清单</div>
+<div class="plan-subtab ${this.planSub==='habit'?'active':''}" onclick="App.setPlanSub('habit')">习惯</div>
+<div class="plan-subtab ${this.planSub==='diary'?'active':''}" onclick="App.setPlanSub('diary')">日记</div>
+</div>${this.renderPlanSub()}`;
+},
+renderPlanWeekbar(){
+const cd=new Date(this.currentDate);
+const day=cd.getDay()||7;
+const monday=new Date(cd);monday.setDate(cd.getDate()-day+1);
+let html='<div class="plan-weekbar"><div class="pw-arrow" onclick="App.planWeekShift(-1)">‹</div><div class="pw-days">';
+const dows=['一','二','三','四','五','六','日'];
+for(let i=0;i<7;i++){
+const dd=new Date(monday);dd.setDate(monday.getDate()+i);
+const ds=fmtDate(dd);const isToday=ds===todayStr();const isSel=ds===this.currentDate;
+html+=`<div class="pw-day ${isToday?'today':''} ${isSel?'selected':''}" onclick="App.selectPlanDate('${ds}')"><div class="pw-dow">${dows[i]}</div><div class="pw-num">${dd.getDate()}</div></div>`;
+}
+html+='</div><div class="pw-arrow" onclick="App.planWeekShift(1)">›</div></div>';
+return html;
+},
+setPlanSub(s){this.planSub=s;this.renderPage('plan')},
+planWeekShift(n){const cd=new Date(this.currentDate);cd.setDate(cd.getDate()+n*7);this.currentDate=fmtDate(cd);this.renderDate();this.renderPage('plan');this.updateHome();haptic(8)},
+selectPlanDate(s){this.currentDate=s;this.renderDate();this.renderPage('plan');this.updateHome();haptic(8)},
+renderPlanSub(){
+if(this.planSub==='schedule')return this.renderPlanSchedule();
+if(this.planSub==='list')return this.renderPlanList();
+if(this.planSub==='habit')return this.renderPlanHabit();
+if(this.planSub==='diary')return this.renderPlanDiary();
+return'';
+},
+renderPlanSchedule(){
 const d=this.dayData(this.currentDate);
 const wT=d.todos?.work||[],pT=d.todos?.personal||[];
 const total=wT.length+pT.length;const done=wT.filter(t=>t.done).length+pT.filter(t=>t.done).length;
@@ -910,6 +994,98 @@ ${this.renderQuadrant('q3','紧急不重要','委托/快速','#66BB6A')}
 ${this.renderQuadrant('q4','不重要不紧急','暂不做','#B0BEC5')}
 </div>`;
 },
+renderPlanList(){
+const cd=new Date(this.currentDate);
+const month=cd.getMonth()+1;const year=cd.getFullYear();
+const day=cd.getDate();
+const monthIdx=(month-1)*2+Math.floor(day/16);
+const monthHappy=[];
+for(let i=0;i<31;i++){monthHappy.push(HAPPY_THINGS[(monthIdx+i)%HAPPY_THINGS.length])}
+const yearWish=WISH_POOL.map((w,i)=>({text:w,done:false,idx:i}));
+const clData=load('qwx5_checklists',{});
+const monthKey=`${year}_${month}`;
+const monthDone=clData[`happy_${monthKey}`]||[];
+const yearKey=`${year}`;
+const yearDone=clData[`wish_${yearKey}`]||[];
+const customs=clData.custom||[];
+return`<div class="section-title">🌸 ${month}月幸福小事 <span class="count">${monthDone.filter(Boolean).length}/${31}</span></div>
+<div class="card">${monthHappy.map((t,i)=>{const isDone=monthDone[i];const isToday=i+1===day;return`<div class="cl-item ${isDone?'checked':''}"><div class="cl-check ${isDone?'checked':''}" onclick="App.toggleMonthHappy(${i})"></div><div class="cl-text">${isToday?'<b>今天 · </b>':''}${i+1}日 · ${escapeHtml(t)}</div></div>`}).join('')}</div>
+<div class="section-title">⭐ ${year}愿望清单 <span class="count">${yearDone.filter(Boolean).length}/${WISH_POOL.length}</span></div>
+<div class="card">${yearWish.map(w=>{const isDone=yearDone[w.idx];return`<div class="cl-item ${isDone?'checked':''}"><div class="cl-check ${isDone?'checked':''}" onclick="App.toggleYearWish(${w.idx})"></div><div class="cl-text">${escapeHtml(w.text)}</div></div>`}).join('')}</div>
+<div class="section-title">📋 我的清单 <span class="count">${customs.length}</span></div>
+<div class="card">${customs.length?customs.map((c,ci)=>`<div style="padding:10px 0;border-bottom:1px solid var(--border)"><div style="font-size:13px;font-weight:600;margin-bottom:6px">${escapeHtml(c.name)} <span style="font-size:11px;color:var(--text-light)">${c.items.filter(Boolean).length}/${c.items.length}</span> <span style="float:right;cursor:pointer;color:var(--text-lighter)" onclick="App.delCustomList(${ci})">×</span></div>${c.items.map((it,ii)=>`<div class="cl-item ${it.done?'checked':''}"><div class="cl-check ${it.done?'checked':''}" onclick="App.toggleCustomItem(${ci},${ii})"></div><div class="cl-text">${escapeHtml(it.text)}</div></div>`).join('')}</div>`).join(''):'<div class="empty"><div class="empty-text">还没有自定义清单</div></div>'}<button class="btn btn-yellow btn-sm" onclick="App.addCustomList()">➕ 新建清单</button></div>`;
+},
+toggleMonthHappy(i){
+const key=`happy_${new Date(this.currentDate).getFullYear()}_${new Date(this.currentDate).getMonth()+1}`;
+const cl=load('qwx5_checklists',{});cl[key]=cl[key]||[];cl[key][i]=!cl[key][i];save('qwx5_checklists',cl);this.renderPage('plan');haptic(10);
+},
+toggleYearWish(i){
+const key=`wish_${new Date(this.currentDate).getFullYear()}`;
+const cl=load('qwx5_checklists',{});cl[key]=cl[key]||[];cl[key][i]=!cl[key][i];save('qwx5_checklists',cl);this.renderPage('plan');haptic(10);
+},
+addCustomList(){
+this.openModal('新建清单',`<div class="input-group"><label>清单名称</label><input class="input" id="clName" placeholder="如：旅行准备"></div><div class="input-group"><label>条目（每行一条）</label><textarea class="diary-ta" id="clItems" placeholder="订机票\n订酒店\n买防晒霜"></div><button class="btn btn-primary btn-block" onclick="App.saveCustomList()">创建</button>`);
+},
+saveCustomList(){
+const name=$('clName').value.trim();const items=$('clItems').value.split('\n').map(s=>s.trim()).filter(Boolean);
+if(!name||!items.length){toast('请填写名称和条目');return}
+const cl=load('qwx5_checklists',{});cl.custom=cl.custom||[];cl.custom.push({name,items:items.map(t=>({text:t,done:false}))});save('qwx5_checklists',cl);this.closeModal();this.renderPage('plan');toast('清单已创建');haptic(15);
+},
+delCustomList(ci){const cl=load('qwx5_checklists',{});cl.custom.splice(ci,1);save('qwx5_checklists',cl);this.renderPage('plan');toast('已删除')},
+toggleCustomItem(ci,ii){const cl=load('qwx5_checklists',{});cl.custom[ci].items[ii].done=!cl.custom[ci].items[ii].done;save('qwx5_checklists',cl);this.renderPage('plan');haptic(10)},
+renderPlanHabit(){
+const habits=load('qwx5_habits',null)||DEFAULT_HABITS.map(h=>({...h}));
+const today=this.currentDate;
+const last7=[];for(let i=6;i>=0;i--){const dd=new Date(today);dd.setDate(dd.getDate()-i);last7.push(fmtDate(dd))}
+const dows=['日','一','二','三','四','五','六'];
+return`<div class="section-title">🌱 今日习惯打卡</div>
+<div class="card">${habits.map((h,hi)=>{
+const todayDone=this.habitDoneOn(h.id,today);
+let streak=this.habitStreak(h.id,today);
+return`<div class="habit-card"><div class="habit-row"><div style="font-size:20px">${h.icon}</div><div style="flex:1"><div style="font-size:13px;font-weight:600">${escapeHtml(h.name)}</div><div style="font-size:11px;color:var(--text-light)">连续 ${streak} 天</div></div><div class="cl-check ${todayDone?'checked':''}" onclick="App.toggleHabit(${hi})"></div></div><div class="habit-dot">${last7.map(ds=>{const done=this.habitDoneOn(h.id,ds);const dw=new Date(ds).getDay();return`<div class="hd ${done?'done':''}" title="${ds} 周${dows[dw]}">${dows[dw]}</div>`}).join('')}</div></div>`}).join('')}</div>
+<button class="btn btn-yellow btn-sm" onclick="App.addHabit()">➕ 添加习惯</button>`;
+},
+habitDoneOn(id,date){const d=this.dayData(date);return d.habits?.[id]===true},
+toggleHabit(hi){const habits=load('qwx5_habits',null)||DEFAULT_HABITS.map(h=>({...h}));const h=habits[hi];const d=this.dayData(this.currentDate);d.habits=d.habits||{};d.habits[h.id]=!d.habits[h.id];this.saveDay(this.currentDate,d);this.renderPage('plan');haptic(12)},
+habitStreak(id,today){
+let streak=0;let ds=new Date(today);
+while(true){if(this.habitDoneOn(id,fmtDate(ds))){streak++;ds.setDate(ds.getDate()-1)}else break}
+return streak;
+},
+addHabit(){
+this.openModal('添加习惯',`<div class="input-group"><label>图标</label><input class="input" id="hbIcon" placeholder="如 💪" maxlength="2"></div><div class="input-group"><label>名称</label><input class="input" id="hbName" placeholder="如：冥想"></div><button class="btn btn-primary btn-block" onclick="App.saveHabit()">添加</button>`);
+},
+saveHabit(){
+const icon=$('hbIcon').value.trim()||'⭐';const name=$('hbName').value.trim();if(!name){toast('请输入名称');return}
+const habits=load('qwx5_habits',null)||DEFAULT_HABITS.map(h=>({...h}));habits.push({id:'c'+Date.now(),icon,name});save('qwx5_habits',habits);this.closeModal();this.renderPage('plan');toast('习惯已添加');haptic(15);
+},
+renderPlanDiary(){
+const d=this.dayData(this.currentDate);
+const mood=d.diaryMood||0;
+const moods=['😢','😟','😐','🙂','😄'];
+const todayDone=this.getDiarySummary();
+return`<div class="section-title">📖 今日日记</div>
+<div class="card">
+<div class="diary-mood">${moods.map((m,i)=>`<div class="dm ${i===mood?'active':''}" onclick="App.setDiaryMood(${i})">${m}</div>`).join('')}</div>
+${todayDone?`<div class="diary-summary"><b>今日完成 ✨</b><br>${todayDone}</div>`:''}
+<textarea class="diary-ta" id="diaryText" placeholder="今天发生了什么？有什么感受？">${escapeHtml(d.reflection||'')}</textarea>
+<button class="btn btn-primary btn-block" style="margin-top:10px" onclick="App.saveDiary()">保存日记</button>
+</div>`;
+},
+setDiaryMood(i){const d=this.dayData(this.currentDate);d.diaryMood=i;this.saveDay(this.currentDate,d);this.renderPage('plan');haptic(8)},
+saveDiary(){
+const txt=$('diaryText')?.value.trim()||'';const d=this.dayData(this.currentDate);d.reflection=txt;this.saveDay(this.currentDate,d);toast('日记已保存');haptic(12);
+},
+getDiarySummary(){
+const d=this.dayData(this.currentDate);
+const parts=[];
+const wT=d.todos?.work||[],pT=d.todos?.personal||[];
+const doneT=[...wT,...pT].filter(t=>t.done);if(doneT.length)parts.push('完成待办 '+doneT.length+' 项');
+const habits=load('qwx5_habits',null)||DEFAULT_HABITS.map(h=>({...h}));const hd=habits.filter(h=>d.habits?.[h.id]);if(hd.length)parts.push('打卡习惯：'+hd.map(h=>h.icon+h.name).join('、'));
+const cl=load('qwx5_checklists',{});const monthKey=`happy_${new Date(this.currentDate).getFullYear()}_${new Date(this.currentDate).getMonth()+1}`;const mh=(cl[monthKey]||[]).filter(Boolean).length;if(mh)parts.push('幸福小事 '+mh+' 件');
+return parts.join('；');
+},
+
 renderTodoItem(t,type,i){
 return`<div class="todo-item ${t.done?'done':''}"><div class="todo-checkbox ${t.done?'checked':''}" onclick="App.toggleTodo('${type}',${i})"></div><div class="todo-content"><div class="todo-text">${escapeHtml(t.text)} <span class="todo-tag ${t.q||'normal'}">${this.qLabel(t.q)}</span></div></div><div class="todo-del" onclick="App.delTodo('${type}',${i})">×</div></div>`;
 },
