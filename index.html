@@ -950,9 +950,9 @@ init(){
 this.migrate();this.bindKeys();this.renderDate();this.switchModule('home');this.showSplash();
 this.loadWordBank();
 if(localStorage.getItem('qwx5_aiStudyPlans')===null){save('aiStudyPlans',DEFAULT_AI_PLANS)}
-// Auto-sync: silently download on startup if configured
-const _token=load('gistToken','');const _gistId=load('gistId','');
-if(_token&&_gistId){this.downloadSync().catch(()=>{})}
+// Auto-sync disabled on startup to prevent data overwrite — user must manually trigger sync
+// const _token=load('gistToken','');const _gistId=load('gistId','');
+// if(_token&&_gistId){this.downloadSync().catch(()=>{})}
 if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{reg.update();reg.addEventListener('updatefound',()=>{const nw=reg.installing;if(nw){nw.addEventListener('statechange',()=>{if(nw.state==='activated'&&navigator.serviceWorker.controller)toast('青梧笑已更新，刷新后生效')})}})}).catch(()=>{})}
 },
 loadWordBank(){
@@ -2378,12 +2378,15 @@ ${!hasToken?'⚠️ 请先输入Token并保存<br>':''}
 2. 电脑打开点「下载同步」<br>
 3. 两端数据自动合并，不会丢失
 </div>
-<div style="display:flex;gap:8px;margin-top:12px">
+<div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
 <button class="btn btn-outline btn-sm" onclick="App.autoSync()">🔄 立即自动同步</button>
 ${gistId?`<button class="btn btn-outline btn-sm" style="color:var(--primary)" onclick="App.resetGist()">🔓 重置Gist绑定</button>`:''}
-</div>`);
+<button class="btn btn-outline btn-sm" style="color:var(--primary)" onclick="App.restoreBackup()">♻️ 恢复备份数据</button>
+</div>
+<div style="font-size:11px;color:var(--text-light);margin-top:8px">⚠️ 下载同步仅补充本地缺失的数据，不会覆盖已有数据。如数据丢失可点「恢复备份数据」。</div>`);
 },
 resetGist(){localStorage.removeItem('qwx5_gistId');toast('Gist绑定已重置，下次上传将创建新Gist');this.openSettings()},
+restoreBackup(){const bk=load('lastBackup',null);if(!bk){toast('❌ 没有找到备份数据');return}try{const data=typeof bk==='string'?JSON.parse(bk):bk;let restored=0;for(const k in data){if(k.startsWith('qwx5_')&&k!=='qwx5_lastBackup'){localStorage.setItem(k,data[k]);restored++}}toast('✅ 已恢复'+restored+'项备份数据');haptic(20);this.renderAll()}catch(e){toast('❌ 恢复失败: '+e.message)}},
 saveGistToken(){const v=$('gistTokenInput')?.value?.trim();if(!v){toast('请输入Token');return}save('gistToken',v);toast('Token已保存');haptic(15)},
 async uploadSync(){
 const token=load('gistToken','');if(!token){toast('请先输入Token');return}
@@ -2416,10 +2419,29 @@ const json=await res.json();
 const file=json.files&&json.files['qingwuxiao-backup.json'];
 if(!file||!file.content){toast('❌ Gist中没有数据');return}
 const data=JSON.parse(file.content);
-let merged=0;
-for(const k in data){if(k.startsWith('qwx5_')&&k!=='qwx5_gistId'&&k!=='qwx5_gistToken'){try{const local=localStorage.getItem(k);if(!local){localStorage.setItem(k,data[k]);merged++}else{const localObj=JSON.parse(local);const remoteObj=JSON.parse(data[k]);if(typeof localObj==='object'&&localObj!==null&&typeof remoteObj==='object'&&remoteObj!==null&&!Array.isArray(localObj)){const mergedObj={...remoteObj,...localObj};for(const kk in remoteObj){if(!(kk in localObj))mergedObj[kk]=remoteObj[kk]}localStorage.setItem(k,JSON.stringify(mergedObj));merged++}else{localStorage.setItem(k,data[k]);merged++}}}catch(e){}}}
+/* Backup local data before merge */
+const backup={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('qwx5_'))backup[k]=localStorage.getItem(k)}
+save('lastBackup',JSON.stringify(backup));
+let added=0,skipped=0;
+for(const k in data){
+if(k.startsWith('qwx5_')&&k!=='qwx5_gistId'&&k!=='qwx5_gistToken'&&k!=='qwx5_lastBackup'){
+try{
+const local=localStorage.getItem(k);
+if(!local){localStorage.setItem(k,data[k]);added++}
+else{
+/* Only merge objects (add missing keys), NEVER overwrite arrays or local values */
+const localObj=JSON.parse(local);const remoteObj=JSON.parse(data[k]);
+if(typeof localObj==='object'&&localObj!==null&&!Array.isArray(localObj)&&typeof remoteObj==='object'&&remoteObj!==null&&!Array.isArray(remoteObj)){
+let changed=false;const mergedObj={...localObj};
+for(const kk in remoteObj){if(!(kk in localObj)){mergedObj[kk]=remoteObj[kk];changed=true}}
+if(changed){localStorage.setItem(k,JSON.stringify(mergedObj));added++}else{skipped++}
+}else{skipped++}
+}
+}catch(e){skipped++}
+}
+}
 save('lastSyncTime',new Date().toLocaleString('zh-CN'));
-toast('✅ 下载成功，合并'+merged+'项');haptic(20);
+toast('✅ 下载完成：新增'+added+'项，跳过'+skipped+'项（本地优先）');haptic(20);
 this.renderAll();
 }catch(e){const msg=e.name==='AbortError'?'下载超时（30秒），请检查网络':(e.message||'网络错误');toast('❌ 下载失败: '+msg);console.error('downloadSync error:',e)}
 },
