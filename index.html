@@ -762,7 +762,7 @@ detail:{住宿:'网红民宿/景观房300-600/晚，选有拍照场景的',交�
 /* === App === */
 const App={
 currentDate:todayStr(),currentPage:'home',langSub:'en',newsFilter:'all',aiFilter:'all',exerciseSub:'posture',
-dietMeal:'breakfast',financeSub:'detail',financeDetailSub:'bill',financeChartPeriod:'month',
+dietMeal:'breakfast',menuEditing:false,menuTab:'breakfast',financeSub:'detail',financeDetailSub:'bill',financeChartPeriod:'month',
 financeRecordType:'expense',financeRecordCat:'food',financeRecordAmount:'',financeRecordNote:'',
 outfitTab:'commute',travelTab:'all',langGameMode:null,langFlashIdx:0,langSpellIdx:0,langListenIdx:0,
 favTab:'all',calMonth:null,weatherData:null,userCity:'',
@@ -807,18 +807,23 @@ if(saved&&saved.date===todayStr()){$('splashWeather').innerHTML=`${saved.icon} $
 $('splashWeather').textContent='📍 获取天气中...';
 if(navigator.geolocation){
 navigator.geolocation.getCurrentPosition(
-pos=>{this.fetchWeather(pos.coords.latitude,pos.coords.latitude)},
+pos=>{this.fetchWeather(pos.coords.latitude,pos.coords.longitude)},
 ()=>{this.fetchWeather(39.9,116.4)}
 );
 }else{this.fetchWeather(39.9,116.4)}
 },
 async fetchWeather(lat,lon){
 try{
-const res=await fetch(`https://wttr.in/${lat},${lon}?format=%C+%t+%W&lang=zh`);
+const res=await fetch(`https://wttr.in/${lat},${lon}?format=%C+%t&lang=zh`);
 const txt=await res.text();
 const parts=txt.trim().split(/\s+/);
-const city='当前位置';
-const data={icon:'🌤',temp:parts[1]?.replace(/°C/g,'')||'--',text:parts[0]||'晴',city:city,date:todayStr()};
+const rawCond=parts[0]||'晴';
+const rawTemp=parts[1]||'--';
+const temp=rawTemp.replace(/[+°C]/g,'').trim()||'--';
+const condMap={'晴':'☀️','多云':'⛅','阴':'☁️','雨':'🌧','小雨':'🌦','中雨':'🌧','大雨':'⛈','暴雨':'⛈','雷阵雨':'⛈','雪':'❄️','小雪':'🌨','雾':'🌫','霾':'😷','沙尘':'🌪'};
+let icon='🌤';
+for(const k in condMap){if(rawCond.includes(k)){icon=condMap[k];break}}
+const data={icon,temp,text:rawCond,city:'当前位置',date:todayStr()};
 save('weather_cache',data);
 $('splashWeather').innerHTML=`${data.icon} ${data.temp}° ${data.text} · 📍 ${data.city}`;
 }catch(e){
@@ -964,7 +969,7 @@ const d=this.dayData(this.currentDate);
 const diet=d.diet||{};const cal=d.dietCal||{};
 const bCal=cal.breakfast||0,lCal=cal.lunch||0,dCal=cal.dinner||0;const total=bCal+lCal+dCal;
 const target=1500;
-const menu=DAILY_MENU[dayIdx(this.currentDate)%DAILY_MENU.length];
+const menu=this.getTodayMenu();
 return`<div class="card" style="background:linear-gradient(135deg,var(--primary) 0%,#FFB088 50%,var(--accent) 100%);color:#fff">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px"><div><div style="font-size:12px;opacity:.9">今日摄入</div><div style="font-size:32px;font-weight:700">${total}<span style="font-size:14px;opacity:.8"> kcal</span></div></div>
 <div style="text-align:right"><div style="font-size:12px;opacity:.9">目标 ${target} kcal</div><div style="font-size:14px;margin-top:4px">${total>target?'⚠️ 超出':'✅ 达标'}</div></div></div>
@@ -974,26 +979,58 @@ return`<div class="card" style="background:linear-gradient(135deg,var(--primary)
 <div class="card" style="background:var(--jelly);backdrop-filter:blur(8px);border:1px solid var(--jelly-bd)">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
 <div style="font-size:14px;font-weight:700;color:var(--text)">🍽️ 今日菜单推荐</div>
+<div style="display:flex;gap:6px;align-items:center">
 <span style="font-size:11px;color:var(--text-light)">Day ${dayIdx(this.currentDate)%10+1}</span>
+<span style="font-size:11px;color:var(--primary-dark);cursor:pointer" onclick="App.toggleMenuEdit()">${this.menuEditing?'✅ 完成':'✏️ 编辑'}</span>
 </div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🍳</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">早餐</div><div style="font-size:13px">${menu.breakfast}</div></div></div>
-<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🍲</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">午餐</div><div style="font-size:13px">${menu.lunch}</div></div></div>
-<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🥗</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">晚餐</div><div style="font-size:13px">${menu.dinner}</div></div></div>
-<div style="display:flex;gap:8px;align-items:flex-start"><span style="font-size:18px">🍎</span><div><div style="font-size:12px;color:var(--text-light);font-weight:600">加餐</div><div style="font-size:13px">${menu.snack}</div></div></div>
 </div>
-<div style="font-size:11px;color:var(--text-lighter);margin-top:8px;text-align:center">菜单按日期轮换 · 可参考填入下方记录</div>
+<div style="display:flex;gap:8px">
+<div style="flex:1;background:var(--primary-lighter);border-radius:var(--radius-sm);padding:10px;text-align:center;${this.menuTab==='breakfast'?'border:2px solid var(--primary)':'border:2px solid transparent'}" onclick="App.setMenuTab('breakfast')">
+<div style="font-size:20px;margin-bottom:4px">🍳</div>
+<div style="font-size:11px;color:var(--text-light);font-weight:600">早餐</div>
+${this.menuEditing?`<input class="input" style="font-size:11px;text-align:center;padding:4px;margin-top:4px;width:100%" value="${escapeHtml(menu.breakfast)}" oninput="App.editMenu('breakfast',this.value)">`:`<div style="font-size:12px;margin-top:4px;line-height:1.4">${menu.breakfast}</div>`}
+</div>
+<div style="flex:1;background:var(--primary-lighter);border-radius:var(--radius-sm);padding:10px;text-align:center;${this.menuTab==='lunch'?'border:2px solid var(--primary)':'border:2px solid transparent'}" onclick="App.setMenuTab('lunch')">
+<div style="font-size:20px;margin-bottom:4px">🍲</div>
+<div style="font-size:11px;color:var(--text-light);font-weight:600">午餐</div>
+${this.menuEditing?`<input class="input" style="font-size:11px;text-align:center;padding:4px;margin-top:4px;width:100%" value="${escapeHtml(menu.lunch)}" oninput="App.editMenu('lunch',this.value)">`:`<div style="font-size:12px;margin-top:4px;line-height:1.4">${menu.lunch}</div>`}
+</div>
+<div style="flex:1;background:var(--primary-lighter);border-radius:var(--radius-sm);padding:10px;text-align:center;${this.menuTab==='dinner'?'border:2px solid var(--primary)':'border:2px solid transparent'}" onclick="App.setMenuTab('dinner')">
+<div style="font-size:20px;margin-bottom:4px">🥗</div>
+<div style="font-size:11px;color:var(--text-light);font-weight:600">晚餐</div>
+${this.menuEditing?`<input class="input" style="font-size:11px;text-align:center;padding:4px;margin-top:4px;width:100%" value="${escapeHtml(menu.dinner)}" oninput="App.editMenu('dinner',this.value)">`:`<div style="font-size:12px;margin-top:4px;line-height:1.4">${menu.dinner}</div>`}
+</div>
+</div>
+${this.menuEditing?`<div style="display:flex;gap:8px;margin-top:8px"><input class="input" style="flex:1;font-size:12px;padding:6px" value="${escapeHtml(menu.snack||'')}" placeholder="加餐（可选）" oninput="App.editMenu('snack',this.value)"><button class="btn btn-outline btn-sm" onclick="App.resetMenu()">↻ 重置</button></div>`:''}
+<div style="font-size:11px;color:var(--text-lighter);margin-top:8px;text-align:center">${this.menuEditing?'编辑后自动保存 · 点击餐次切换查看':'菜单按日期轮换 · 点击餐次切换 · ✏️可编辑'}</div>
 </div>
 <div class="meal-tabs">
 <div class="meal-tab ${this.dietMeal==='breakfast'?'active':''}" onclick="App.setDietMeal('breakfast')">🍳 早餐</div>
 <div class="meal-tab ${this.dietMeal==='lunch'?'active':''}" onclick="App.setDietMeal('lunch')">🍲 午餐</div>
 <div class="meal-tab ${this.dietMeal==='dinner'?'active':''}" onclick="App.setDietMeal('dinner')">🥗 晚餐</div>
 </div>
-${this.renderMealCard('breakfast','早餐')}
-${this.renderMealCard('lunch','午餐')}
-${this.renderMealCard('dinner','晚餐')}
+${this.renderMealCard(this.dietMeal,this.dietMeal==='breakfast'?'早餐':this.dietMeal==='lunch'?'午餐':'晚餐')}
 <div class="section-title">📊 本周饮食总结</div>
 <div class="card">${this.renderDietWeekSummary()}</div>`;
+},
+getTodayMenu(){
+const key='qwx5_menu_'+this.currentDate;
+const saved=load(key,null);
+if(saved)return saved;
+return DAILY_MENU[dayIdx(this.currentDate)%DAILY_MENU.length];
+},
+editMenu(field,val){
+const key='qwx5_menu_'+this.currentDate;
+const menu=this.getTodayMenu();
+menu[field]=val;
+save(key,menu);
+},
+toggleMenuEdit(){this.menuEditing=!this.menuEditing;this.renderPage('diet')},
+setMenuTab(t){this.menuTab=t;this.renderPage('diet')},
+resetMenu(){
+const key='qwx5_menu_'+this.currentDate;
+localStorage.removeItem(key);
+this.renderPage('diet');toast('菜单已重置为推荐');
 },
 renderMealCard(meal,label){
 const d=this.dayData(this.currentDate);const m=(d.diet||{})[meal]||{};const cal=(d.dietCal||{})[meal]||0;
