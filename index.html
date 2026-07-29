@@ -505,7 +505,7 @@ function load(key,def){try{const v=localStorage.getItem('qwx5_'+key);return v?JS
 function escapeHtml(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function speak(text,lang){if('speechSynthesis'in window){speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang=lang||'en-US';u.rate=0.85;speechSynthesis.speak(u)}}
 function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
-function dayIdx(s){const d=new Date(s);return Math.floor((d-new Date('2024-01-01'))/864e5)}
+function dayIdx(s){const d=parseDate(s);return Math.floor((d-new Date('2024-01-01'))/864e5)}
 function rotate(arr,idx){const n=arr.length;if(!n)return null;return arr[idx%n]}
 
 /* === Data: Words (loaded from words.json) === */
@@ -921,8 +921,8 @@ $('splashWeather').innerHTML=`<span class="splash-weather-link" onclick="App.pic
 },
 loadAlmanac(){
 const idx=dayIdx(todayStr());
-const yi=shuffle(ALMANAC_YI).slice(0,3).join('、');
-const ji=shuffle(ALMANAC_JI).slice(0,3).join('、');
+const yi=[0,1,2].map(i=>ALMANAC_YI[(idx*3+i)%ALMANAC_YI.length]).join('、');
+const ji=[0,1,2].map(i=>ALMANAC_JI[(idx*5+i+3)%ALMANAC_JI.length]).join('、');
 $('splashAlmanac').innerHTML=`<div class="sa-row"><span class="sa-label sa-yi-label">宜</span><div class="sa-item-half">${yi}</div></div><div class="sa-row"><span class="sa-label sa-ji-label">忌</span><div class="sa-item-half">${ji}</div></div>`;
 },
 hideSplash(){const splash=$('splash');if(splash)splash.classList.add('hidden');this.switchModule('home')},
