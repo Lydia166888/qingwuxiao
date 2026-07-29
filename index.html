@@ -2374,9 +2374,9 @@ ${gistId?`✅ 已绑定 Gist<br>`:''}
 ${syncTime?`🕐 上次同步：${syncTime}<br>`:''}
 ${!hasToken?'⚠️ 请先输入Token并保存<br>':''}
 📋 使用说明：<br>
-1. 手机记账后点「上传同步」<br>
-2. 电脑打开点「下载同步」<br>
-3. 两端数据自动合并，不会丢失
+1. 手机记账后点「🔄 立即自动同步」<br>
+2. 电脑打开也点「🔄 立即自动同步」<br>
+3. 双向合并，多设备数据取并集，不会互相覆盖
 </div>
 <div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap">
 <button class="btn btn-outline btn-sm" onclick="App.autoSync()">🔄 立即自动同步</button>
@@ -2441,31 +2441,76 @@ restoreBackup(){const bk=load('lastBackup',null);if(!bk){toast('❌ 没有找到
 saveGistToken(){const v=$('gistTokenInput')?.value?.trim();if(!v){toast('请输入Token');return}save('gistToken',v);toast('Token已保存');haptic(15)},
 async uploadSync(){
 const token=load('gistToken','');if(!token){toast('请先输入Token');return}
-toast('正在上传...');
-const data={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('qwx5_')&&k!=='qwx5_gistToken')data[k]=localStorage.getItem(k)}
-data.__meta={device:navigator.userAgent.slice(0,60),syncTime:new Date().toISOString()};
-const content=JSON.stringify(data,null,2);
+toast('正在上传（读取云端数据...）');
+/* 1. Collect local data */
+const localData={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('qwx5_')&&k!=='qwx5_gistToken'&&k!=='qwx5_lastBackup')localData[k]=localStorage.getItem(k)}
+localData.__meta=JSON.stringify({device:navigator.userAgent.slice(0,80),syncTime:new Date().toISOString()});
+/* 2. Read current Gist (to merge, not overwrite) */
 const gistId=load('gistId','');
+let remoteData={};
+if(gistId){
+try{
+const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),60000);
+const res=await fetch('https://api.github.com/gists/'+gistId,{signal:ctrl.signal,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}});
+if(res.ok){const json=await res.json();const f=json.files&&json.files['qingwuxiao-backup.json'];if(f&&f.content){const parsed=JSON.parse(f.content);for(const k in parsed){if(k.startsWith('qwx5_')&&k!=='qwx5_gistToken'&&k!=='qwx5_lastBackup')remoteData[k]=parsed[k]}if(parsed.__meta)remoteData.__meta=parsed.__meta}}
+else if(res.status===404){/* Gist deleted, will create new */}
+else if(res.status===401){toast('❌ Token无效，请重新生成');return}
+}catch(e){/* Network error reading Gist, will overwrite — but that's better than not syncing */}
+}
+/* 3. Deep merge local into remote (preserves both devices' data) */
+const merged={...remoteData};
+for(const k in localData){
+if(k==='__meta'){merged.__meta=localData[k];continue}
+if(k in remoteData){
+try{
+const lv=JSON.parse(localData[k]);const rv=JSON.parse(remoteData[k]);
+merged[k]=JSON.stringify(this.mergeVal(lv,rv));
+}catch(e){merged[k]=localData[k]}
+}else{merged[k]=localData[k]}
+}
+/* 4. Upload merged data */
+const content=JSON.stringify(merged,null,2);
 const url=gistId?'https://api.github.com/gists/'+gistId:'https://api.github.com/gists';
 const method=gistId?'PATCH':'POST';
-try{
-const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),30000);
+const doUpload=async()=>{
+const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),60000);
 const res=await fetch(url,{method,signal:ctrl.signal,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'},body:JSON.stringify({description:'qingwuxiao-sync',public:false,files:{'qingwuxiao-backup.json':{content}}})});
-if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效或已过期（可能被GitHub自动撤销），请重新生成';else if(res.status===403)errMsg='Token权限不足或触发限流，请确认Token勾选了gist权限';else if(res.status===404)errMsg='Gist未找到，可能已被删除';else if(res.status===422)errMsg='请求格式错误';const errBody=await res.json().catch(()=>({}));if(errBody.message)errMsg+=' ['+errBody.message+']';throw new Error(errMsg)}
-const json=await res.json();
+if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效或已过期，请重新生成';else if(res.status===403)errMsg='权限不足或触发限流';else if(res.status===404)errMsg='Gist未找到，请重置绑定';const errBody=await res.json().catch(()=>({}));if(errBody.message)errMsg+=' ['+errBody.message+']';throw new Error(errMsg)}
+return res.json()};
+try{
+let json=await doUpload();
+/* Retry once on network failure */
+if(!json.id){await new Promise(r=>setTimeout(r,2000));json=await doUpload()}
 if(!gistId&&json.id){save('gistId',json.id)}
 save('lastSyncTime',new Date().toLocaleString('zh-CN'));
-toast('✅ 上传成功');haptic(20);
-}catch(e){const msg=e.name==='AbortError'?'上传超时（30秒），请检查网络':(e.message||'网络错误');toast('❌ 上传失败: '+msg);console.error('uploadSync error:',e)}
+toast('✅ 上传成功（已合并云端数据）');haptic(20);
+}catch(e){const msg=e.name==='AbortError'?'上传超时（60秒），请检查网络':(e.message||'网络错误');toast('❌ 上传失败: '+msg);console.error('uploadSync error:',e)}
+},
+/* Deep merge: arrays→union+dedupe, objects→deep merge, primitives→keep local */
+mergeVal(lv,rv){
+if(lv===undefined||lv===null)return rv;
+if(rv===undefined||rv===null)return lv;
+if(Array.isArray(lv)&&Array.isArray(rv)){
+const seen=new Set(lv.map(v=>{try{return JSON.stringify(v)}catch(e){return String(v)}}));
+const result=[...lv];
+for(const v of rv){const s=typeof v==='object'?JSON.stringify(v):String(v);if(!seen.has(s)){result.push(v);seen.add(s)}}
+return result;
+}
+if(typeof lv==='object'&&!Array.isArray(lv)&&typeof rv==='object'&&!Array.isArray(rv)){
+const result={...lv};
+for(const k in rv){if(k in result){result[k]=this.mergeVal(result[k],rv[k])}else{result[k]=rv[k]}}
+return result;
+}
+return lv;
 },
 async downloadSync(){
 const token=load('gistToken','');if(!token){toast('请先输入Token');return}
 const gistId=load('gistId','');if(!gistId){toast('请先上传一次以创建Gist');return}
 toast('正在下载...');
 try{
-const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),30000);
+const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),60000);
 const res=await fetch('https://api.github.com/gists/'+gistId,{signal:ctrl.signal,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}});
-if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效或已过期，请重新生成';else if(res.status===403)errMsg='Token权限不足或触发限流';else if(res.status===404)errMsg='Gist未找到';throw new Error(errMsg)}
+if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效或已过期，请重新生成';else if(res.status===403)errMsg='权限不足或触发限流';else if(res.status===404)errMsg='Gist未找到，请重置绑定';throw new Error(errMsg)}
 const json=await res.json();
 const file=json.files&&json.files['qingwuxiao-backup.json'];
 if(!file||!file.content){toast('❌ Gist中没有数据');return}
@@ -2473,33 +2518,30 @@ const data=JSON.parse(file.content);
 /* Backup local data before merge */
 const backup={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('qwx5_'))backup[k]=localStorage.getItem(k)}
 save('lastBackup',JSON.stringify(backup));
-let added=0,skipped=0;
+let merged=0,added=0;
 for(const k in data){
-if(k.startsWith('qwx5_')&&k!=='qwx5_gistId'&&k!=='qwx5_gistToken'&&k!=='qwx5_lastBackup'){
+if(k.startsWith('qwx5_')&&k!=='qwx5_gistId'&&k!=='qwx5_gistToken'&&k!=='qwx5_lastBackup'&&k!=='__meta'){
 try{
 const local=localStorage.getItem(k);
 if(!local){localStorage.setItem(k,data[k]);added++}
 else{
-/* Only merge objects (add missing keys), NEVER overwrite arrays or local values */
-const localObj=JSON.parse(local);const remoteObj=JSON.parse(data[k]);
-if(typeof localObj==='object'&&localObj!==null&&!Array.isArray(localObj)&&typeof remoteObj==='object'&&remoteObj!==null&&!Array.isArray(remoteObj)){
-let changed=false;const mergedObj={...localObj};
-for(const kk in remoteObj){if(!(kk in localObj)){mergedObj[kk]=remoteObj[kk];changed=true}}
-if(changed){localStorage.setItem(k,JSON.stringify(mergedObj));added++}else{skipped++}
-}else{skipped++}
+const lv=JSON.parse(local);const rv=JSON.parse(data[k]);
+const mv=this.mergeVal(lv,rv);
+localStorage.setItem(k,JSON.stringify(mv));
+if(JSON.stringify(mv)!==JSON.stringify(lv))merged++;
 }
-}catch(e){skipped++}
+}catch(e){}
 }
 }
 save('lastSyncTime',new Date().toLocaleString('zh-CN'));
-toast('✅ 下载完成：新增'+added+'项，跳过'+skipped+'项（本地优先）');haptic(20);
+toast('✅ 下载完成：新增'+added+'项，合并'+merged+'项');haptic(20);
 this.renderAll();
-}catch(e){const msg=e.name==='AbortError'?'下载超时（30秒），请检查网络':(e.message||'网络错误');toast('❌ 下载失败: '+msg);console.error('downloadSync error:',e)}
+}catch(e){const msg=e.name==='AbortError'?'下载超时（60秒），请检查网络':(e.message||'网络错误');toast('❌ 下载失败: '+msg);console.error('downloadSync error:',e)}
 },
 async autoSync(){
-const token=load('gistToken','');const gistId=load('gistId','');
-if(!token||!gistId)return;
+const token=load('gistToken','');if(!token){toast('请先输入并保存Token');return}
 await this.uploadSync();
+await new Promise(r=>setTimeout(r,500));
 await this.downloadSync();
 },
 renderAll(){this.renderDate();this.renderPage(this.currentPage);this.updateHome()},
