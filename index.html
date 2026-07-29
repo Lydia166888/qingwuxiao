@@ -2378,36 +2378,40 @@ ${!hasToken?'⚠️ 请先输入Token并保存<br>':''}
 2. 电脑打开点「下载同步」<br>
 3. 两端数据自动合并，不会丢失
 </div>
-<div style="margin-top:12px">
+<div style="display:flex;gap:8px;margin-top:12px">
 <button class="btn btn-outline btn-sm" onclick="App.autoSync()">🔄 立即自动同步</button>
+${gistId?`<button class="btn btn-outline btn-sm" style="color:var(--primary)" onclick="App.resetGist()">🔓 重置Gist绑定</button>`:''}
 </div>`);
 },
+resetGist(){localStorage.removeItem('qwx5_gistId');toast('Gist绑定已重置，下次上传将创建新Gist');this.openSettings()},
 saveGistToken(){const v=$('gistTokenInput')?.value?.trim();if(!v){toast('请输入Token');return}save('gistToken',v);toast('Token已保存');haptic(15)},
 async uploadSync(){
 const token=load('gistToken','');if(!token){toast('请先输入Token');return}
 toast('正在上传...');
-const data={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('qwx5_'))data[k]=localStorage.getItem(k)}
+const data={};for(let i=0;i<localStorage.length;i++){const k=localStorage.key(i);if(k.startsWith('qwx5_')&&k!=='qwx5_gistToken')data[k]=localStorage.getItem(k)}
 data.__meta={device:navigator.userAgent.slice(0,60),syncTime:new Date().toISOString()};
 const content=JSON.stringify(data,null,2);
 const gistId=load('gistId','');
 const url=gistId?'https://api.github.com/gists/'+gistId:'https://api.github.com/gists';
 const method=gistId?'PATCH':'POST';
 try{
-const res=await fetch(url,{method,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'},body:JSON.stringify({description:'qingwuxiao-sync',public:false,files:{'qingwuxiao-backup.json':{content}}})});
-if(!res.ok){const err=await res.json().catch(()=>({}));throw new Error(err.message||('HTTP '+res.status))}
+const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),30000);
+const res=await fetch(url,{method,signal:ctrl.signal,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'},body:JSON.stringify({description:'qingwuxiao-sync',public:false,files:{'qingwuxiao-backup.json':{content}}})});
+if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效或已过期（可能被GitHub自动撤销），请重新生成';else if(res.status===403)errMsg='Token权限不足或触发限流，请确认Token勾选了gist权限';else if(res.status===404)errMsg='Gist未找到，可能已被删除';else if(res.status===422)errMsg='请求格式错误';const errBody=await res.json().catch(()=>({}));if(errBody.message)errMsg+=' ['+errBody.message+']';throw new Error(errMsg)}
 const json=await res.json();
 if(!gistId&&json.id){save('gistId',json.id)}
 save('lastSyncTime',new Date().toLocaleString('zh-CN'));
 toast('✅ 上传成功');haptic(20);
-}catch(e){toast('❌ 上传失败: '+(e.message||'网络错误'))}
+}catch(e){const msg=e.name==='AbortError'?'上传超时（30秒），请检查网络':(e.message||'网络错误');toast('❌ 上传失败: '+msg);console.error('uploadSync error:',e)}
 },
 async downloadSync(){
 const token=load('gistToken','');if(!token){toast('请先输入Token');return}
 const gistId=load('gistId','');if(!gistId){toast('请先上传一次以创建Gist');return}
 toast('正在下载...');
 try{
-const res=await fetch('https://api.github.com/gists/'+gistId,{headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}});
-if(!res.ok)throw new Error('HTTP '+res.status);
+const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),30000);
+const res=await fetch('https://api.github.com/gists/'+gistId,{signal:ctrl.signal,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}});
+if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效或已过期，请重新生成';else if(res.status===403)errMsg='Token权限不足或触发限流';else if(res.status===404)errMsg='Gist未找到';throw new Error(errMsg)}
 const json=await res.json();
 const file=json.files&&json.files['qingwuxiao-backup.json'];
 if(!file||!file.content){toast('❌ Gist中没有数据');return}
@@ -2417,7 +2421,7 @@ for(const k in data){if(k.startsWith('qwx5_')&&k!=='qwx5_gistId'&&k!=='qwx5_gist
 save('lastSyncTime',new Date().toLocaleString('zh-CN'));
 toast('✅ 下载成功，合并'+merged+'项');haptic(20);
 this.renderAll();
-}catch(e){toast('❌ 下载失败: '+(e.message||'网络错误'))}
+}catch(e){const msg=e.name==='AbortError'?'下载超时（30秒），请检查网络':(e.message||'网络错误');toast('❌ 下载失败: '+msg);console.error('downloadSync error:',e)}
 },
 async autoSync(){
 const token=load('gistToken','');const gistId=load('gistId','');
