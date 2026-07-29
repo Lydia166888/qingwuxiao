@@ -626,7 +626,7 @@ function guessCal(name){if(!name)return 0;for(const k in FOOD_CAL){if(name.inclu
 /* === Data: Almanac (黄历宜忌) === */
 const ALMANAC_YI=['祭祀','祈福','出行','嫁娶','搬家','开市','交易','签约','纳财','安床','修造','动土','破土','安葬','求嗣','解除','沐浴','剃头','裁衣','冠笄'];
 const ALMANAC_JI=['开市','动土','嫁娶','出行','搬家','安葬','祭祀','祈福','签约','求医','针灸','诉讼','远行','乘船','登山','伐木','畋猎','嫁娶','安床','破土'];
-const QUOTES=['好好吃饭，慢慢变好','今天也是发光的自己','小事做完，进步稳稳','你比昨天更棒了','坚持就是超能力','轻盈生活，温柔前行','每一步都算数','好体态从当下开始','温柔且有力量','做自己的光','小步前进也是前进','今天也要元气满满'];
+const QUOTES=['好好吃饭，慢慢变好','今天也是发光的自己','小事做完，进步稳稳','你比昨天更棒了','坚持就是超能力','轻盈生活，温柔前行','每一步都算数','好体态从当下开始','温柔且有力量','做自己的光','小步前进也是前进','今天也要元气满满','把今天活成想要的模样','不慌不忙，闪闪发光','认真生活的人最可爱','慢慢来，比较快','今天值得一个拥抱','你只管努力，剩下的交给时间','保持热爱，奔赴山海','把简单的事做到极致','心里有光，哪里都是路','好好爱自己，是一切的开始','允许自己慢慢变好','今天的你，已经很努力了','别急，花会开的','微小的坚持，终会发光','把焦虑变成行动','生活不会亏待认真的人','你笑起来真好看','做难事必有所得','保持专注，世界会为你让路','今天的三件小确幸是什么','不和别人比，只和昨天比','越自律越自由','把每一天都当作新的开始','你值得一切美好','信心比黄金更重要','先完成再完美','休息也是前进的一部分','今天也要好好喝水','把目标拆小，一步一步来','你的坚持很了不起','生活需要一点仪式感','别忘了抬头看看天','今天的小目标是什么','量变终会引发质变','给自己一个微笑吧','你比想象中更强大','认真的样子最美','把不开心留在昨天','今天也要好好吃饭呀','每天进步一点点就够了','你就是自己的小太阳','慢慢变好，才是给自己最好的礼物','保持好奇，保持热爱','今天也要记得夸夸自己','所有的努力都不会白费','把生活过成喜欢的样子','心态好，一切都好','今天，也要闪闪发光'];
 
 const HAPPY_THINGS=['泡一杯自己喜欢的茶','给植物浇一次水','抬头看云五分钟','整理一个抽屉','给好友发一句问候','散步十分钟','听一首老歌','写三件感恩的小事','换一套干净的床单','晒一会儿太阳','读两页喜欢的书','做一次深呼吸','给家人打个电话','整理桌面','喝够八杯水','早睡一次','吃一顿好吃的早餐','记录一个灵感','整理手机相册','涂一点护手霜','看一次日落','给未来的自己写一句话','整理收件箱','买一束小花','换一个喜欢的壁纸','做一组拉伸','写日记五分钟','认真吃一顿饭','关掉通知一小时','和宠物玩一会儿','睡前放下手机'];
 const WISH_POOL=['学会一首俄语歌','存下第一笔旅行基金','读完五本好书','独自完成一次短途旅行','学会做三道拿手菜','坚持运动一百天','拍一组满意的照片','给爸妈准备一份礼物','整理完所有旧笔记','掌握一门新技能','完成一次断舍离','写满一本日记','养成一早睡的习惯','看完一部经典纪录片','学会简单的理财记账','给朋友写一封手写信','跑完人生第一次五公里','种活一盆植物','收藏一本喜欢的相册','完成今年的语言学习目标'];
@@ -650,34 +650,132 @@ const NEWS_POOL=[
 
 /* === Data: Invest pool (multi-platform) === */
 const INVEST_POOL=[
-{cat:'储蓄',title:'50/30/20储蓄法则',body:'50%必要支出，30%想要，20%储蓄。外贸收入波动大，建议提高到30%储蓄',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=50/30/20储蓄法则理财方法'},
+{cat:'储蓄',title:'50/30/20储蓄法则',body:'50%必要支出，30%想要，20%储蓄。外贸收入波动大，建议提高到30%储蓄',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=50/30/20储蓄法则理财方法'},
 {cat:'应急',title:'应急基金要存3-6个月',body:'提成制工作建议存够6个月生活费，放在货币基金',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=应急基金存多少个月理财'},
-{cat:'避坑',title:'新手理财避坑：别碰不懂的产品',body:'股票、基金、crypto不懂就不要碰，先存定期和货币基金',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=新手理财避坑指南'},
-{cat:'定投',title:'基金定投：懒人理财神器',body:'每月固定日期买入固定金额的指数基金，长期坚持摊平成本',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=基金定投懒人理财方法'},
+{cat:'避坑',title:'新手理财避坑：别碰不懂的产品',body:'股票、基金、crypto不懂就不要碰，先存定期和货币基金',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/新手理财避坑指南'},
+{cat:'定投',title:'基金定投：懒人理财神器',body:'每月固定日期买入固定金额的指数基金，长期坚持摊平成本',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=基金定投懒人理财方法'},
 {cat:'个税',title:'外贸人个税优化',body:'了解个体户核定征收、专项附加扣除，合法降低税负',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=外贸人个人所得税优化核定征收'},
 {cat:'记账',title:'鲨鱼记账APP使用教程：外贸人必备',body:'手把手教你用鲨鱼记账管理多币种收入',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=鲨鱼记账使用教程外贸'},
 {cat:'理财',title:'月薪5000也能理财的5个方法',body:'适合年轻打工人的低门槛理财方案',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/月薪5000理财方法'},
 {cat:'省钱',title:'外贸女孩省钱攻略：一年攒下5万',body:'真实分享外贸业务员的省钱记账心得',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=外贸女孩省钱攻略记账'},
-{cat:'投资',title:'2025年适合新手的指数基金推荐',body:'宽基指数+行业指数组合，风险分散',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=2025新手指数基金推荐'},
-{cat:'保险',title:'年轻人第一份保险怎么买？',body:'意外险+医疗险+重疾险，年保费3000搞定',src:'微信',tag:'wx',link:'https://weixin.sogou.com/weixin?type=2&query=年轻人保险怎么买'},
+{cat:'投资',title:'2025年适合新手的指数基金推荐',body:'宽基指数+行业指数组合，风险分散',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=2025新手指数基金推荐'},
+{cat:'保险',title:'年轻人第一份保险怎么买？',body:'意外险+医疗险+重疾险，年保费3000搞定',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=年轻人保险怎么买配置'},
 {cat:'副业',title:'外贸人副业指南：利用俄语优势变现',body:'翻译、代购、跨境电商，3个副业方向',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=外贸人副业俄语变现'},
-{cat:'汇率',title:'卢布汇率波动如何影响你的收入',body:'外贸人必懂的汇率风险管理',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=卢布汇率波动影响外贸收入管理'}
+{cat:'汇率',title:'卢布汇率波动如何影响你的收入',body:'外贸人必懂的汇率风险管理',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/卢布汇率波动外贸收入管理'},
+{cat:'记账',title:'记账半年我发现了这些消费黑洞',body:'复盘半年账单，揪出5个隐形消费陷阱',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=记账半年消费黑洞复盘'},
+{cat:'定投',title:'定投2年真实收益分享｜不是稳赚但能存钱',body:'每月1000定投沪深300，附真实收益曲线',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=定投2年真实收益沪深300'},
+{cat:'省钱',title:'月入8千存5千｜我的极简消费清单',body:'外贸女孩的真实月度开销明细',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=月入8千存5千极简消费'},
+{cat:'理财',title:'第一次买基金就亏了？新手必看避坑指南',body:'3个最常见的基金新手误区',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=第一次买基金亏了新手避坑'},
+{cat:'副业',title:'俄语外贸人如何用业余时间月入3000副业',body:'翻译+代购+知识付费三条路',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=俄语外贸人副业月入3000'},
+{cat:'储蓄',title:'52周存钱法｜一年轻松攒下13780',body:'第1周存10，每周递增10，附打卡表',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=52周存钱法打卡表'},
+{cat:'记账',title:'鲨鱼记账vs随手记vs喵喵记账｜哪个好用',body:'三款记账APP横评，附使用感受',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=鲨鱼记账随手记喵喵记账横评'},
+{cat:'保险',title:'25岁女生保险配置攻略｜年保费2000搞定',body:'百万医疗+意外+重疾，附产品清单',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=25岁女生保险配置年保费2000'},
+{cat:'省钱',title:'外贸出差省钱攻略｜机票酒店这样订省一半',body:'俄罗斯出差实战省钱经验',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=外贸出差省钱攻略机票酒店'},
+{cat:'理财',title:'工资一到账就做这3件事｜理财习惯养成',body:'先存后花、记账复盘、定投自动化',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=工资到账理财习惯先存后花'},
+{cat:'汇率',title:'卢布人民币换汇技巧｜外贸人必看',body:'银行vs换汇平台vs第三方，附手续费对比',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=卢布人民币换汇技巧手续费'},
+{cat:'副业',title:'用小红书接外贸翻译单｜一单200-500',body:'怎么入驻、怎么报价、怎么接单全流程',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=小红书接翻译单报价流程'},
+{cat:'储蓄',title:'365天存钱法｜每天存一个数字一年攒66795',body:'1-365任选一个数字存，附打卡模板',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=365天存钱法打卡模板'},
+{cat:'定投',title:'定投止盈不止损｜3个止盈策略',body:'目标收益率法、估值法、回撤法',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=定投止盈策略目标收益率估值法'},
+{cat:'记账',title:'我用记账APP存下了第一个10万',body:'坚持记账3年的真实心得和方法',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=记账APP存下10万心得'},
+{cat:'保险',title:'百万医疗险怎么选？一篇看懂',body:'免赔额、报销比例、续保条件全解析',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=百万医疗险怎么选免赔额续保'},
+{cat:'理财',title:'货币基金vs银行定期vs国债｜哪个收益高',body:'三种低风险理财方式对比',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=货币基金银行定期国债收益对比'},
+{cat:'副业',title:'外贸人知识变现｜把经验做成付费内容',body:'知乎盐选、小红书专栏、知识星球',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=外贸人知识变现付费内容'},
+{cat:'省钱',title:'断舍离式消费｜一年少花3万',body:'不买清单+消费冷静期+二手回血',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=断舍离式消费一年少花3万'},
+{cat:'汇率',title:'外贸收款避坑｜PayPal手续费太贵了',body:'对比PayPal、万里汇、派安盈手续费',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=外贸收款PayPal万里汇派安盈手续费'},
+{cat:'理财',title:'月薪3000也能理财｜3个低门槛方法',body:'货币基金+国债逆回购+定投',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/月薪3000理财低门槛方法'},
+{cat:'省钱',title:'一个人住每月只花2000｜省钱挑战',body:'房租+吃饭+交通全记录',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/一个人住每月花2000省钱挑战'},
+{cat:'记账',title:'坚持记账100天变化太大了',body:'从月光到月存3000的真实改变',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/坚持记账100天月光到月存'},
+{cat:'定投',title:'定投3年亏了20%还要继续吗',body:'市场下跌时的心态和策略调整',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/定投3年亏了20%还要继续吗'},
+{cat:'副业',title:'下班后2小时做副业｜月多赚5000',body:'3个适合上班族的线上副业',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/下班后2小时副业月赚5000'},
+{cat:'储蓄',title:'存钱上瘾！分享我的4个存钱账户',body:'日常账户+固定支出+储蓄+梦想基金',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/4个存钱账户强制储蓄'},
+{cat:'保险',title:'年轻人别乱买保险！先搞懂这3个',body:'医疗险、意外险、重疾险配置顺序',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/年轻人保险配置顺序医疗意外重疾'},
+{cat:'理财',title:'复利到底有多可怕｜1万变10万要多久',body:'年化8%的复利效应计算',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/复利效应1万变10万计算'},
+{cat:'汇率',title:'做外贸一定要懂的对冲汇率风险方法',body:'远期结售汇+自然对冲+分批换汇',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/外贸对冲汇率风险远期结售汇'},
+{cat:'省钱',title:'我的一年不买新衣服挑战',body:'365天不买衣服的真实体验',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/一年不买新衣服挑战365天'},
+{cat:'记账',title:'夫妻共同记账怎么管｜AA还是统一管',body:'家庭财务管理的3种模式',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/夫妻共同记账家庭财务管理'},
+{cat:'副业',title:'抖音0粉丝也能变现｜知识分享类',body:'外贸经验分享起号全流程',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/抖音0粉丝变现知识分享起号'},
+{cat:'定投',title:'定投扣款日选哪天最好',body:'月初vs月中vs月末定投收益对比',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/定投扣款日选哪天月初月中月末'},
+{cat:'理财',title:'年底了你的年终奖怎么花最划算',body:'50%储蓄+30%消费+20%投资',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/年终奖怎么花储蓄消费投资'},
+{cat:'储蓄',title:'强制储蓄的5个狠招｜月光族自救',body:'工资日自动转存+定存+信封法',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/强制储蓄5个狠招月光族自救'},
+{cat:'理财',title:'什么是资产配置？一个公式搞定',body:'股票+债券+现金的经典配置比例',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=资产配置公式股票债券现金比例'},
+{cat:'保险',title:'重疾险买多少保额合适',body:'年收入5-10倍原则，附计算方法',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=重疾险保额多少合适年收入倍数'},
+{cat:'投资',title:'ETF和场外基金有什么区别',body:'交易方式、费率、适合人群对比',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=ETF场外基金区别对比'},
+{cat:'记账',title:'外贸多币种怎么记账最方便',body:'人民币+卢布+美元混合记账方案',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=外贸多币种记账人民币卢布美元'},
+{cat:'汇率',title:'2025年人民币汇率走势分析',body:'央行政策+国际形势对外贸的影响',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=2025人民币汇率走势分析外贸'},
+{cat:'储蓄',title:'大额存单抢不到？试试这3个替代品',body:'国债+货币基金+结构性存款',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=大额存单替代品国债货币基金结构性存款'},
+{cat:'理财',title:'通胀时代怎么保住你的钱',body:'跑赢通胀的3个思路',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=通胀时代保住钱跑赢通胀'},
+{cat:'投资',title:'REITs是什么？普通人怎么买',body:'基础设施公募REITs入门指南',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=REITs是什么普通人怎么买公募'},
+{cat:'保险',title:'保费豁免是什么意思？买保险必看',body:'重疾险保费豁免条款详解',src:'微信',tag:'wx',link:'https://weixin.sogou.com/weixin?type=2&query=保费豁免是什么意思重疾险'},
+{cat:'副业',title:'跨境电商副业入门｜0成本起步',body:'俄罗斯电商平台Ozon开店教程',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=跨境电商副业Ozon开店教程俄罗斯'},
+{cat:'理财',title:'个人养老金账户值得开吗',body:'税收优惠+产品选择+适合人群分析',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=个人养老金账户值得开吗税收优惠'},
+{cat:'投资',title:'可转债打新小白教程｜一年白赚几千',body:'开户+打新+上市卖出的全流程',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=可转债打新教程开户流程'},
+{cat:'记账',title:'我用Excel做年度预算表｜超好用',body:'收入支出分类+月度对比+图表分析',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=Excel年度预算表收入支出'},
+{cat:'省钱',title:'自己带饭一年省了2万｜打工人午餐攻略',body:'一周备餐方案+成本对比',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/自己带饭一年省2万打工人午餐'}
 ];
 
 /* === Data: AI trending pool === */
 const AI_TRENDING=[
 {cat:'变现',title:'用AI写俄语开发信，转化率提升300%',body:'ChatGPT+DeepL组合，5分钟写出专业俄语商务邮件',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI写俄语开发信外贸'},
-{cat:'工具',title:'AI一键生成外贸报价单，含多语言翻译',body:'输入产品信息，自动生成中英俄三语报价单',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI生成外贸报价单多语言翻译'},
+{cat:'工具',title:'AI一键生成外贸报价单，含多语言翻译',body:'输入产品信息，自动生成中英俄三语报价单',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI生成外贸报价单多语言翻译'},
 {cat:'爆款',title:'抖音AI数字人直播带货，月入过万实操',body:'不需要真人出镜，AI数字人24小时直播',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI数字人直播带货月入过万'},
 {cat:'工具',title:'AI设计产品宣传图，省下外包费',body:'Midjourney+Canva组合，小白也能做出专业宣传图',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI设计产品宣传图Midjourney'},
-{cat:'变现',title:'用AI做知识付费课程，被动收入管道',body:'把你的外贸经验用AI整理成课程，上架平台躺赚',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=AI知识付费课程被动收入'},
-{cat:'效率',title:'AI分析客户邮件意图，自动生成回复',body:'再也不用纠结怎么回客户了，AI帮你分析+建议回复',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI分析客户邮件意图自动回复'},
+{cat:'变现',title:'用AI做知识付费课程，被动收入管道',body:'把你的外贸经验用AI整理成课程，上架平台躺赚',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI知识付费课程被动收入外贸'},
+{cat:'效率',title:'AI分析客户邮件意图，自动生成回复',body:'再也不用纠结怎么回客户了，AI帮你分析+建议回复',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI分析客户邮件意图自动回复'},
 {cat:'爆款',title:'小红书AI批量生成图文，涨粉1万实操',body:'用AI一天生成30条小红书图文内容',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI批量生成小红书图文涨粉'},
-{cat:'工具',title:'AI翻译避坑：专业术语一定要人工复核',body:'AI翻译的常见错误和修正方法',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI翻译避坑专业术语人工复核'},
+{cat:'工具',title:'AI翻译避坑：专业术语一定要人工复核',body:'AI翻译的常见错误和修正方法',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI翻译避坑专业术语人工复核'},
 {cat:'变现',title:'用AI帮中小企业做外贸，月接5单',body:'提供AI外贸代运营服务，一单赚3000-5000',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI帮中小企业外贸代运营'},
-{cat:'效率',title:'AI自动整理客户CRM，再也不用手工录入',body:'用AI工具自动从邮件提取客户信息',src:'微信',tag:'wx',link:'https://weixin.sogou.com/weixin?type=2&query=AI自动整理客户CRM'},
+{cat:'效率',title:'AI自动整理客户CRM，再也不用手工录入',body:'用AI工具自动从邮件提取客户信息',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI自动整理客户CRM外贸'},
 {cat:'爆款',title:'用AI做短视频剪辑，10分钟出一条',body:'CapCut AI+剪映，批量生产短视频内容',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI短视频剪辑10分钟出一条'},
-{cat:'变现',title:'AI帮人写俄语简历，一单赚200',body:'利用俄语+AI优势，帮求职者写俄语简历',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI写俄语简历变现'}
+{cat:'变现',title:'AI帮人写俄语简历，一单赚200',body:'利用俄语+AI优势，帮求职者写俄语简历',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI写俄语简历变现'},
+{cat:'工具',title:'Kimi和ChatGPT哪个好用？外贸场景实测',body:'写邮件、翻译、做报价单三个场景对比',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=Kimi和ChatGPT对比外贸场景'},
+{cat:'效率',title:'AI帮我5分钟做完一周竞品分析',body:'用AI分析竞品网站和社媒内容',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI竞品分析5分钟网站社媒'},
+{cat:'工具',title:'Notion AI做外贸客户管理太香了',body:'自动整理客户信息+跟进提醒+邮件模板',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=Notion AI外贸客户管理跟进'},
+{cat:'变现',title:'用AI做小红书图文笔记｜涨粉1万复盘',body:'AI生成选题+文案+配图的完整工作流',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI做小红书图文涨粉1万复盘'},
+{cat:'效率',title:'AI一键生成展会邀请函｜多语言版',body:'中英俄三语邀请函模板+AI自动填充',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI生成展会邀请函多语言'},
+{cat:'工具',title:'用通义千问写俄语邮件｜免费又好用',body:'通义千问vs ChatGPT俄语写作对比',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=通义千问写俄语邮件对比ChatGPT'},
+{cat:'变现',title:'AI帮人做PPT｜一单赚300-800',body:'用Gamma和美图AI做PPT接单全流程',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI做PPT接单Gamma美图'},
+{cat:'效率',title:'AI整理展会名片信息｜3秒录入CRM',body:'拍照识别+AI提取+自动分类',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI整理展会名片录入CRM'},
+{cat:'工具',title:'用AI做产品目录册｜外贸人必备技能',body:'Canva AI+产品图+参数自动排版',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI做产品目录册Canva外贸'},
+{cat:'变现',title:'用AI做跨境电商产品描述｜月入过万',body:'给Ozon卖家批量生成俄语产品描述',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI跨境电商产品描述Ozon俄语'},
+{cat:'效率',title:'AI自动跟进客户｜再也不怕忘记回邮件',body:'设置AI定时提醒+建议回复内容',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI自动跟进客户邮件提醒'},
+{cat:'工具',title:'豆包APP做语音翻译｜见客户神器',body:'实时语音翻译+录音转文字+多语言',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=豆包APP语音翻译见客户'},
+{cat:'爆款',title:'AI数字人讲解产品视频｜省下拍摄费',body:'HeyGen数字人+产品介绍脚本',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI数字人产品讲解视频HeyGen'},
+{cat:'变现',title:'AI代写商业计划书｜一单2000起',body:'用AI快速生成BP框架+内容填充',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI代写商业计划书BP接单'},
+{cat:'效率',title:'用AI做会议纪要｜1小时会议5分钟出稿',body:'飞书妙记+AI总结+自动待办提取',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI会议纪要飞书妙记自动待办'},
+{cat:'工具',title:'AI生成社交媒体日历｜一个月内容不愁',body:'输入产品信息自动生成30天发文计划',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI生成社交媒体日历30天'},
+{cat:'变现',title:'用AI做知识星球｜外贸经验变现',body:'AI辅助生成付费内容+社群运营',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI知识星球外贸经验变现'},
+{cat:'效率',title:'AI分析客户背景｜谈单前必做',body:'用AI分析客户官网+社媒+海关数据',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI分析客户背景官网社媒海关数据'},
+{cat:'工具',title:'用AI做产品对比表｜一键生成',body:'自家产品vs竞品的参数对比表格',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI产品对比表一键生成'},
+{cat:'爆款',title:'AI换装试穿｜服装外贸人必备',body:'不用拍照，AI一键换装展示产品',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI换装试穿服装外贸'},
+{cat:'工具',title:'3个免费AI工具让你效率翻倍',body:'Kimi+豆包+通义千问，全免费',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/3个免费AI工具效率翻倍Kimi豆包通义'},
+{cat:'变现',title:'AI做副业月入过万｜5个方向',body:'写作、设计、翻译、视频、咨询',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI副业月入过万5个方向'},
+{cat:'效率',title:'用AI写周报3分钟搞定｜打工人必备',body:'输入关键词AI自动生成完整周报',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI写周报3分钟打工人必备'},
+{cat:'工具',title:'DeepSeek用起来真香｜免费又强',body:'DeepSeek写代码、写文案、做翻译实测',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/DeepSeek免费好用写代码翻译'},
+{cat:'爆款',title:'AI让静态图片动起来｜保姆教程',body:'可灵AI图生视频，3步搞定',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/可灵AI图生视频静态图片动起来教程'},
+{cat:'变现',title:'抖音AI带货｜0粉丝0成本起步',body:'AI生成带货文案+数字人直播',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/抖音AI带货0粉丝0成本起步'},
+{cat:'效率',title:'AI帮你读完整本书｜10分钟提取精华',body:'用Kimi/豆包快速读书总结',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI读书总结10分钟提取精华Kimi'},
+{cat:'工具',title:'AI做Excel表格｜再也不用手动输入',body:'WPS AI+ChatGPT处理表格数据',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI做Excel表格WPS自动处理数据'},
+{cat:'爆款',title:'用AI复活老照片｜感动哭了',body:'可灵AI让老照片动起来教程',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI复活老照片可灵动起来'},
+{cat:'变现',title:'AI做表情包赚钱｜一个包赚500',body:'用AI批量生成表情包上架微信',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI表情包赚钱批量生成上架微信'},
+{cat:'效率',title:'AI写外贸合同｜5分钟出初稿',body:'输入关键条款AI生成中俄双语合同',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI写外贸合同5分钟中俄双语'},
+{cat:'工具',title:'手机上用好AI｜这3个APP就够了',body:'豆包+Kimi+通义，移动办公神器',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/手机AI APP豆包Kimi通义移动办公'},
+{cat:'爆款',title:'AI生成产品3D展示｜客户直呼专业',body:'用AI把产品图做成3D旋转展示',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI产品3D展示旋转图生成'},
+{cat:'变现',title:'用AI做咨询｜一小时收费500',body:'用AI辅助做行业咨询和方案设计',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI做咨询一小时500行业方案'},
+{cat:'效率',title:'AI自动回复评价｜电商客服神器',body:'批量生成评价回复+情感分析',src:'抖音',tag:'dy',link:'https://www.douyin.com/search/AI自动回复评价电商客服情感分析'},
+{cat:'工具',title:'2025最值得用的10个AI工具盘点',body:'写作、设计、视频、编程全覆盖',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=2025最值得用的AI工具盘点写作设计视频'},
+{cat:'效率',title:'用AI做竞品价格监控｜自动抓取对比',body:'AI+爬虫自动监控竞品定价',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI竞品价格监控自动抓取对比'},
+{cat:'变现',title:'AI做线上课程从0到1｜全流程',body:'选题+大纲+录制+上架完整教程',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=AI线上课程从0到1全流程教程'},
+{cat:'工具',title:'ChatGPT提示词技巧｜写出专业外贸邮件',body:'角色设定+上下文+示例的提示词框架',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=ChatGPT提示词技巧专业外贸邮件框架'},
+{cat:'效率',title:'用飞书AI做项目管理｜团队效率翻倍',body:'自动分配任务+进度追踪+风险预警',src:'微信',tag:'wx',link:'https://weixin.sogou.com/weixin?type=2&query=飞书AI项目管理团队效率'},
+{cat:'爆款',title:'AI生成品牌LOGO｜3分钟出10个方案',body:'标小智+AI Logo生成工具实测',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI生成品牌LOGO标小智3分钟'},
+{cat:'工具',title:'用AI做SEO优化｜外贸网站流量翻倍',body:'AI生成关键词+优化页面+写描述',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI做SEO优化外贸网站流量翻倍'},
+{cat:'变现',title:'AI接单平台汇总｜哪里能接到活',body:'猪八戒+闲鱼+小红书+豆瓣接单攻略',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=AI接单平台汇总猪八戒闲鱼攻略'},
+{cat:'效率',title:'AI做外贸单证｜报关单据一键生成',body:'发票、装箱单、报关单AI自动填写',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI外贸单证报关单据一键生成'},
+{cat:'工具',title:'AI翻译插件推荐｜浏览俄语网站无障碍',body:'沉浸式翻译+彩云小译对比',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI翻译插件沉浸式翻译彩云小译俄语网站'},
+{cat:'爆款',title:'用AI做年终总结PPT｜10分钟搞定',body:'Gamma AI输入要点自动生成PPT',src:'微信',tag:'wx',link:'https://weixin.sogou.com/weixin?type=2&query=AI年终总结PPT Gamma自动生成'},
+{cat:'变现',title:'AI做虚拟主播｜24小时直播不断',body:'数字人+AI语音+自动弹幕回复',src:'B站',tag:'bili',link:'https://search.bilibili.com/all?keyword=AI虚拟主播24小时直播数字人'},
+{cat:'工具',title:'AI写俄语合同避坑指南｜条款审查',body:'AI帮你检查合同条款风险点',src:'百度',tag:'bd',link:'https://www.baidu.com/s?wd=AI写俄语合同避坑条款审查风险'},
+{cat:'效率',title:'AI批量生成开发信主题行｜打开率翻倍',body:'5个AI生成的邮件标题模板实测',src:'小红书',tag:'xhs',link:'https://www.xiaohongshu.com/search_result?keyword=AI生成开发信主题行打开率'}
 ];
 const AI_COURSES=[
 {icon:'✉️',name:'AI写商务邮件',status:'5节·已更新'},
@@ -686,6 +784,14 @@ const AI_COURSES=[
 {icon:'💬',name:'AI翻译避坑',status:'3节·已更新'},
 {icon:'📈',name:'AI分析客户',status:'2节·已更新'},
 {icon:'🎬',name:'AI短视频制作',status:'6节·已更新'}
+];
+const DEFAULT_AI_PLANS=[
+{title:'第1周：AI写俄语商务邮件',detail:'学习ChatGPT/通义千问提示词技巧\n练习写开发信、询盘回复、商务催单\n目标：5分钟写出专业俄语邮件',done:false,date:todayStr()},
+{title:'第2周：AI生成报价单和产品目录',detail:'用AI工具自动生成中英俄三语报价单\nCanva AI做产品目录册排版\n目标：独立完成一份多语言报价单',done:false,date:todayStr()},
+{title:'第3周：AI设计产品宣传图',detail:'学习Midjourney基础操作\n用AI生成产品主图和详情页配图\n目标：做出5张专业产品宣传图',done:false,date:todayStr()},
+{title:'第4周：AI做竞品分析和客户背调',detail:'用AI分析竞品官网和社媒内容\nAI整理客户背景信息（官网+海关数据）\n目标：完成一份竞品分析报告',done:false,date:todayStr()},
+{title:'第5周：AI生成社媒内容',detail:'用AI批量生成小红书/抖音图文脚本\nAI写社媒日历和发布计划\n目标：生成一个月的社媒内容',done:false,date:todayStr()},
+{title:'第6周：AI整理客户CRM',detail:'用AI自动从邮件提取客户信息\n设置AI定时跟进提醒和回复建议\n目标：建立完整的客户管理系统',done:false,date:todayStr()}
 ];
 
 /* === Data: Outfit === */
@@ -803,6 +909,7 @@ planSub:'schedule',planWeekRef:null,
 init(){
 this.migrate();this.bindKeys();this.renderDate();this.switchModule('home');this.showSplash();
 this.loadWordBank();
+if(localStorage.getItem('qwx5_aiStudyPlans')===null){save('aiStudyPlans',DEFAULT_AI_PLANS)}
 if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{reg.update();reg.addEventListener('updatefound',()=>{const nw=reg.installing;if(nw){nw.addEventListener('statechange',()=>{if(nw.state==='activated'&&navigator.serviceWorker.controller)toast('青梧笑已更新，刷新后生效')})}})}).catch(()=>{})}
 },
 loadWordBank(){
@@ -857,7 +964,7 @@ const d=new Date();const w=['日','一','二','三','四','五','六'];
 $('splashDate').textContent=`${d.getMonth()+1}月${d.getDate()}日 · 周${w[d.getDay()]}`;
 const hr=d.getHours();
 $('splashGreeting').textContent=hr<11?'早安，笑笑':hr<14?'午安，笑笑':hr<18?'下午好，笑笑':'晚上好，笑笑';
-$('splashQuote').textContent=rotate(QUOTES,d.getDate());
+$('splashQuote').textContent=rotate(QUOTES,dayIdx(todayStr()));
 this.genPetals();
 this.loadWeather();
 this.loadAlmanac();
@@ -943,7 +1050,7 @@ const wProg=this.getWordProgress();
 return`<div class="hero-card">
 <div class="hero-date">${fmtDate(this.currentDate)}</div>
 <div class="hero-greeting">嗨，笑笑 ✿</div>
-<div class="hero-quote">${rotate(QUOTES,new Date(this.currentDate).getDate())}</div>
+<div class="hero-quote">${rotate(QUOTES,dayIdx(this.currentDate))}</div>
 <div class="hero-row">
 <div class="hero-info"><div class="done-text">${done}/${total} 完成</div><div class="streak">连续打卡 ${this.calcStreak()} 天 🔥</div></div>
 <div class="hero-progress"><svg width="70" height="70"><circle class="ring-bg" cx="35" cy="35" r="30"/><circle class="ring-fg" cx="35" cy="35" r="30" stroke-dasharray="${circ}" stroke-dashoffset="${offset}"/></svg><div class="pct">${pct}%</div></div>
@@ -1660,9 +1767,11 @@ saveReflection(){const v=$('reflText').value.trim();const d=this.dayData(this.cu
 /* === INVEST === */
 renderInvest(){
 const idx=dayIdx(this.currentDate);
-const items=INVEST_POOL;
-const filtered=this.aiFilter==='all'?items:items.filter(n=>n.cat===this.aiFilter);
-const cats=['all',...new Set(items.map(n=>n.cat))];
+const all=INVEST_POOL;
+const cats=['all',...new Set(all.map(n=>n.cat))];
+const pool=this.aiFilter==='all'?all:all.filter(n=>n.cat===this.aiFilter);
+const items=[];
+for(let i=0;i<Math.min(6,pool.length);i++){items.push(pool[(idx+i)%pool.length])}
 const fav=load('favs_invest',[]);
 const goal=load('savingsGoal',{target:50000,current:0,name:'年度储蓄目标'});
 const pct=goal.target?Math.min(100,Math.round(goal.current/goal.target*100)):0;
@@ -1682,7 +1791,7 @@ return`<div class="card" style="background:linear-gradient(135deg,var(--primary)
 </div>
 <div class="section-title">📈 理财干货 <span class="count">每日轮换</span></div>
 <div class="chips">${cats.map(c=>`<span class="chip ${this.aiFilter===c?'active':''}" onclick="App.setInvestFilter('${c}')">${c==='all'?'全部':c}</span>`).join('')}</div>
-${filtered.map(n=>this.renderContentCard(n,'invest',fav)).join('')}
+${items.map(n=>this.renderContentCard(n,'invest',fav)).join('')}
 <div class="section-title">📓 学习笔记</div>
 <div class="card">
 ${notes.length?notes.map((n,i)=>`<div style="padding:10px 0;border-bottom:1px solid var(--border)">
@@ -1724,9 +1833,12 @@ delInvestNote(i){if(!confirm('确定删除此笔记？'))return;const notes=load
 
 /* === AI === */
 renderAI(){
-const items=AI_TRENDING;
-const filtered=this.aiFilter==='all'?items:items.filter(n=>n.cat===this.aiFilter);
-const cats=['all',...new Set(items.map(n=>n.cat))];
+const idx=dayIdx(this.currentDate);
+const all=AI_TRENDING;
+const cats=['all',...new Set(all.map(n=>n.cat))];
+const pool=this.aiFilter==='all'?all:all.filter(n=>n.cat===this.aiFilter);
+const items=[];
+for(let i=0;i<Math.min(6,pool.length);i++){items.push(pool[(idx+i)%pool.length])}
 const fav=load('favs_ai',[]);
 const plans=load('aiStudyPlans',[]);
 const doneCount=plans.filter(p=>p.done).length;
@@ -1750,7 +1862,7 @@ ${!plans.length?'<div style="font-size:13px;opacity:.8;padding:8px 0">点击「�
 </div>
 <div class="section-title">🤖 AI应用爆款 <span class="count">每日灵感</span></div>
 <div class="chips">${cats.map(c=>`<span class="chip ${this.aiFilter===c?'active':''}" onclick="App.setAIFilter('${c}')">${c==='all'?'全部':c}</span>`).join('')}</div>
-${filtered.map(n=>this.renderContentCard(n,'ai',fav)).join('')}`;
+${items.map(n=>this.renderContentCard(n,'ai',fav)).join('')}`;
 },
 setAIFilter(f){this.aiFilter=f;this.renderPage('ai');haptic(10)},
 addStudyPlan(){
