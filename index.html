@@ -2382,8 +2382,59 @@ ${!hasToken?'⚠️ 请先输入Token并保存<br>':''}
 <button class="btn btn-outline btn-sm" onclick="App.autoSync()">🔄 立即自动同步</button>
 ${gistId?`<button class="btn btn-outline btn-sm" style="color:var(--primary)" onclick="App.resetGist()">🔓 重置Gist绑定</button>`:''}
 <button class="btn btn-outline btn-sm" style="color:var(--primary)" onclick="App.restoreBackup()">♻️ 恢复备份数据</button>
+<button class="btn btn-outline btn-sm" onclick="App.diagnoseData()">🔍 数据诊断</button>
 </div>
-<div style="font-size:11px;color:var(--text-light);margin-top:8px">⚠️ 下载同步仅补充本地缺失的数据，不会覆盖已有数据。如数据丢失可点「恢复备份数据」。</div>`);
+<div style="font-size:11px;color:var(--text-light);margin-top:8px">⚠️ 下载同步仅补充本地缺失的数据，不会覆盖已有数据。如数据丢失可点「恢复备份数据」或「数据诊断」。</div>`);
+},
+diagnoseData(){
+let items=[];let totalSize=0;
+for(let i=0;i<localStorage.length;i++){
+const k=localStorage.key(i);
+if(k.startsWith('qwx5_')){
+const v=localStorage.getItem(k);
+const size=v?v.length:0;
+totalSize+=size;
+let info=k.replace('qwx5_','');
+let count='';
+try{const p=JSON.parse(v);if(Array.isArray(p))count='['+p.length+'项]';else if(typeof p==='object'&&p!==null)count='{'+Object.keys(p).length+'键}';else count=String(p).slice(0,20)}catch(e){count=String(v).slice(0,20)}
+items.push(`<tr><td style="padding:2px 6px;font-size:11px">${info}</td><td style="padding:2px 6px;font-size:11px;color:var(--text-light)">${count}</td><td style="padding:2px 6px;font-size:11px;color:var(--text-light);text-align:right">${(size/1024).toFixed(1)}KB</td></tr>`)
+}
+}
+items.sort();
+const token=load('gistToken','');const gistId=load('gistId','');
+this.openModal('🔍 数据诊断',`
+<div style="font-size:13px;line-height:1.8;margin-bottom:12px">
+📊 本地数据：<b>${items.length}</b> 项，总计 <b>${(totalSize/1024).toFixed(1)}KB</b><br>
+🔑 Token：${token?'✅ 已保存':'❌ 未设置'}<br>
+📦 Gist：${gistId?'✅ 已绑定 ('+gistId.slice(0,8)+'...)':'❌ 未绑定'}<br>
+💾 备份：${load('lastBackup',null)?'✅ 有备份':'❌ 无备份'}
+</div>
+<table style="width:100%;border-collapse:collapse;margin-bottom:12px">
+<tr style="border-bottom:1px solid rgba(255,107,157,.2)"><th style="padding:4px 6px;text-align:left;font-size:11px">数据项</th><th style="padding:4px 6px;text-align:left;font-size:11px">内容</th><th style="padding:4px 6px;text-align:right;font-size:11px">大小</th></tr>
+${items.join('')}
+</table>
+${gistId?`<div style="margin-top:12px"><button class="btn btn-primary btn-sm" style="width:100%" onclick="App.forceRestoreFromGist()">⚡ 强制从Gist恢复（覆盖本地）</button><div style="font-size:11px;color:var(--text-light);margin-top:4px">⚠️ 此操作会用Gist数据完全替换本地数据，请确认Gist中有你的数据</div></div>`:''}
+${!gistId&&token?`<div style="margin-top:12px"><button class="btn btn-primary btn-sm" style="width:100%" onclick="App.uploadSync()">⬆️ 先上传当前数据到Gist</button></div>`:''}
+`);
+},
+async forceRestoreFromGist(){
+const token=load('gistToken','');if(!token){toast('请先输入Token');return}
+const gistId=load('gistId','');if(!gistId){toast('未绑定Gist');return}
+if(!confirm('⚠️ 确认要用Gist数据完全覆盖本地数据吗？\n\n此操作不可撤销！\n建议先点「上传同步」备份当前数据。'))return;
+toast('正在从Gist恢复...');
+try{
+const ctrl=new AbortController();setTimeout(()=>ctrl.abort(),30000);
+const res=await fetch('https://api.github.com/gists/'+gistId,{signal:ctrl.signal,headers:{'Authorization':'Bearer '+token,'Accept':'application/vnd.github.v3+json'}});
+if(!res.ok){let errMsg='HTTP '+res.status;if(res.status===401)errMsg='Token无效，请重新生成';else if(res.status===404)errMsg='Gist未找到';throw new Error(errMsg)}
+const json=await res.json();
+const file=json.files&&json.files['qingwuxiao-backup.json'];
+if(!file||!file.content){toast('❌ Gist中没有数据');return}
+const data=JSON.parse(file.content);
+let restored=0;
+for(const k in data){if(k.startsWith('qwx5_')&&k!=='qwx5_gistToken'&&k!=='qwx5_lastBackup'){localStorage.setItem(k,data[k]);restored++}}
+toast('✅ 已从Gist恢复'+restored+'项数据');haptic(30);
+this.closeModal();this.renderAll();
+}catch(e){toast('❌ 恢复失败: '+(e.name==='AbortError'?'超时':e.message))}
 },
 resetGist(){localStorage.removeItem('qwx5_gistId');toast('Gist绑定已重置，下次上传将创建新Gist');this.openSettings()},
 restoreBackup(){const bk=load('lastBackup',null);if(!bk){toast('❌ 没有找到备份数据');return}try{const data=typeof bk==='string'?JSON.parse(bk):bk;let restored=0;for(const k in data){if(k.startsWith('qwx5_')&&k!=='qwx5_lastBackup'){localStorage.setItem(k,data[k]);restored++}}toast('✅ 已恢复'+restored+'项备份数据');haptic(20);this.renderAll()}catch(e){toast('❌ 恢复失败: '+e.message)}},
