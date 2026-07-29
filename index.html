@@ -31,33 +31,28 @@ ul{list-style:none}
 #app{max-width:560px;margin:0 auto;height:100%;display:flex;flex-direction:row;position:relative;background:var(--bg);box-shadow:0 0 40px rgba(255,107,157,.1)}
 #main{flex:1;min-width:0;height:100%;display:flex;flex-direction:column;position:relative}
 
-/* Splash - 粉黄果冻·清新自然 */
-.splash{position:fixed;inset:0;z-index:100;background:linear-gradient(165deg,#FF8FB1 0%,#FFB07C 45%,#FFD93D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:28px;transition:opacity .6s,visibility .6s;overflow-y:auto}
+/* Splash - 粉黄果冻·无卡片全屏高级版 */
+.splash{position:fixed;inset:0;z-index:100;background:linear-gradient(160deg,#FF8FB1 0%,#FFB8A0 42%,#FFD93D 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:32px 28px;transition:opacity .6s,visibility .6s;overflow:hidden}
+.splash::before{content:'';position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 0%,rgba(255,255,255,.2),transparent 60%),radial-gradient(100% 60% at 50% 100%,rgba(255,107,157,.1),transparent 70%);pointer-events:none}
 .splash.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.splash .petal{position:absolute;border-radius:50%;background:rgba(255,255,255,.5);pointer-events:none;animation:petalFloat linear infinite}
-@keyframes petalFloat{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.6}90%{opacity:.4}100%{transform:translateY(-120px) rotate(360deg);opacity:0}}
-.splash-card{background:rgba(255,255,255,.28);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.45);border-radius:24px;padding:26px 24px 22px;max-width:300px;box-shadow:0 12px 40px rgba(255,107,157,.18);display:flex;flex-direction:column;align-items:center;animation:cardIn .6s ease}
-@keyframes cardIn{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
-.splash-top{font-size:13px;letter-spacing:1.5px;opacity:.95;margin-bottom:10px}
-.splash-weather{display:inline-flex;align-items:center;gap:6px;font-size:13px;opacity:.95;margin-bottom:18px;background:rgba(255,255,255,.3);padding:5px 14px;border-radius:16px;backdrop-filter:blur(6px)}
-.splash-avatar{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;font-size:28px;margin-bottom:16px;border:1px solid rgba(255,255,255,.5);animation:breathe 4s ease-in-out infinite}
-@keyframes breathe{0%,100%{transform:scale(1);box-shadow:0 4px 18px rgba(255,255,255,.3)}50%{transform:scale(1.05);box-shadow:0 6px 24px rgba(255,255,255,.45)}}
-.splash-greeting{font-size:24px;font-weight:600;margin-bottom:8px;letter-spacing:.5px}
-.splash-quote{font-size:14px;font-weight:500;margin-bottom:4px;max-width:260px;line-height:1.7;opacity:.96}
-.splash-sub{font-size:12px;opacity:.85;margin-bottom:16px}
-.splash-almanac{background:rgba(255,255,255,.28);backdrop-filter:blur(10px);border-radius:18px;padding:14px 20px;margin-bottom:22px;max-width:340px;border:1px solid rgba(255,255,255,.4);box-shadow:0 4px 16px rgba(0,0,0,.06)}
-.splash-almanac .sa-row{display:flex;gap:18px;justify-content:center;align-items:center}
-.splash-almanac .sa-item{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:0}
-.splash-almanac .sa-item-half{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:#fff;line-height:1.4;text-align:center;letter-spacing:.3px;text-shadow:0 1px 3px rgba(0,0,0,.1)}
-.splash-almanac .sa-label{font-size:15px;font-weight:700;padding:2px 10px;border-radius:10px;letter-spacing:2px}
-.splash-almanac .sa-yi-label{background:rgba(255,217,61,.95);color:#7A5A00}
-.splash-almanac .sa-ji-label{background:rgba(255,139,158,.95);color:#7A0028}
-.splash-almanac .sa-yi{color:#fff;text-shadow:0 1px 4px rgba(122,90,0,.3)}
-.splash-almanac .sa-ji{color:#fff;text-shadow:0 1px 4px rgba(122,0,40,.3)}
-.splash-btn{background:#fff;color:var(--primary-dark);border:none;border-radius:26px;padding:12px 40px;font-size:14px;font-weight:600;cursor:pointer;box-shadow:0 6px 20px rgba(255,107,157,.2);margin-bottom:6px;transition:transform .2s;animation:btnPulse 3s ease-in-out infinite}
-@keyframes btnPulse{0%,100%{box-shadow:0 6px 20px rgba(255,107,157,.2)}50%{box-shadow:0 6px 28px rgba(255,107,157,.35)}}
+.splash .petal{position:absolute;border-radius:50%;background:rgba(255,255,255,.3);pointer-events:none;filter:blur(.5px);animation:petalFloat linear infinite}
+@keyframes petalFloat{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.4}85%{opacity:.25}100%{transform:translateY(-140px) rotate(360deg);opacity:0}}
+.splash-inner{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;max-width:360px;width:100%;animation:cardIn .7s ease}
+@keyframes cardIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.splash-date{font-size:14px;font-weight:600;letter-spacing:3px;opacity:.94;margin-bottom:12px;text-shadow:0 1px 4px rgba(180,60,90,.15)}
+.splash-weather{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;margin-bottom:30px;background:rgba(255,255,255,.28);padding:8px 18px;border-radius:24px;border:1px solid rgba(255,255,255,.42);cursor:pointer}
+.splash-weather-link{cursor:pointer}
+.splash-greeting{font-size:32px;font-weight:700;letter-spacing:2px;margin-bottom:10px;text-shadow:0 2px 8px rgba(180,60,90,.18)}
+.splash-quote{font-size:16px;font-weight:500;line-height:1.7;max-width:300px;margin-bottom:26px;opacity:.97;text-shadow:0 1px 4px rgba(180,60,90,.12)}
+.splash-almanac{display:flex;flex-direction:column;gap:8px;width:100%;max-width:320px;margin-bottom:34px}
+.splash-almanac .sa-row{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.36);border-radius:14px;padding:10px 14px}
+.splash-almanac .sa-label{font-size:14px;font-weight:700;min-width:30px;text-align:center;padding:3px 0;border-radius:8px;letter-spacing:1px}
+.splash-almanac .sa-yi-label{background:rgba(255,217,61,.95);color:#5A3E00}
+.splash-almanac .sa-ji-label{background:rgba(255,107,157,.9);color:#fff}
+.splash-almanac .sa-item-half{flex:1;font-size:14px;font-weight:600;color:#fff;text-align:left;letter-spacing:.5px;line-height:1.4;text-shadow:0 1px 3px rgba(120,40,60,.2)}
+.splash-btn{position:relative;z-index:2;background:#fff;color:var(--primary-dark);border:none;border-radius:30px;padding:15px 56px;font-size:16px;font-weight:600;cursor:pointer;box-shadow:0 8px 28px rgba(255,107,157,.25);letter-spacing:2px;transition:transform .2s}
 .splash-btn:active{transform:scale(.96)}
-.splash-hint{font-size:11px;opacity:.7}
+.splash-hint{position:relative;z-index:2;font-size:12px;opacity:.78;margin-top:10px;letter-spacing:1px}
 
 /* Side Nav */
 .side-nav{width:var(--nav-w);background:var(--jelly);backdrop-filter:blur(16px);border-right:1px solid var(--jelly-bd);flex-shrink:0;display:flex;flex-direction:column;align-items:center;padding:14px 0 8px;z-index:20;overflow-y:auto}
@@ -419,16 +414,14 @@ ul{list-style:none}
 <body>
 <div class="splash" id="splash">
   <div id="splashPetals"></div>
-  <div class="splash-card">
-    <div class="splash-top" id="splashDate">--</div>
+  <div class="splash-inner">
+    <div class="splash-date" id="splashDate">--</div>
     <div class="splash-weather" id="splashWeather">📍 定位中...</div>
-    <div class="splash-avatar">✿</div>
-    <div class="splash-greeting">嗨，笑笑</div>
+    <div class="splash-greeting" id="splashGreeting">早安，笑笑</div>
     <div class="splash-quote" id="splashQuote">--</div>
-    <div class="splash-sub">今天也要好好吃饭、好好流汗</div>
     <div class="splash-almanac" id="splashAlmanac"></div>
   </div>
-  <button class="splash-btn" onclick="App.hideSplash()">开始今天 ✨</button>
+  <button class="splash-btn" onclick="App.hideSplash()">开始今天</button>
   <div class="splash-hint">点一下，开启今日计划</div>
 </div>
 <div id="app">
@@ -862,6 +855,8 @@ showSplash(){
 const splash=$('splash');if(!splash)return;
 const d=new Date();const w=['日','一','二','三','四','五','六'];
 $('splashDate').textContent=`${d.getMonth()+1}月${d.getDate()}日 · 周${w[d.getDay()]}`;
+const hr=d.getHours();
+$('splashGreeting').textContent=hr<11?'早安，笑笑':hr<14?'午安，笑笑':hr<18?'下午好，笑笑':'晚上好，笑笑';
 $('splashQuote').textContent=rotate(QUOTES,d.getDate());
 this.genPetals();
 this.loadWeather();
@@ -928,10 +923,10 @@ loadAlmanac(){
 const idx=dayIdx(todayStr());
 const yi=shuffle(ALMANAC_YI).slice(0,3).join('、');
 const ji=shuffle(ALMANAC_JI).slice(0,3).join('、');
-$('splashAlmanac').innerHTML=`<div class="sa-row"><div class="sa-item"><span class="sa-label sa-yi-label">宜</span><div class="sa-item-half"><span class="sa-yi">${yi}</span></div></div><div class="sa-item"><span class="sa-label sa-ji-label">忌</span><div class="sa-item-half"><span class="sa-ji">${ji}</span></div></div></div>`;
+$('splashAlmanac').innerHTML=`<div class="sa-row"><span class="sa-label sa-yi-label">宜</span><div class="sa-item-half">${yi}</div></div><div class="sa-row"><span class="sa-label sa-ji-label">忌</span><div class="sa-item-half">${ji}</div></div>`;
 },
 hideSplash(){const splash=$('splash');if(splash)splash.classList.add('hidden');this.switchModule('home')},
-genPetals(){const box=$('splashPetals');if(!box||box.childElementCount)return;const colors=['rgba(255,255,255,.6)','rgba(255,240,245,.5)','rgba(255,250,220,.5)'];for(let i=0;i<10;i++){const p=document.createElement('div');p.className='petal';const s=4+Math.random()*7;p.style.width=s+'px';p.style.height=s+'px';p.style.left=Math.random()*100+'%';p.style.bottom=(-20-Math.random()*60)+'px';p.style.background=colors[i%3];p.style.animationDuration=(5+Math.random()*6)+'s';p.style.animationDelay=(Math.random()*6)+'s';box.appendChild(p)}},
+genPetals(){const box=$('splashPetals');if(!box||box.childElementCount)return;const colors=['rgba(255,255,255,.35)','rgba(255,240,245,.3)','rgba(255,250,220,.3)'];for(let i=0;i<6;i++){const p=document.createElement('div');p.className='petal';const s=8+Math.random()*10;p.style.width=s+'px';p.style.height=s+'px';p.style.left=Math.random()*100+'%';p.style.bottom=(-20-Math.random()*60)+'px';p.style.background=colors[i%3];p.style.animationDuration=(9+Math.random()*6)+'s';p.style.animationDelay=(Math.random()*8)+'s';box.appendChild(p)}},
 
 switchModule(p){this.currentPage=p;document.querySelectorAll('.nav-item').forEach(el=>el.classList.toggle('active',el.dataset.page===p));document.querySelectorAll('.page').forEach(el=>el.classList.toggle('active',el.id==='page-'+p));this.renderPage(p);$('content').scrollTop=0},
 renderPage(p){const el=$('page-'+p);const m={home:'renderHome',plan:'renderPlan',diet:'renderDiet',finance:'renderFinance',language:'renderLanguage',exercise:'renderExercise',news:'renderNews',invest:'renderInvest',ai:'renderAI',outfit:'renderOutfit',travel:'renderTravel'};if(m[p])el.innerHTML=this[m[p]]()},
@@ -1313,6 +1308,7 @@ const unlocked=getUnlockedLevels(this.langSub);
 const totalInBank=bank.length;
 const mastered=getMasteredCount(this.langSub);
 const errorBook=load('errorBook_'+this.langSub,[]);
+const isToday=this.currentDate===todayStr();
 const lvNames={core:'核心',intermediate:'进阶',advanced:'拓展'};
 let lvHtml='';
 ['core','intermediate','advanced'].forEach(lv=>{
@@ -1329,10 +1325,11 @@ return`<div class="card" style="background:linear-gradient(135deg,var(--primary)
 ${lvHtml}
 <div class="chips" style="margin-top:12px"><span class="chip ${this.langSub==='en'?'active':''}" style="background:${this.langSub==='en'?'#fff':'rgba(255,255,255,.2)'};color:${this.langSub==='en'?'var(--primary-dark)':'#fff'}" onclick="App.setLang('en')">English</span><span class="chip ${this.langSub==='ru'?'active':''}" style="background:${this.langSub==='ru'?'#fff':'rgba(255,255,255,.2)'};color:${this.langSub==='ru'?'var(--primary-dark)':'#fff'}" onclick="App.setLang('ru')">Русский</span></div>
 </div>
+${!isToday?`<div class="card" style="text-align:center;padding:10px 14px;background:var(--accent-light);border:1px solid var(--accent);color:var(--accent-dark);font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:8px">⚠️ 预览模式：${fmtDate(this.currentDate)} 的单词<button class="btn btn-yellow btn-sm" onclick="App.goToday()">回到今天</button></div>`:''}
 ${reviewWords.length?`<div class="section-title">🔁 今日复习 <span class="count">${reviewWords.length}词</span></div>
 <div class="card" style="background:var(--primary-lighter);padding:12px">
 <div style="font-size:12px;color:var(--text-light);margin-bottom:8px">艾宾浩斯遗忘曲线提醒你复习这些单词</div>
-${reviewWords.map((w,i)=>`<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border)"><div style="flex:1"><div style="font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊</span></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.m)}</div></div><button class="btn btn-yellow btn-sm" onclick="App.reviewWord('${escapeHtml(w.w)}',true)">✅ 记得</button><button class="btn btn-outline btn-sm" onclick="App.reviewWord('${escapeHtml(w.w)}',false)">❓ 忘了</button></div>`).join('')}
+${reviewWords.map((w,i)=>`<div style="display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--border)"><div style="flex:1"><div style="font-size:13px;font-weight:600">${escapeHtml(w.w)} <span style="cursor:pointer" onclick="speak('${escapeHtml(w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊</span></div><div style="font-size:11px;color:var(--text-light)">${escapeHtml(w.m)}</div></div>${isToday?`<button class="btn btn-yellow btn-sm" onclick="App.reviewWord('${escapeHtml(w.w)}',true)">✅ 记得</button><button class="btn btn-outline btn-sm" onclick="App.reviewWord('${escapeHtml(w.w)}',false)">❓ 忘了</button>`:'<span style="font-size:11px;color:var(--text-lighter)">回到今天可复习</span>'}</div>`).join('')}
 </div>`:''}
 <div class="section-title">今日单词 <span class="count">${known}/${words.length}</span></div>
 ${words.map((w,i)=>this.renderWordCard(w,i)).join('')}
@@ -1359,20 +1356,23 @@ ${this.renderWordBook()}
 getTodayWords(){
 const arr=this.langSub==='en'?EN_WORDS:RU_WORDS;
 if(!arr.length)return[];
-const week=monthWeek(this.currentDate);
-const total=15+(week-1)*3;
+const total=15+(monthWeek(this.currentDate)-1)*3;
 const reviewQ=this.getReviewQueue();
 const reviewCount=Math.min(Math.floor(total*0.3),reviewQ.length);
 const newCount=total-reviewCount;
 const unlocked=getUnlockedLevels(this.langSub);
 const pool=arr.filter(w=>unlocked.includes(w.lv));
-const newWords=pool.filter(w=>!getWordState(this.langSub,w.w));
+if(!pool.length)return[];
+const reviewSet=new Set(reviewQ.map(w=>w.w));
+const avail=pool.filter(w=>!getWordState(this.langSub,w.w)&&!reviewSet.has(w.w));
 const daySeed=dayIdx(this.currentDate);
 const newSlice=[];
-for(let i=0;i<Math.min(newCount,newWords.length);i++){newSlice.push(newWords[(daySeed+i)%newWords.length])}
+if(avail.length){
+const start=(daySeed*newCount)%avail.length;
+for(let i=0;i<Math.min(newCount,avail.length);i++){newSlice.push(avail[(start+i)%avail.length])}
+}
 const reviewSlice=reviewQ.slice(0,reviewCount);
 const result=[...newSlice,...reviewSlice].slice(0,total);
-result.forEach(w=>{if(!getWordState(this.langSub,w.w))markWordLearned(this.langSub,w.w)});
 return result;
 },
 getReviewQueue(){
@@ -1382,6 +1382,7 @@ const today=this.currentDate;
 return arr.filter(w=>isWordDue(this.langSub,w.w,today));
 },
 reviewWord(word,correct){
+if(this.currentDate!==todayStr()){toast('请回到今天再复习');return}
 markWordReviewed(this.langSub,word,correct);
 haptic(correct?20:40);
 if(!correct)addErrorWord(this.langSub,word);
@@ -1403,8 +1404,7 @@ return`<div class="word-card" onclick="App.toggleWordDetail(${i})">
 <button class="btn btn-yellow btn-sm" style="margin-top:6px" onclick="event.stopPropagation();speak('${escapeHtml(w.ex||w.s||w.w)}','${w.lang==='ru'?'ru-RU':'en-US'}')">🔊 听例句</button>
 </div>
 <div style="display:flex;gap:6px;margin-top:8px" onclick="event.stopPropagation()">
-<button class="btn ${st==='known'?'btn-primary':'btn-outline'} btn-sm" onclick="App.markWord(${i},'known')">认识</button>
-<button class="btn ${st==='unknown'?'btn-primary':'btn-outline'} btn-sm" onclick="App.markWord(${i},'unknown')">不认识</button>
+${this.currentDate===todayStr()?`<button class="btn ${st==='known'?'btn-primary':'btn-outline'} btn-sm" onclick="App.markWord(${i},'known')">认识</button><button class="btn ${st==='unknown'?'btn-primary':'btn-outline'} btn-sm" onclick="App.markWord(${i},'unknown')">不认识</button>`:'<span style="flex:1;text-align:center;font-size:11px;color:var(--text-lighter);padding:6px">仅预览，回到今天可打卡</span>'}
 </div>
 </div>`;
 },
@@ -1427,6 +1427,7 @@ return`<div style="font-size:12px;color:var(--text-light);margin-bottom:8px">共
 },
 clearErrorBook(){save('errorBook_'+this.langSub,[]);this.renderPage('language');toast('错题集已清空')},
 markWord(i,st){
+if(this.currentDate!==todayStr()){toast('请回到今天再进行学习打卡');return}
 const d=this.dayData(this.currentDate);d.wordStatus=d.wordStatus||{};d.wordStatus[this.langSub+i]=st;this.saveDay(this.currentDate,d);
 const words=this.getTodayWords();const w=words[i];
 if(st==='known'&&w){markWordLearned(this.langSub,w.w)}
@@ -1437,6 +1438,7 @@ clearWordBook(){save('wordBook_'+this.langSub,[]);this.renderPage('language');to
 
 /* Listen game */
 startListenGame(){
+if(this.currentDate!==todayStr()){toast('请回到今天再开始练习');return}
 const words=this.getTodayWords();const q=shuffle(words).slice(0,5);
 this._listenQ=q;this._listenIdx=0;
 this.renderListenQ();
@@ -1500,6 +1502,7 @@ flashPrev(){if(this._flashIdx>0){this._flashIdx--;this._flashFlipped=false;this.
 
 /* Spell game */
 startSpellGame(){
+if(this.currentDate!==todayStr()){toast('请回到今天再开始练习');return}
 const words=this.getTodayWords();const q=shuffle(words).slice(0,5);
 this._spellQ=q;this._spellIdx=0;
 this.renderSpellQ();
