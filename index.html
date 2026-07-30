@@ -953,7 +953,7 @@ if(localStorage.getItem('qwx5_aiStudyPlans')===null){save('aiStudyPlans',DEFAULT
 // Auto-sync disabled on startup to prevent data overwrite — user must manually trigger sync
 // const _token=load('gistToken','');const _gistId=load('gistId','');
 // if(_token&&_gistId){this.downloadSync().catch(()=>{})}
-if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{reg.update();reg.addEventListener('updatefound',()=>{const nw=reg.installing;if(nw){nw.addEventListener('statechange',()=>{if(nw.state==='activated'&&navigator.serviceWorker.controller){/* Guard against reload loop: only reload once per session */if(sessionStorage.getItem('qwx_swReloaded')){console.log('SW updated but already reloaded this session, skipping');return}sessionStorage.setItem('qwx_swReloaded','1');toast('青梧笑已更新，自动刷新中...');setTimeout(()=>window.location.reload(),800)}}})}})}).catch(()=>{})}
+if('serviceWorker'in navigator){navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(reg=>{reg.update();reg.addEventListener('updatefound',()=>{const nw=reg.installing;if(nw){nw.addEventListener('statechange',()=>{if(nw.state==='activated'&&navigator.serviceWorker.controller){toast('青梧笑已更新，请手动刷新页面')}})}})}).catch(()=>{})}
 /* Cross-window data sync: PWA window and browser tab share localStorage; auto-refresh when data changes in the other window */
 window.addEventListener('storage',(e)=>{if(e.key&&e.key.startsWith('qwx5_')){clearTimeout(this._crossSync);this._crossSync=setTimeout(()=>{this.renderAll()},300)}});
 },
