@@ -2203,7 +2203,7 @@ return`<div class="sub-tab-row" style="margin-bottom:12px">${periodTabs}</div>
 <div class="section-title">📈 ${range.from.slice(0,4)}年收支</div>
 <div class="card">
 <div style="display:flex;align-items:flex-end;justify-content:space-between;height:120px;gap:4px">
-${items.map(it=>{const eh=maxVal?it.exp/maxVal*80:0;const ih=maxVal?it.inc/maxVal*80:0;return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px"><div style="font-size:8px;color:var(--text-light)">${it.exp||''}</div><div style="display:flex;gap:1px;align-items:flex-end;height:80px"><div style="width:8px;height:${eh}px;border-radius:2px;background:var(--primary)"></div><div style="width:8px;height:${ih}px;border-radius:2px;background:var(--success)"></div></div><div style="font-size:8px;color:var(--text-light)">${monthNames[it.month-1]}</div></div>`}).join('')}
+${items.map(it=>{const eh=maxVal?it.exp/maxVal*80:0;const ih=maxVal?it.inc/maxVal*80:0;return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:2px"><div style="font-size:8px;color:var(--text-light)">${it.exp?Math.round(it.exp):''}</div><div style="display:flex;gap:1px;align-items:flex-end;height:80px"><div style="width:8px;height:${eh}px;border-radius:2px;background:var(--primary)"></div><div style="width:8px;height:${ih}px;border-radius:2px;background:var(--success)"></div></div><div style="font-size:8px;color:var(--text-light)">${monthNames[it.month-1]}</div></div>`}).join('')}
 </div>
 <div style="display:flex;gap:12px;margin-top:8px;font-size:11px;color:var(--text-light)"><span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--primary);margin-right:3px"></span>支出</span><span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--success);margin-right:3px"></span>收入</span></div>
 </div>
@@ -2219,7 +2219,7 @@ return`<div class="sub-tab-row" style="margin-bottom:12px">${periodTabs}</div>
 <div class="section-title">📈 本周收支</div>
 <div class="card">
 <div style="display:flex;align-items:flex-end;justify-content:space-between;height:120px;gap:6px">
-${items.map((it,i)=>{const eh=maxVal?it.exp/maxVal*80:0;const ih=maxVal?it.inc/maxVal*80:0;const isToday=it.date===todayStr();return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px"><div style="font-size:9px;color:var(--text-light)">${it.exp||''}</div><div style="display:flex;gap:2px;align-items:flex-end;height:80px"><div style="width:12px;height:${eh}px;border-radius:3px;background:var(--primary)"></div><div style="width:12px;height:${ih}px;border-radius:3px;background:var(--success)"></div></div><div style="font-size:9px;color:${isToday?'var(--primary)':'var(--text-light)'}">${dows[i]}</div></div>`}).join('')}
+${items.map((it,i)=>{const eh=maxVal?it.exp/maxVal*80:0;const ih=maxVal?it.inc/maxVal*80:0;const isToday=it.date===todayStr();return`<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:3px"><div style="font-size:9px;color:var(--text-light)">${it.exp?Math.round(it.exp):''}</div><div style="display:flex;gap:2px;align-items:flex-end;height:80px"><div style="width:12px;height:${eh}px;border-radius:3px;background:var(--primary)"></div><div style="width:12px;height:${ih}px;border-radius:3px;background:var(--success)"></div></div><div style="font-size:9px;color:${isToday?'var(--primary)':'var(--text-light)'}">${dows[i]}</div></div>`}).join('')}
 </div>
 <div style="display:flex;gap:12px;margin-top:8px;font-size:11px;color:var(--text-light)"><span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--primary);margin-right:3px"></span>支出</span><span><span style="display:inline-block;width:8px;height:8px;border-radius:2px;background:var(--success);margin-right:3px"></span>收入</span></div>
 </div>
@@ -2253,7 +2253,7 @@ renderFinanceRecord(){
 const type=this.financeRecordType||'expense';const cats=FINANCE_CATS[type];const amount=this.financeRecordAmount||'';
 const d=this.dayData(this.currentDate);const records=d.finance||[];const todayRecords=records.filter(r=>r.type===type);
 const todayTotal=todayRecords.reduce((s,r)=>s+(+r.amount||0),0);
-const recordList=todayRecords.length?`<div class="fr-records-head"><span class="fr-records-title">今日${type==='income'?'收入':'支出'}</span><span id="frRecordTotal" class="fr-records-total">¥${todayTotal}</span></div>
+const recordList=todayRecords.length?`<div class="fr-records-head"><span class="fr-records-title">今日${type==='income'?'收入':'支出'}</span><span id="frRecordTotal" class="fr-records-total">¥${Math.round(todayTotal)}</span></div>
 <div id="frRecordList">${todayRecords.map((r,i)=>{const realIdx=records.indexOf(r);const cat=FINANCE_CATS[type]?.find(c=>c.k===r.cat)||{i:'🧩',n:'其他'};return this.renderRecordItem(r,cat,realIdx,type)}).join('')}</div>`:`<div class="fr-record-empty">今日还没有记账，记一笔吧～</div>`;
 return`<div class="section-title"><span>记一笔</span></div>
 <div class="sub-tab-row"><div class="sub-tab ${type==='expense'?'active':''}" onclick="App.setFinanceRecordType('expense')">支出</div><div class="sub-tab ${type==='income'?'active':''}" style="${type==='income'?'background:linear-gradient(135deg,var(--success),#81C784)':''}" onclick="App.setFinanceRecordType('income')">收入</div></div>
